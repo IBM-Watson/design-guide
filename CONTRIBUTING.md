@@ -1,0 +1,10 @@
+## Contributing to the IBM Watson Pattern Library
+
+We love contributors! Yes we do! If you would like to contribute to the IBM Watson Pattern Library, please follow the following guidelines:
+
+* **DO NOT ISSUE A PULL REQUEST WITHOUT RELATED ISSUE!!** All pull requests must reference an issue in the issue queue and will only be looked at after discussion about that issue has taken place. Any pull request created that does not reference an issue will be closed.
+* All pull requests will be tested against our standard test suite through Travis CI. If any of the tests fail, we will ask you to fix your code so that the tests no longer fail. Any new features that are added must have accompanying passing tests before being considered. During a pull request, we may ask for additional tests to be written in order to ensure that what is being changed does not have negative effects elsewhere.
+* Styling changes must be done in Sass and compiled into CSS, not solely through CSS
+* No patterns may rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any pattern submissions that do will be asked to be rewritten without said dependencies. Acceptable JavaScript dependencies include core JavaScript that we provide and any current dependencies already included in the project. Any additional external dependencies will need to be approved before they can be used.
+* Development is done using [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). It is recommended you use the [Git Flow Git plugin](http://danielkummer.github.io/git-flow-cheatsheet/) for working with feature branches.
+* If your pull request does not apply cleanly we will ask you to fix that before we will look into pulling it in. We may ask you to update or make changes to the code you've submitted, please don't take this the wrong way. If a pull request smells (such as if a large amount of code is all within a single commit, or the coding standards aren't in line with what currently exists) we may ask you to rewrite your commit.
