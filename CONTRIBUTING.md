@@ -1,6 +1,6 @@
 ## Contributing to the IBM Watson Pattern Library
 
-We love contributors! Yes we do! If you would like to contribute to the IBM Watson Pattern Library, please follow the following guidelines:
+We love contributors! If you would like to contribute to the IBM Watson Pattern Library, please follow the following guidelines:
 
 * **DO NOT ISSUE A PULL REQUEST WITHOUT RELATED ISSUE!!** All pull requests must reference an issue in the issue queue and will only be looked at after discussion about that issue has taken place. Any pull request created that does not reference an issue will be closed.
 * All pull requests will be tested against our standard test suite through Travis CI. If any of the tests fail, we will ask you to fix your code so that the tests no longer fail. Any new features that are added must have accompanying passing tests before being considered. During a pull request, we may ask for additional tests to be written in order to ensure that what is being changed does not have negative effects elsewhere.
