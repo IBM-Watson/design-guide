@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Copy host gitconfig into the Virtual Machine
   # On Windows if not using Powershell, change `~/.gitconfig` to `C:\Users\$USER` with $USER being your user name
-  config.vm.provision 'file', source: '/Users/samrichard/.gitconfig', destination: '.gitconfig'
+  config.vm.provision 'file', source: '~/.gitconfig', destination: '.gitconfig'
   config.vm.provision 'shell', path: '.standup.sh'
   config.vm.provision 'shell', path: '.stackup.sh', privileged: false
 
