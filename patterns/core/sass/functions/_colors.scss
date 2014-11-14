@@ -12,7 +12,7 @@
 // background: color(blue);     // #4178BE
 //////////////////////////////
 @function color($color, $tone: 'core') {
-  @return map-get(map-get($ibm__color-palette, $color), $tone);
+  @return map-get(map-get($__color-palette, $color), $tone);
 }
 
 //////////////////////////////
@@ -23,14 +23,14 @@
 @function get-colors($color: null) {
   // Return a list of colors available if nothing is passed in
   @if $color == null {
-    @return map-keys($ibm__color-palette);
+    @return map-keys($__color-palette);
   }
   // Return the full color map if 'all' is passed in
   @else if $color == 'all' {
-    @return $ibm__color-palette;
+    @return $__color-palette;
   }
   // Return just the color map if a specific color is passed in
   @else {
-    @return map-get($ibm__color-palette, $color);
+    @return map-get($__color-palette, $color);
   }
 }
