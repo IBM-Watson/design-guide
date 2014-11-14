@@ -15,7 +15,6 @@ sudo apt-get install p7zip-full
 wget https://github.com/IBM-Watson/runner/archive/master.zip
 7z x master.zip
 sudo chown -R vagrant .
-cd runner-master
-find . -mindepth 1 -maxdepth 1 -exec mv -t.. -- {} +
-cd ..
-rmdir runner-master
+rm master.zip
+rsync -a -v runner-master/ ./
+rm -r runner-master
