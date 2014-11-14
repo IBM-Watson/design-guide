@@ -8,8 +8,8 @@
 //
 // Usage:
 //
-// background: palette(blue, 80); // #1D3649
-// background: palette(blue);     // #4178BE
+// background: color(blue, 80); // #1D3649
+// background: color(blue);     // #4178BE
 //////////////////////////////
 @function color($color, $tone: 'core') {
   @return map-get(map-get($ibm__color-palette, $color), $tone);
