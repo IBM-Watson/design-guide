@@ -1,0 +1,11 @@
+<div [library-class="pattern--rendered"]>
+  {{ pattern.markup | safe }}
+</div>
+<div [library-class="pattern--code"]>
+  <pre><code class="language-html">
+    {{ pattern.markup | escape -}}
+  </code></pre>
+</div>
+<div [library-class="pattern--readme"] class="base--STYLED">
+  {{ pattern.readme | safe }}
+</div>
