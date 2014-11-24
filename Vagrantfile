@@ -26,5 +26,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder 'patterns', '/crick/patterns'
   config.vm.synced_folder 'library', '/crick/library'
   config.vm.synced_folder '.www', '/crick/www'
+
+  # Set up network
+  config.vm.network 'forwarded_port', guest: 3000, host: 3000
   config.vm.network :private_network, ip: '172.10.10.10'
 end
