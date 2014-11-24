@@ -1,6 +1,6 @@
 # Heading Level 3
 
-Heading Level 3, `<h3>`, is the primary heading for an associated section
+Heading Level 3, `<h3>`, is the third level heading for an associated section
 
 ## Available Classes
 
