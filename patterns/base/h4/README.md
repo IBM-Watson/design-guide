@@ -1,6 +1,6 @@
 # Heading Level 4
 
-Heading Level 4, `<h4>`, is the primary heading for an associated section
+Heading Level 4, `<h4>`, is a fourth level heading within an associated section
 
 ## Available Classes
 
