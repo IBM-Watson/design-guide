@@ -1,5 +1,5 @@
 name: Heading Level 3
-description: Third level heading for associated section
+description: Third level heading within an associated section
 displayTemplate: pattern
 variables:
   header:
