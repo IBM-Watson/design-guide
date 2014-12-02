@@ -6,28 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {# Page Title -#}
-  <title>Crick{% block title %} Patterns{% endblock %}</title>
+  <title>Crick{{ layout.title }}</title>
 
   {# CSS -#}
-  {% block css %}
   <link rel="stylesheet" href="/css/crick.css">
-  {% endblock %}
+  {% for css in layout.css %}
+    <link rel="stylesheet" href="{{css}}">
+  {% endfor %}
+
+  {# JavaScript -#}
+  {% for js in layout.js %}
+    {% if js.head %}
+      {% if js.inline %}
+        <script>{{ js.src | safe -}}</script>
+      {% else %}
+        <script src="{{js.src}}" {%if js.async %}async{% endif %} {%if js.defer %}defer{% endif %}></script>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
 </head>
 <body>
 
   {# Page Heading -#}
+  {% if layout.heading %}
   <header library-class="heading">
-    {% block navigation %}{% endblock %}
+    {{ layout.heading.navigation | safe -}}
   </header>
+  {% endif %}
 
   {# Page Body -#}
   <main library-class="body">
-    {% block content %}{% endblock %}
+    {{ layout.content | safe -}}
   </main>
 
   {# JavaScript -#}
-  {% block javascript %}{% endblock %}
+  {% for js in layout.js %}
+    {% if not js.head %}
+      {% if js.inline %}
+        <script>{{ js.src | safe -}}</script>
+      {% else %}
+        <script src="{{js.src}}" {%if js.async %}async{% endif %} {%if js.defer %}defer{% endif %}></script>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
 </body>
 </html>
