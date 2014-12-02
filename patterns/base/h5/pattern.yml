@@ -1,0 +1,6 @@
+name: Heading Level 5
+description: Fifth level heading within an associated section
+displayTemplate: pattern
+variables:
+  header:
+    text: Header 5
