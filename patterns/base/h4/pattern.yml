@@ -1,5 +1,5 @@
 name: Heading Level 4
-description: Fourth level heading for associated section
+description: Fourth level heading within an associated section
 displayTemplate: pattern
 variables:
   header:
