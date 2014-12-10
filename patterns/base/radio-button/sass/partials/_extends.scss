@@ -1,12 +1,11 @@
 %base--radio {
-  opacity: 0; //hides input but its still there-- so thats hacky
   display: block;
-  width: 100%;
+  opacity: 0; //hides input but its still there -- so thats hacky
 
   + label:before {
     content: "";
+    border: $input-border-width solid color(gray, 30);
     border-radius: 50%;
-    border: 3px solid lightgrey;
     display: inline-block;
     height: 1em;
     margin-right: 1em;
@@ -15,7 +14,7 @@
   }
 
   &:checked + label:before {
-    background: dimgrey;
-    box-shadow: inset 0 0 0 3px white;
+    background: color(gray, 80);
+    box-shadow: inset 0 0 0 $input-border-width color(white);
   }
 }
