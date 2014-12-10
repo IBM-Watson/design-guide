@@ -1,0 +1,4 @@
+name: Radio Button
+description: A form field option where only one choice may be selected
+displayTemplate: pattern
+variables:
