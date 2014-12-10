@@ -5,7 +5,7 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
-.base--h1,
-.base--STYLED h1 {
-  @extend %base--h1;
+.base--radio,
+.base--STYLED input[type="radio"] {
+  @extend %base--radio;
 }
