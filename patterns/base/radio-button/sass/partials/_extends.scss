@@ -2,9 +2,9 @@
   display: none;
 
   + label:before {
-    content: "";
-    border: $input-border-width solid color(gray, 30);
+    border: $input-border-width solid color('gray', 30);
     border-radius: 50%;
+    content: '';
     display: inline-block;
     height: 1em;
     margin-right: 1em;
@@ -13,13 +13,13 @@
   }
 
   &:checked + label:before {
-    background: color(gray, 80);
-    box-shadow: inset 0 0 0 $input-border-width color(white);
+    background: color('gray', 80);
+    box-shadow: inset 0 0 0 $input-border-width color('white');
   }
 }
 
 // this is temporary
-ul[role="radiogroup"] {
+[role='radiogroup'] {
   li {
     list-style: none;
   }
