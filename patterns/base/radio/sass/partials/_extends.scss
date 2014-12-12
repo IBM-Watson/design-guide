@@ -5,14 +5,14 @@
     position: relative;
 
     &:before {
-      content: '';
-      border: $input-border-width solid color('gray', 30);
-      border-radius: 50%;
       display: inline-block;
-      height: 1em;
       width: 1em;
+      height: 1em;
       margin-right: 1em;
       vertical-align: middle;
+      border: $input-border-width solid color('gray', 30);
+      border-radius: 50%;
+      content: '';
     }
   }
 
