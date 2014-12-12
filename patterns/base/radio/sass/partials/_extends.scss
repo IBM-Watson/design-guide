@@ -3,27 +3,29 @@
 
   + label {
     position: relative;
-  }
 
-  + label:before {
-    content: '';
-    border: $input-border-width solid color('gray', 30);
-    display: inline-block;
-    height: 1em;
-    margin-right: 1em;
-    vertical-align: middle;
-    width: 1em;
+    &:before {
+      content: '';
+      border: $input-border-width solid color('gray', 30);
+      border-radius: 50%;
+      display: inline-block;
+      height: 1em;
+      width: 1em;
+      margin-right: 1em;
+      vertical-align: middle;
+
+    }
   }
 
   &:checked + label:after {
     content: '';
     background: color('gray', 80);
     border-radius: 50%;
-    display: block;
+    display: inline-block;
     position: absolute;
     width: .5em;
     height: .5em;
-    top: .4em;
-    left: .4em;
+    top: .415em;
+    left: .425em;
   }
 }

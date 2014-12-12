@@ -4,3 +4,11 @@
 @import 'partials/settings';
 @import 'partials/mixins';
 @import 'partials/extends';
+
+.base--radiogroup {
+  @extend %base--radiogroup;
+}
+
+.radiogroup--item {
+  @extend %radiogroup--item;
+}
