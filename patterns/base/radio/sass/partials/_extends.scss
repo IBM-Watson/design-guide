@@ -13,19 +13,10 @@
       width: 1em;
       margin-right: 1em;
       vertical-align: middle;
-
     }
   }
 
-  &:checked + label:after {
-    content: '';
-    background: color('gray', 80);
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    width: .5em;
-    height: .5em;
-    top: .415em;
-    left: .425em;
+  &:checked + label:before {
+    background: radial-gradient(color('gray', 80) 40%, transparent 40%);
   }
 }
