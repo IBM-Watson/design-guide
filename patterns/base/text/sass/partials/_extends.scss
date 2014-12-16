@@ -1,12 +1,12 @@
 %base--text-input {
   @extend %font--sans;
-  border: 1px solid $text-input-border--color;
-  font-size: 1em;
-  padding: $text-input-padding;
   width: 100%;
+  padding: $text-input-padding;
+  font-size: 1em;
+  border: 1px solid $text-input-border--color;
 
   &:focus {
-    box-shadow: inset 0 0 0 2px $text-input-border--color;
     outline: none;
+    box-shadow: inset 0 0 0 2px $text-input-border--color;
   }
 }
