@@ -1,0 +1,16 @@
+@import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--block-label,
+.base--STYLED label {
+  @extend %base--inline-label
+}
+
+.base--block-label,
+.base--STYLED .base--block-label {
+  @extend %base--block-label
+}
