@@ -5,7 +5,7 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
-.base--input,
-.base--STYLED input {
-  @extend %base--input;
+.base--text-input,
+.base--STYLED input[type="text"] {
+  @extend %base--text-input;
 }
