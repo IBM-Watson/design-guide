@@ -1,3 +1,7 @@
 name: Text Input
 description: Text input field for a form
 displayTemplate: pattern
+variables:
+  text:
+    placeholder: Placeholder Text
+    disabled: Disabled Input
