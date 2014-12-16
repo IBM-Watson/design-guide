@@ -2,6 +2,13 @@ name: Text Input
 description: Text input field for a form
 displayTemplate: pattern
 variables:
-  text:
-    placeholder: Placeholder Text
-    disabled: Disabled Input
+  inputs:
+    basic:
+      label: Basic Text Input
+    placeholder:
+      label: Placeholder Text
+      placeholder: This is placeholder text
+    disabled:
+      label: Disabled Text Input
+      placeholder: Can't click me
+      disabled: true
