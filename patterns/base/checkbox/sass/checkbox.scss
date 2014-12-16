@@ -1,0 +1,12 @@
+@import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--checkbox,
+.base--STYLED input[type="checkbox"] {
+  @extend %base--checkbox;
+}
+
