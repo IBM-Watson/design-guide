@@ -7,5 +7,5 @@ A flexible and configurable area for a long-form text input.
 Styling can be applied in the following ways:
 
 * `.base--input-textarea` - class
-* `.base--STYLED input` - `textarea` tag inside a class of `.base--STYLED`
+* `.base--STYLED textarea` - `textarea` tag inside a class of `.base--STYLED`
 * `%base--input-textarea` - extended through Sass
