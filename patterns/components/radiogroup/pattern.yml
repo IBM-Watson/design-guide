@@ -1,0 +1,8 @@
+name: Radio Group
+description: A group of radio buttons
+displayTemplate: pattern
+variables:
+  radios:
+    - First Option
+    - Second Option
+    - Third Option

@@ -1,0 +1,22 @@
+%base--radio {
+  display: none;
+
+  + label {
+    position: relative;
+
+    &:before {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 1em;
+      vertical-align: middle;
+      border: $input-border-width solid color('gray', 30);
+      border-radius: 50%;
+      content: '';
+    }
+  }
+
+  &:checked + label:before {
+    background: radial-gradient(color('gray', 80) 40%, transparent 40%);
+  }
+}
