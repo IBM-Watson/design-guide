@@ -1,0 +1,5 @@
+@import '../../../input/sass/partials/extends';
+
+%base--range-input {
+  @extend %base--input;
+}
