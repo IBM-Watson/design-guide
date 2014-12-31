@@ -1,0 +1,14 @@
+name: Input Field
+description: Input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Input
+    placeholder:
+      label: Basic Input with Placeholder Text
+      placeholder: This is placeholder text
+    disabled:
+      label: Disabled Basic Input
+      placeholder: Can't click me
+      disabled: true

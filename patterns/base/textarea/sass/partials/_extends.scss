@@ -1,10 +1,5 @@
-%base--textarea {
-  padding: $text-input-padding;
-  font-size: 1em;
-  border: 1px solid $text-input-border--color;
+@import '../../../input/sass/partials/extends';
 
-  &:focus {
-    outline: none;
-    box-shadow: inset 0 0 0 2px $text-input-border--color;
-  }
+%base--textarea {
+  @extend %base--input;
 }

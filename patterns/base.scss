@@ -19,13 +19,16 @@
 // Form Elements
 //////////////////////////////
 
+// Input
+@import 'base/input/sass/input';
+// Label
+@import 'base/label/sass/label';
+
 // Radio Button
 @import 'base/radio/sass/radio';
 // Text Input
 @import 'base/text/sass/text';
-// Label
-@import 'base/label/sass/label';
 // Textarea
 @import 'base/textarea/sass/textarea';
-// Forms
+// Checkboxes
 @import 'base/checkbox/sass/checkbox';

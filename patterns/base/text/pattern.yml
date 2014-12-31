@@ -5,10 +5,13 @@ variables:
   inputs:
     basic:
       label: Basic Text Input
+      type: text
     placeholder:
       label: Placeholder Text
+      type: text
       placeholder: This is placeholder text
     disabled:
       label: Disabled Text Input
+      type: text
       placeholder: Can't click me
       disabled: true
