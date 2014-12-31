@@ -1,0 +1,17 @@
+name: File Input
+description: File input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic File Input
+      type: file
+    placeholder:
+      label: Placeholder File
+      type: file
+      placeholder: This is placeholder file
+    disabled:
+      label: Disabled File Input
+      type: file
+      placeholder: Can't click me
+      disabled: true
