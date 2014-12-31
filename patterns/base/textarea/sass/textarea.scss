@@ -1,0 +1,11 @@
+@import '../../../core/sass/core';
+
+@import '../../text/sass/partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--textarea,
+.base--STYLED textarea {
+  @extend %base--textarea;
+}
