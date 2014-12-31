@@ -1,0 +1,17 @@
+name: Color Input
+description: Color input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Color Input
+      type: color
+    placeholder:
+      label: Placeholder Color
+      type: color
+      placeholder: This is placeholder color
+    disabled:
+      label: Disabled Color Input
+      type: color
+      placeholder: Can't click me
+      disabled: true

@@ -1,0 +1,5 @@
+@import '../../../input/sass/partials/extends';
+
+%base--color-input {
+  @extend %base--input;
+}
