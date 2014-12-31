@@ -1,0 +1,17 @@
+name: Password Input
+description: Password input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Password Input
+      type: password
+    placeholder:
+      label: Placeholder Password
+      type: password
+      placeholder: This is placeholder password
+    disabled:
+      label: Disabled Password Input
+      type: password
+      placeholder: Can't click me
+      disabled: true
