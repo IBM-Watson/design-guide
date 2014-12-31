@@ -1,0 +1,17 @@
+name: Month Input
+description: Month input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Month Input
+      type: month
+    placeholder:
+      label: Placeholder Month
+      type: month
+      placeholder: This is placeholder month
+    disabled:
+      label: Disabled Month Input
+      type: month
+      placeholder: Can't click me
+      disabled: true
