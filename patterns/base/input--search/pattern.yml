@@ -1,0 +1,17 @@
+name: Search Input
+description: Search input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Search Input
+      type: search
+    placeholder:
+      label: Placeholder Search
+      type: search
+      placeholder: This is placeholder search
+    disabled:
+      label: Disabled Search Input
+      type: search
+      placeholder: Can't click me
+      disabled: true

@@ -1,0 +1,11 @@
+@import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--search-input,
+.base--STYLED input[type="search"] {
+  @extend %base--search-input;
+}
