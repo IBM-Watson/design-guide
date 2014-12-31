@@ -1,0 +1,11 @@
+@import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--datetime-local-input,
+.base--STYLED input[type="datetime-local"] {
+  @extend %base--datetime-local-input;
+}

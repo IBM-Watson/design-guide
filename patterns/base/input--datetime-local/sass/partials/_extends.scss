@@ -1,0 +1,5 @@
+@import '../../../input/sass/partials/extends';
+
+%base--datetime-local-input {
+  @extend %base--input;
+}
