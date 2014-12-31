@@ -1,0 +1,11 @@
+@import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--number-input,
+.base--STYLED input[type="number"] {
+  @extend %base--number-input;
+}
