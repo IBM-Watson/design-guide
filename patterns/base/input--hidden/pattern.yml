@@ -1,0 +1,17 @@
+name: Hidden Input
+description: Hidden input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Hidden Input
+      type: hidden
+    placeholder:
+      label: Placeholder Hidden
+      type: hidden
+      placeholder: This is placeholder hidden
+    disabled:
+      label: Disabled Hidden Input
+      type: hidden
+      placeholder: Can't click me
+      disabled: true
