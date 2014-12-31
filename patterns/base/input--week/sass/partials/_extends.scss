@@ -1,0 +1,5 @@
+@import '../../../input/sass/partials/extends';
+
+%base--week-input {
+  @extend %base--input;
+}

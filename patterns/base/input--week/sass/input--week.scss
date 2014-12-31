@@ -1,0 +1,11 @@
+@import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--week-input,
+.base--STYLED input[type="week"] {
+  @extend %base--week-input;
+}

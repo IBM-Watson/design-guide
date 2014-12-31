@@ -1,0 +1,17 @@
+name: Week Input
+description: Week input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Week Input
+      type: week
+    placeholder:
+      label: Placeholder Week
+      type: week
+      placeholder: This is placeholder week
+    disabled:
+      label: Disabled Week Input
+      type: week
+      placeholder: Can't click me
+      disabled: true
