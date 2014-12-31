@@ -1,0 +1,17 @@
+name: Date Input
+description: Date input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Date Input
+      type: date
+    placeholder:
+      label: Placeholder Date
+      type: date
+      placeholder: This is placeholder date
+    disabled:
+      label: Disabled Date Input
+      type: date
+      placeholder: Can't click me
+      disabled: true
