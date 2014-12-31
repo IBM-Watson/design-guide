@@ -1,0 +1,5 @@
+@import '../../../input/sass/partials/extends';
+
+%base--tel-input {
+  @extend %base--input;
+}

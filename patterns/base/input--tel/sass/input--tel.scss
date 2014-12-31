@@ -1,0 +1,11 @@
+@import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--tel-input,
+.base--STYLED input[type="tel"] {
+  @extend %base--tel-input;
+}

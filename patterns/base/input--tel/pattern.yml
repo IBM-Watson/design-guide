@@ -1,0 +1,17 @@
+name: Tel Input
+description: Tel input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Tel Input
+      type: tel
+    placeholder:
+      label: Placeholder Tel
+      type: tel
+      placeholder: This is placeholder tel
+    disabled:
+      label: Disabled Tel Input
+      type: tel
+      placeholder: Can't click me
+      disabled: true
