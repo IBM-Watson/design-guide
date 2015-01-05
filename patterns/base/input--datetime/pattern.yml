@@ -1,0 +1,17 @@
+name: Datetime Input
+description: Datetime input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Datetime Input
+      type: datetime
+    placeholder:
+      label: Placeholder Datetime
+      type: datetime
+      placeholder: This is placeholder datetime
+    disabled:
+      label: Disabled Datetime Input
+      type: datetime
+      placeholder: Can't click me
+      disabled: true

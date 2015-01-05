@@ -1,0 +1,17 @@
+name: Email Input
+description: Email input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Email Input
+      type: email
+    placeholder:
+      label: Placeholder Email
+      type: email
+      placeholder: This is placeholder email
+    disabled:
+      label: Disabled Email Input
+      type: email
+      placeholder: Can't click me
+      disabled: true

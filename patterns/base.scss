@@ -19,13 +19,50 @@
 // Form Elements
 //////////////////////////////
 
-// Radio Button
-@import 'base/radio/sass/radio';
-// Text Input
-@import 'base/text/sass/text';
+// Input
+@import 'base/input/sass/input';
 // Label
 @import 'base/label/sass/label';
+
+// Radio Button
+@import 'base/radio/sass/radio';
+// Color Input
+@import 'base/input--color/sass/input--color';
+// Date Input
+@import 'base/input--date/sass/input--date';
+// Datetime Input
+@import 'base/input--datetime/sass/input--datetime';
+// Datetime Local Input
+@import 'base/input--datetime-local/sass/input--datetime-local';
+// Email Input
+@import 'base/input--email/sass/input--email';
+// File Input
+@import 'base/input--file/sass/input--file';
+// Hidden Input
+@import 'base/input--hidden/sass/input--hidden';
+// Image Input
+@import 'base/input--image/sass/input--image';
+// Month Input
+@import 'base/input--month/sass/input--month';
+// Number Input
+@import 'base/input--number/sass/input--number';
+// Password Input
+@import 'base/input--password/sass/input--password';
+// Range Input
+@import 'base/input--range/sass/input--range';
+// Search Input
+@import 'base/input--search/sass/input--search';
+// Tel Input
+@import 'base/input--tel/sass/input--tel';
+// Text Input
+@import 'base/input--text/sass/input--text';
+// Time Input
+@import 'base/input--time/sass/input--time';
+// URL Input
+@import 'base/input--url/sass/input--url';
+// Week Input
+@import 'base/input--week/sass/input--week';
 // Textarea
 @import 'base/textarea/sass/textarea';
-// Forms
+// Checkboxes
 @import 'base/checkbox/sass/checkbox';

@@ -1,0 +1,17 @@
+name: Time Input
+description: Time input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Time Input
+      type: time
+    placeholder:
+      label: Placeholder Time
+      type: time
+      placeholder: This is placeholder time
+    disabled:
+      label: Disabled Time Input
+      type: time
+      placeholder: Can't click me
+      disabled: true

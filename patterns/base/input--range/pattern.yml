@@ -1,0 +1,17 @@
+name: Range Input
+description: Range input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Range Input
+      type: range
+    placeholder:
+      label: Placeholder Range
+      type: range
+      placeholder: This is placeholder range
+    disabled:
+      label: Disabled Range Input
+      type: range
+      placeholder: Can't click me
+      disabled: true

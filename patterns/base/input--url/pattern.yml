@@ -1,0 +1,17 @@
+name: URL Input
+description: URL input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic URL Input
+      type: url
+    placeholder:
+      label: Placeholder URL
+      type: url
+      placeholder: This is placeholder url
+    disabled:
+      label: Disabled URL Input
+      type: url
+      placeholder: Can't click me
+      disabled: true

@@ -5,11 +5,7 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
-.base--inline-label,
-.base--STYLED label {
-  @extend %base--inline-label;
-}
-
-.base--block-label {
-  @extend %base--block-label;
+.base--datetime-local-input,
+.base--STYLED input[type="datetime-local"] {
+  @extend %base--datetime-local-input;
 }

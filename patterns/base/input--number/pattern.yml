@@ -1,0 +1,17 @@
+name: Number Input
+description: Number input field for a form
+displayTemplate: pattern
+variables:
+  inputs:
+    basic:
+      label: Basic Number Input
+      type: number
+    placeholder:
+      label: Placeholder Number
+      type: number
+      placeholder: This is placeholder number
+    disabled:
+      label: Disabled Number Input
+      type: number
+      placeholder: Can't click me
+      disabled: true

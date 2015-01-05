@@ -1,7 +1,0 @@
-{% for input in inputs -%}
-{% set input = {id: 'input' + loop.index} -%}
-
-<label class="base--block-label" for="{{input.id}}">{{ input.label }}</label>
-<input type="text" id="{{input.id}}" {% if input.placeholder %}placeholder="{{ input.placeholder }}" {% endif %} class="base--text-input" {% if input.disabled %}disabled{% endif %}></input>
-
-{% endfor %}

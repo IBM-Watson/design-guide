@@ -1,10 +1,11 @@
 @import '../../../core/sass/core';
 
+@import 'partials/vars';
 @import 'partials/settings';
 @import 'partials/mixins';
 @import 'partials/extends';
 
-.base--textarea,
-.base--STYLED textarea {
-  @extend %base--textarea;
+.base--datetime-input,
+.base--STYLED input[type="datetime"] {
+  @extend %base--datetime-input;
 }
