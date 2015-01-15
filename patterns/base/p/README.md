@@ -1,11 +1,11 @@
-# Heading Level 1
+# Paragraph
 
-Heading Level 1, `<h1>`, is the primary heading for an associated section
+The p element represents a paragraph. Authors traditionally divide their thoughts and arguments into sequences of paragraphs.
 
 ## Available Classes
 
 Styling can be applied in the following ways:
 
-* `.base--h1` - class
-* `.base--STYLED h1` - `<h1>` tag inside a class of `.base--STYLED`
-* `%base--h1` - extended through Sass
+* `.base--p` - class
+* `.base--STYLED p` - `<p>` tag inside a class of `.base--STYLED`
+* `%base--p` - extended through Sass

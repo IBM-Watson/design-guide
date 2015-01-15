@@ -1,7 +1,6 @@
 name: Paragraph
-description: The <p> element should not be used when a more specific element is more appropriate. 
+description: Authors traditionally divide their thoughts and arguments into sequences of paragraphs. The <p> element should not be used when a more specific element is more appropriate. 
 
 displayTemplate: pattern
-variables:
-  header:
-    text: Paragraph
+text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam harum placeat atque beatae qui. Perferendis consectetur, explicabo laborum nihil inventore quasi sapiente aliquid doloremque ipsa adipisci distinctio modi laudantium.""
+
