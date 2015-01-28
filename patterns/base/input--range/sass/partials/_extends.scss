@@ -1,5 +1,27 @@
 @import '../../../input/sass/partials/extends';
+@import 'vars';
 
 %base--range-input {
   @extend %base--input;
+
+  height: $range-height;
+  padding: 0;
+  border-radius: $range-height;
+  box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
+
+  &::-webkit-range-thumb,
+  &::-moz-range-thumb {
+    width: $range-thumb-size;
+    height: $range-thumb-size;
+    background-color: color('white');
+    border-radius: $range-thumb-size;
+    box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
+  }
 }
