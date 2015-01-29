@@ -9,9 +9,9 @@ variables:
     placeholder:
       label: Placeholder Email
       type: email
-      placeholder: This is placeholder email
+      placeholder: email@example.com
     disabled:
       label: Disabled Email Input
       type: email
-      placeholder: Can't click me
+      placeholder: disabled-email@example.com
       disabled: true
