@@ -1,0 +1,19 @@
+@mixin range--thumb($prefix: null) {
+  @if $prefix != null {
+    $prefix: '-#{$prefix}-';
+  }
+  &::#{$prefix}slider-thumb {
+    #{$prefix}appearance: none;
+    width: $range-thumb-size;
+    height: $range-thumb-size;
+    background: white;
+    border-radius: $range-thumb-size;
+    box-shadow: inset 0 0 0 $range-outline*1.5 $base--input-border-color;
+  }
+}
+
+@mixin clear-appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
