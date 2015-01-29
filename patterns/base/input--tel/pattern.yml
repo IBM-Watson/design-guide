@@ -9,9 +9,9 @@ variables:
     placeholder:
       label: Placeholder Tel
       type: tel
-      placeholder: This is placeholder tel
+      placeholder: 8882121881
     disabled:
       label: Disabled Tel Input
       type: tel
-      placeholder: Can't click me
+      placeholder: 8882121881
       disabled: true
