@@ -4,9 +4,9 @@
 
 %base--range-input {
   @extend %base--input;
-
   height: $range-height;
   padding: 0;
+  background-color: color('white');
   border-radius: $range-height;
   box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
 
@@ -19,8 +19,14 @@
     opacity: .5;
   }
 
-  @include clear-appearance;
-  @include range--thumb('webkit');
-  @include range--thumb('moz');
-  @include range--thumb;
+  &::-moz-range-track {
+    height: $range-height;
+    padding: 0;
+    background-color: color('white');
+    border-radius: $range-height;
+    box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
+  }
+
+  @include range--thumb('webkit', 'slider');
+  @include range--thumb('moz', 'range');
 }
