@@ -1,0 +1,19 @@
+//@include include-animation($animation-name)
+//@include include-animation(fadeIn)
+@mixin include-animation($name) {
+  @if map-has-key($animations, $name) {
+    @keyframes #{$name} {
+      @each $position, $change in map-get($animations, $name) {
+        #{$position} {
+          @each $prop, $val in $change {
+            #{$prop}: #{$val}
+          }
+        }
+      }
+    }
+  }
+
+  @else {
+    @warn "Couldn't find that animation!";
+  }
+};
