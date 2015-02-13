@@ -1,19 +1,50 @@
-//@include include-animation($animation-name)
-//@include include-animation(fadeIn)
-@mixin include-animation($name) {
+// Import the IBM animation variables
+@import '../variables/animations';
+
+//////////////////////////////
+// Keyframe Generator
+//
+// Creates a @keyframe animation for any animations
+// that are included for use within the application.
+//
+// Usage:
+//
+// @include keyframe-gen($animation-name)
+// @include keyframe-gen(fade-in)
+//////////////////////////////
+@mixin keyframe-gen($name) {
   @if map-has-key($animations, $name) {
     @keyframes #{$name} {
       @each $position, $change in map-get($animations, $name) {
         #{$position} {
           @each $prop, $val in $change {
-            #{$prop}: #{$val}
+            #{$prop}: #{$val};
           }
         }
       }
     }
   }
+};
 
-  @else {
-    @warn "Couldn't find that animation!";
+//////////////////////////////
+// Animate
+//
+// Builds an animation with mixin keframe-gen during
+// first use, and gives the element an animation with
+// customizable properties.
+//
+// Usage:
+//
+// @include animate(fade-in);
+// @include animate(fade-in, 3s, $ibm-snapin);
+//////////////////////////////
+@mixin animate($name, $duration: 2s, $timing: ease-in) {
+  $exists: index($included-animations, '#{$name}');
+  @if not $exists {
+    @at-root {
+      @include keyframe-gen($name);
+    }
+    $included-animations: append($included-animations, '#{$name}') !global;
   }
+  animation: $name $duration $timing;
 };
