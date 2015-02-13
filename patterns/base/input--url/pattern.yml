@@ -9,9 +9,9 @@ variables:
     placeholder:
       label: Placeholder URL
       type: url
-      placeholder: This is placeholder url
+      placeholder: http://example.com
     disabled:
       label: Disabled URL Input
       type: url
-      placeholder: Can't click me
+      placeholder: http://disabled-input.com
       disabled: true
