@@ -1,12 +1,14 @@
 //timing functions
-$ibm-easein: cubic-bezier(.240, 0, .285, .995);
-$ibm-easeout: cubic-bezier(.725, .005, .695, 1);
-$ibm-bounceout: cubic-bezier(.520, -.270, .345, 1.005);
-$ibm-bouncein: cubic-bezier(.805, .005, .410, 1.280);
-$ibm-bounceinout: cubic-bezier(.555, -.270, .370, 1.350);
-$ibm-snapin: cubic-bezier(1, 0, .765, 1);
-$ibm-snapout: cubic-bezier(.155, 0, 0, .995);
-$ibm-snapinout: cubic-bezier(.920, .010, .050, 1);
+$timing-functions: (
+  ease-in: cubic-bezier(.240, 0, .285, .995),
+  ease-out: cubic-bezier(.725, .005, .695, 1),
+  bounce-out: cubic-bezier(.520, -.270, .345, 1.005),
+  bounce-in: cubic-bezier(.805, .005, .410, 1.280),
+  bounce-in-out: cubic-bezier(.555, -.270, .370, 1.350),
+  snap-in: cubic-bezier(1, 0, .765, 1),
+  snap-out: cubic-bezier(.155, 0, 0, .995),
+  snap-in-out: cubic-bezier(.920, .010, .050, 1),
+);
 
 $included-animations: ();
 

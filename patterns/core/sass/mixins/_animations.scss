@@ -23,6 +23,9 @@
         }
       }
     }
+  }@else {
+    @error $name + ' is not an animation option.' +
+          'These are your options: ' + '#{map-keys($animations)}';
   }
 };
 
@@ -46,5 +49,13 @@
     }
     $included-animations: append($included-animations, '#{$name}') !global;
   }
+
+  @if map-has-key($timing-functions, $timing) {
+    $timing: map-get($timing-functions, $timing);
+  } @else {
+    @error $timing + ' is not a timing function option.' +
+          'These are your options: ' + '#{map-keys($timing-functions)}';
+  }
+
   animation: $name $duration $timing;
 };
