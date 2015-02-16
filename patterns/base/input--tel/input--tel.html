@@ -1,7 +1,1 @@
-{% for input in inputs -%}
-{% set input = {id: 'input' + loop.index} -%}
-
-<label class="base--block-label" for="{{ input.id }}">{{ input.label }}</label>
-<input type="{{ input.type }}" id="{{ input.id }}" {% if input.placeholder %}placeholder="{{ input.placeholder }}" {% endif %} {% if input.pattern %}pattern="{{ input.pattern }}" {% endif %}{%if input.accept %}accept="{{ input.accept }}"{% endif %}class="base--{{ input.type }}{% if input.type %}-{% endif %}input" {% if input.disabled %}disabled{% endif %}></input>
-
-{% endfor %}
+{% pattern input from base %}
