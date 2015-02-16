@@ -7,11 +7,16 @@ variables:
       label: Basic Tel Input
       type: tel
     placeholder:
-      label: Placeholder Tel
+      label: Placeholder with Default Tel Pattern
       type: tel
-      placeholder: This is placeholder tel
+      placeholder: 8882121881
+    pattern:
+      label: Pattern Based on USA Phone Number
+      type: tel
+      pattern: \d{3}[\-]\d{3}[\-]\d{4}
+      placeholder: 123-343-9938
     disabled:
       label: Disabled Tel Input
       type: tel
-      placeholder: Can't click me
+      placeholder: 8882121881
       disabled: true
