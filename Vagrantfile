@@ -30,4 +30,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Set up network
   config.vm.network 'forwarded_port', guest: 3000, host: 3000
   config.vm.network :private_network, ip: '172.10.10.10'
+
+  # Play with Provider Goodies
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 8192
+    v.cpus = 2
+  end
 end
