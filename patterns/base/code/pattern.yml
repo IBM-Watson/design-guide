@@ -1,0 +1,5 @@
+name: Code
+description: Computer code in text
+displayTemplate: pattern
+variables:
+  snippet: '<link rel="stylesheet" href="#" />'
