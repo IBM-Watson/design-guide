@@ -6,10 +6,6 @@ variables:
     basic:
       label: Basic Date Input
       type: date
-    placeholder:
-      label: Placeholder Date
-      type: date
-      placeholder: This is placeholder date
     disabled:
       label: Disabled Date Input
       type: date
