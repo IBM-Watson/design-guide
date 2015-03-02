@@ -7,5 +7,5 @@ These are a handful of helper apps that can be run and will automatically run th
 * **Vagrant Login** - `vagrant ssh`
 * **Vagrant Remove** - `vagrant destroy -f`
 * **Vagrant Start** - `vagrant up`
-* **Vagrant Start** - `vagrant suspend`
+* **Vagrant Stop** - `vagrant suspend`
 * **Vagrant Update** - `vagrant provision`
