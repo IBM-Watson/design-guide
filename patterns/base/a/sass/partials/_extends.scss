@@ -1,3 +1,8 @@
 %base--a {
+  color: $color--secondary;
 
+  &:hover,
+  &:focus {
+    color: darken($color--secondary, 10%);
+  }
 }
