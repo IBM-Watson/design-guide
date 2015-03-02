@@ -2,5 +2,4 @@ name: Anchor link
 description: Anchor link
 displayTemplate: pattern
 variables:
-  header:
-    text: Link to something
+  text: Link to something
