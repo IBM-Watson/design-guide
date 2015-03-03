@@ -6,10 +6,6 @@ variables:
     basic:
       label: Basic Datetime-local Input
       type: datetime-local
-    placeholder:
-      label: Placeholder Datetime-local
-      type: datetime-local
-      placeholder: This is placeholder datetime-local
     disabled:
       label: Disabled Datetime-local Input
       type: datetime-local
