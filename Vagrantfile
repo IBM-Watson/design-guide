@@ -25,6 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.synced_folder 'patterns', '/crick/patterns'
   config.vm.synced_folder 'library', '/crick/library'
+  config.vm.synced_folder 'bower_components', '/crick/bower_components'
   config.vm.synced_folder '.www', '/crick/www'
 
   # Set up network
