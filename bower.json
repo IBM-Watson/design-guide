@@ -1,0 +1,21 @@
+{
+  "name": "watson-design-library",
+  "version": "0.1.0",
+  "homepage": "https://github.com/IBM-Watson/patterns",
+  "authors": [
+    "Sam Richard <sam.richard@us.ibm.com>"
+  ],
+  "description": "Design guidelines and patterns for creating sites and applications",
+  "main": "patterns/crick.scss",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-toolkit": "~2.8.0"
+  }
+}
