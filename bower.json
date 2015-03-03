@@ -17,6 +17,6 @@
   ],
   "dependencies": {
     "sass-toolkit": "~2.8.0",
-    "ibm-colors": "~1.0.0"
+    "ibm-colors": "~1.0.1"
   }
 }
