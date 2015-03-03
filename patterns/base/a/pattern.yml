@@ -1,0 +1,5 @@
+name: Anchor link
+description: Anchor link
+displayTemplate: pattern
+variables:
+  text: Link to something
