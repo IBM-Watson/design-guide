@@ -1,8 +1,9 @@
 %base--a {
   color: $color--secondary;
+  text-decoration: underline;
 
   &:hover,
   &:focus {
-    color: darken($color--secondary, 10%);
+    color: mix($color--secondary, color('black'), 20%);
   }
 }
