@@ -1,0 +1,5 @@
+name: Strong
+description: Important (strong) text
+displayTemplate: pattern
+variables:
+  text: important text
