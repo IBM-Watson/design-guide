@@ -1,5 +1,32 @@
 // @import '../../../input/sass/partials/extends';
+@import 'vars';
+@import 'mixins';
 
 %base--range-input {
   @extend %base--input;
+  height: $range-height;
+  padding: 0;
+  background-color: color('white');
+  border-radius: $range-height;
+  box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
+
+  &:disabled {
+    opacity: .5;
+  }
+
+  &::-moz-range-track {
+    height: $range-height;
+    padding: 0;
+    background-color: color('white');
+    border-radius: $range-height;
+    box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
+  }
+
+  @include range--thumb('webkit', 'slider');
+  @include range--thumb('moz', 'range');
 }
