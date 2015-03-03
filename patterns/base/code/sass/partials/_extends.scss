@@ -1,6 +1,6 @@
 %base--code {
+  @extend %font--mono;
   padding: .2em .5em;
-  margin: 0 .3em;
-  outline: 2px solid color('grey', 10);
-  color: $color--primary;
+  font-size: 85%;
+  background-color: rgba(color('grey', .25));
 }
