@@ -1,0 +1,5 @@
+name: Em
+description: Emphasized text
+displayTemplate: pattern
+variables:
+  text: emphasized text
