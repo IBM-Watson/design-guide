@@ -2,6 +2,10 @@
   font-family: $font--sans;
 }
 
+%font--mono {
+  font-family: $font--mono;
+}
+
 %font-weight--light,
 %base--font-weight {
   font-weight: $font-weight--light;
