@@ -1,0 +1,16 @@
+name: Ordered List
+description: Ordered list of items
+displayTemplate: pattern
+variables:
+  listitems:
+    - List item 1
+    - List item 2
+    - Really super duper long list item so we can see how lists look like when they wrap
+    - List item 3
+    - List item 4
+    - List item 5
+    - List item 6
+    - List item 7
+    - List item 8
+    - List item 9
+    - List item 10
