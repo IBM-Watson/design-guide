@@ -1,8 +1,25 @@
-%base--list-spacing {
-  list-style-position: outside;
+//////////////////////////////
+// Remove once Libsass 3.2 is released
+//////////////////////////////
+%base--list {
+  display: table;
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+
+  li,
+  .base--li {
+    display: table-row;
+    counter-increment: table-ol;
+
+    &:before {
+      display: table-cell;
+      padding-right: .4em;
+      text-align: right;
+    }
+  }
 }
 
 %base--ul {
-  margin-left: 1.25em;
-  list-style-type: disc;
+  @include base--list('•');
 }
