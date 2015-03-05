@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "sass-toolkit": "~2.8.0",
+    "sass-toolkit": "~2.9.0",
     "ibm-colors": "~1.0.1"
   }
 }

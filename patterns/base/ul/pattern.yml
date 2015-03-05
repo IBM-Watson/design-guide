@@ -1,0 +1,9 @@
+name: Unordered List
+description: Unordered list of items
+displayTemplate: pattern
+variables:
+  listitems:
+    - List item 1
+    - List item 2
+    - Really super duper long list item so we can see how lists look like when they wrap
+    - List item 3
