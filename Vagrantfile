@@ -4,6 +4,13 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = '2'
 
+# Set synced_folder_type to 'smb' only if Windows:
+synced_folder_type = 'nfs'
+require 'rbconfig'
+if (RbConfig::CONFIG['host_os'] =~ /mswin|msys|mingw|cygwin|bccwin|wince|emc/)
+  synced_folder_type = 'smb'
+end
+
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -23,10 +30,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Set up Vagrant folder to be NFS and provide it a private network
   config.vm.synced_folder '.', '/vagrant', disabled: true
-  config.vm.synced_folder 'patterns', '/crick/patterns'
-  config.vm.synced_folder 'library', '/crick/library'
-  config.vm.synced_folder 'bower_components', '/crick/bower_components'
-  config.vm.synced_folder '.www', '/crick/www'
+  config.vm.synced_folder 'patterns', '/crick/patterns',
+      type: synced_folder_type,
+      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
+  config.vm.synced_folder 'library', '/crick/library',
+      type: synced_folder_type,
+      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
+  config.vm.synced_folder 'bower_components', '/crick/bower_components',
+      type: synced_folder_type,
+      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
+  config.vm.synced_folder '.www', '/crick/www',
+      type: synced_folder_type,
+      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
 
   # Set up network
   config.vm.network 'forwarded_port', guest: 3000, host: 3000
