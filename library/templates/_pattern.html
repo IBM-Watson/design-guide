@@ -2,10 +2,16 @@
   <h2 library-class="pattern--name">{{ pattern.metadata.name }}</h2>
   <p library-class="pattern--description">{{ pattern.metadata.description }}</p>
   <div library-class="pattern--rendered">
+    <header library-class="pattern--header">
+      <h3>Rendered Pattern</h3>
+    </header>
     {{ pattern.markup | safe -}}
   </div>
   <div library-class="pattern--code">
-    <pre><code class="language-html">{{ pattern.markup | escape -}}</code></pre>
+    <header library-class="pattern--header">
+      <h3>Pattern Code</h3>
+    </header>
+    <pre class="base--pre"><code class="language-html base--code">{{ pattern.markup | escape -}}</code></pre>
   </div>
   <div library-class="pattern--readme" class="base--STYLED">
     {{ pattern.readme | safe -}}
