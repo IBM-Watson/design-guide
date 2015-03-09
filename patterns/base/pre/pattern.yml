@@ -1,0 +1,10 @@
+name: Pre
+description: Pre formatted text
+displayTemplate: pattern
+variables:
+  snippet: >
+    <pre class="base--pre">
+      <code class="base--code">
+        <a href="http://github.com/ibm-watson/"/>IBM Watson on GitHub</a>
+      </code>
+    </pre>
