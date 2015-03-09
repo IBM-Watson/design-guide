@@ -3,8 +3,11 @@ description: Pre formatted text
 displayTemplate: pattern
 variables:
   snippet: >
-    <pre class="base--pre">
-      <code class="base--code">
-        <a href="http://github.com/ibm-watson/"/>IBM Watson on GitHub</a>
-      </code>
-    </pre>
+    h1 {
+      font-size: ms(5);
+      font-weight: normal;
+
+      @include breakpoint($large-typography) {
+        font-size: ms(6);
+      }
+    }
