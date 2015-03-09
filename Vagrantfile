@@ -32,16 +32,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.synced_folder 'patterns', '/crick/patterns',
       type: synced_folder_type,
-      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
+      mount_options: ['rw', 'vers=3', 'tcp', 'actimeo=1']
   config.vm.synced_folder 'library', '/crick/library',
       type: synced_folder_type,
-      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
+      mount_options: ['rw', 'vers=3', 'tcp', 'actimeo=1']
   config.vm.synced_folder 'bower_components', '/crick/bower_components',
       type: synced_folder_type,
-      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
+      mount_options: ['rw', 'vers=3', 'tcp', 'actimeo=1']
   config.vm.synced_folder '.www', '/crick/www',
       type: synced_folder_type,
-      mount_options: ['rw', 'vers=3', 'tcp', 'fsc', 'actimeo=1']
+      mount_options: ['rw', 'vers=3', 'tcp', 'actimeo=1']
 
   # Set up network
   config.vm.network 'forwarded_port', guest: 3000, host: 3000

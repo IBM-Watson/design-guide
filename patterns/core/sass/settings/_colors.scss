@@ -1,0 +1,7 @@
+$ColorScheme: (
+  'primary color': color('teal', 60),
+  'secondary color': color('blue', 60),
+  'tertiary color': color('orange', 30)
+);
+
+$GlobalSettings: map-merge($GlobalSettings, $ColorScheme);
