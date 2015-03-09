@@ -23,8 +23,13 @@
         }
       }
     }
-  }@else {
+  }
+
+  @if feature-exists(at-error) {
     @error $name + ' is not an animation option.' +
+          'These are your options: ' + '#{map-keys($animations)}';
+  } @else {
+    @warn $name + ' is not an animation option.' +
           'These are your options: ' + '#{map-keys($animations)}';
   }
 };
@@ -52,8 +57,13 @@
 
   @if map-has-key($timing-functions, $timing) {
     $timing: map-get($timing-functions, $timing);
-  } @else {
+  }
+
+  @if feature-exists(at-error) {
     @error $timing + ' is not a timing function option.' +
+          'These are your options: ' + '#{map-keys($timing-functions)}';
+  } @else {
+    @warn $timing + ' is not a timing function option.' +
           'These are your options: ' + '#{map-keys($timing-functions)}';
   }
 
