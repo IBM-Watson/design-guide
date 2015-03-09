@@ -1,0 +1,18 @@
+<table class="base--table">
+  <thead class="base--thead">
+    <tr class="base--tr">
+      {% for header in table.head -%}
+      <td class="base--td">{{ header }}</td>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody class="base--tbody">
+    {% for body in table.body -%}
+    <tr class="base--tr">
+      {% for item in body -%}
+      <td class="base--td">{{ item }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

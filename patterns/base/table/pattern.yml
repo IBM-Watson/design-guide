@@ -1,0 +1,12 @@
+name: Table
+description: Tabular information display
+displayTemplate: pattern
+variables:
+  table:
+    head:
+      - First Name
+      - Last Name
+      - Job
+    body:
+      - [John, Doe, Programmer]
+      - [Jane, Doe, '']
