@@ -1,8 +1,8 @@
 //////////////////////////////
 // Modular Scale
 //////////////////////////////
-$ms-ratio: 1.25;
-$ms-base: $ms-ratio * 1em;
+$ms-base: 1em;
+$ms-ratio: 1.333, 1.25;
 
 //////////////////////////////
 // Font Stack
@@ -10,3 +10,8 @@ $ms-base: $ms-ratio * 1em;
 $font--sans: 'Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif;
 $font--mono: 'Courier New', 'Lucida Console', monospace;
 $font-weight--light: 300;
+
+//////////////////////////////
+// Typography Breakpoints
+//////////////////////////////
+$large-typography: 500px;

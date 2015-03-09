@@ -4,9 +4,14 @@
 @import 'plugins';
 
 //////////////////////////////
-// Imports
+// Variables and Settings
 //////////////////////////////
 @import 'variables';
+@import 'settings';
+
+//////////////////////////////
+// Functions/Mixins/Extends
+//////////////////////////////
 @import 'functions';
 @import 'mixins';
 @import 'extends';

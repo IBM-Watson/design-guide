@@ -1,3 +1,10 @@
 %base--h4 {
-  font-size: ms(.5);
+  font-size: ms(1);
+  font-style: italic;
+  font-weight: bold;
+  color: color('gray', 60);
+
+  @include breakpoint($large-typography) {
+    font-size: ms(2);
+  }
 }

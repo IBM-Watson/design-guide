@@ -1,3 +1,8 @@
 %base--h1 {
-  font-size: ms(2);
+  font-size: ms(5);
+  font-weight: normal;
+
+  @include breakpoint($large-typography) {
+    font-size: ms(6);
+  }
 }
