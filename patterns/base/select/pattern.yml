@@ -1,0 +1,9 @@
+name: Textarea
+description: A flexible and configurable area for a long-form text input
+displayTemplate: pattern
+variables:
+  textarea:
+    rows: 10
+    cols: 30
+    id: txtarea1
+    name: text-area

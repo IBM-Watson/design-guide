@@ -8,7 +8,7 @@
   padding: 0;
   background-color: color('white');
   border-radius: $range-height;
-  box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
+  box-shadow: inset 0 0 0 $range-outline setting-get('input border color');
 
   &:hover,
   &:focus {
@@ -24,7 +24,7 @@
     padding: 0;
     background-color: color('white');
     border-radius: $range-height;
-    box-shadow: inset 0 0 0 $range-outline $base--input-border-color;
+    box-shadow: inset 0 0 0 $range-outline setting-get('input border color');
   }
 
   @include range--thumb('webkit', 'slider');

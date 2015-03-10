@@ -1,0 +1,6 @@
+$InputSettings: (
+  'input padding': .6em 1em,
+  'input border color': color('gray', 30)
+);
+
+$GlobalSettings: map-merge($GlobalSettings, $InputSettings);
