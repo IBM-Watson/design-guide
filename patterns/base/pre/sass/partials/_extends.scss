@@ -20,7 +20,7 @@
   code,
   .base--code {
     @extend %base--pre-build;
-    padding: 0;
+    padding: 1em;
     font-size: 1em;
     outline: 0;
   }
