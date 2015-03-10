@@ -10,6 +10,8 @@
 // @param {String} - $direction - Direction the arrow is pointing. Can be one of `up`, `down`, `left`, `right`
 // @param {Boolean} - $encode - Whether or not to encode string
 // @return {String} - Updated string
+//
+// Dependencies: `svg`
 //////////////////////////////
 
 @function triangle($fill: null, $stroke: null, $stroke-width: null, $stroke-miter: null, $size: 1, $direction: 'down', $encode: true) {

@@ -5,6 +5,8 @@
 // Encodes `$string` for use on the web
 // @param {String} $string - Initial string
 // @return {String} - Updated string
+//
+// Dependencies: `str-replace`
 //////////////////////////////
 @function url-encode($string) {
   $encodeMap:('%':'%25',

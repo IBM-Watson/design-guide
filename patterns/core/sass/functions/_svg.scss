@@ -6,6 +6,8 @@
 // @param {String} $viewbox - The viewbox of the SVG
 // @param {Boolean} $encode - Encodes the SVG for use, especially with background images
 // @return {String} - Updated string
+//
+// Dependencies: `url-encode`
 //////////////////////////////
 @function svg($paths, $viewbox: null, $encode: true) {
   $content: $paths;
