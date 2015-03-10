@@ -3,4 +3,6 @@ description: A button element to trigger an action
 displayTemplate: pattern
 variables:
   button:
-    text: Click Me
+    basic_text: Click Me
+    submit_text: Submit
+    reset_text: Reset

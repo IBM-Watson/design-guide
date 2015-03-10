@@ -8,4 +8,12 @@
 .base--button,
 .base--STYLED button {
   @extend %base--button;
+
+  &[type='submit'] {
+    background-color: setting-get('primary color');
+  }
+
+  &[type='reset'] {
+    background-color: color('gray');
+  }
 }
