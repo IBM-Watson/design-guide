@@ -1,3 +1,6 @@
 %base--button {
-
+  padding: .2em .5em;
+  color: color('white');
+  background-color: setting-get('secondary color');
+  border: 0;
 }
