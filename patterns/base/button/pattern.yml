@@ -1,0 +1,14 @@
+name: Button
+description: A button element to trigger an action
+displayTemplate: pattern
+variables:
+  buttons:
+    basic:
+      label: Click Me
+      type: button
+    submit:
+      label: Submit
+      type: submit
+    reset:
+      label: Reset
+      type: reset
