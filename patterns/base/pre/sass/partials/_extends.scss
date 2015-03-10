@@ -1,6 +1,7 @@
 %base--pre-build {
   @extend %font--mono;
   display: block;
+  padding: 1em;
   hyphens: none;
   word-spacing: normal;
   text-align: left;
