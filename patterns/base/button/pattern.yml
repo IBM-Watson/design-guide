@@ -1,0 +1,6 @@
+name: Button
+description: A button element to trigger an action
+displayTemplate: pattern
+variables:
+  header:
+    text: Click Me!
