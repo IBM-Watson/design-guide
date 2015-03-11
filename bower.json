@@ -1,7 +1,7 @@
 {
   "name": "watson-design-library",
   "version": "1.0.0-beta.1",
-  "homepage": "https://github.com/IBM-Watson/patterns",
+  "homepage": "https://github.com/IBM-Watson/design-library",
   "authors": [
     "Sam Richard <sam.richard@us.ibm.com>",
     "Una Kravets <unakravets@us.ibm.com>",
