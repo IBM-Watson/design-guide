@@ -1,0 +1,8 @@
+$TypographySettings: (
+  'large typography breakpoint': 500px,
+  'sans serif font': ('Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif),
+  'monospace font': ('Courier New', 'Lucida Console', monospace),
+  'light weight font': 300
+);
+
+$GlobalSettings: map-merge($GlobalSettings, $TypographySettings);
