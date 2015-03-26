@@ -17,7 +17,7 @@ IBM Design Language recommends using modular type scales to create harmonious pr
 **Resources:** link to IBM Design for typographic scale (http://www.ibm.com/design/language/framework/visual/typography.shtml)
 
 ### Cross-Platform Fontstack Options
-Desktop or Browser: font-family: "Helvetica Neue for IBM", Helvetica, Arial, sans-serif;  
+Desktop or Browser: font-family: "Helvetica Neue for IBM", Helvetica, Arial, Roboto, sans-serif;  
 
 Monospace: font-family: 'Source Code Pro', Monaco, monospace;
 
