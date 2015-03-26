@@ -8,18 +8,19 @@ As a rule and wherever possible, use Helvetica Neue. It is the font of science a
 
 **Visual Examples:**  
 
-![font-stack-example](https://cloud.githubusercontent.com/assets/9538528/6834864/d4d5925a-d304-11e4-8efb-0dfdd862b06f.png)
+![Font Stack Example](/images/visual/font-stack-example.png) 
 
 ### Typographic Scale
 IBM Design Language recommends using modular type scales to create harmonious proportions and structure, as scale creates consistency in sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. As a rule of thumb, the content and user's browser size should inform type scaling choices. IBM Watson recommends choosing breakpoints at which contrast begins to interrupt readability, and scale appropriately. 
 
 
-**Resources:** link to IBM Design for typographic scale (http://www.ibm.com/design/language/framework/visual/typography.shtml)
+**Resources:**  
+[IBM Design for typographic scale](http://www.ibm.com/design/language/framework/visual/typography.shtml)
 
 ### Cross-Platform Fontstack Options
 Desktop or Browser: font-family: "Helvetica Neue for IBM", Helvetica, Arial, Roboto, sans-serif;  
 
-Monospace: font-family: 'Source Code Pro', Monaco, monospace;
+Monospace: font-family: 'Source Code Pro', Lucida Console, Andale Mono, monospace;
 
 Apple Watch: font-family: “San Francisco”;
 
