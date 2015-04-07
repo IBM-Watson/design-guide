@@ -4,7 +4,7 @@
   font-weight: bold;
   color: color('gray', 60);
 
-  @include breakpoint($large-typography) {
+  @include breakpoint(setting-get('large typography breakpoint')) {
     font-size: ms(2);
   }
 }

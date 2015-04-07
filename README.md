@@ -7,9 +7,9 @@ Development on the Watson Design Library is done in this repository. Patterns ar
 
 ### Installation
 
-Development is done through a Vagrant VM. Please install the [Watson Development Environments](https://github.com/IBM-Watson/environments/blob/gh-pages/README.md#ibm-watson-development-environments) requirements.
+Development is done through a Vagrant VM. Please install the [Watson Development Environments](https://github.com/IBM-Watson/environments/blob/gh-pages/README.md#ibm-watson-development-environments) requirements. You will also need [Bower](http://bower.io/) installed.
 
-After [forking and cloning](https://guides.github.com/activities/forking/) the repository, either open your terminal, [`cd` to the cloned folder](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line), and run `vagrant up` (Mac, Unix, Windows), or run the **Vagrant Start** app from inside the `helper-apps` directory (Mac).
+After [forking and cloning](https://guides.github.com/activities/forking/) the repository, either open your terminal, [`cd` to the cloned folder](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line), and run `bower install` followed by `vagrant up` (Mac, Unix, Windows), or run the **Bower Install** app followed by the **Vagrant Start** app from inside the `helper-apps` directory (Mac).
 
 ### Updating The Runner
 
