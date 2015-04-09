@@ -10,6 +10,7 @@ install:
   - bower install
   - npm install
 script:
+  - gulp build
   - sh ./.deploy.sh
 env:
   global:
