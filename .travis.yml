@@ -10,7 +10,11 @@ install:
   - bower install
   - npm install
 script:
-  - sh ./.deploy.sh
+  - if [ "$TRAVIS_BRANCH" == "feature/travis" ]; then
+      set -e # exit with nonzero exit code if anything fails
+      echo "Conditional Test"
+    fi
+
 env:
   global:
     - GH_REF: github.com/IBM-Watson/design-library
