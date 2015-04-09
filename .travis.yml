@@ -8,6 +8,7 @@ before_install:
   - npm install -g gulp bower
 install:
   - bower install
+  - npm install
 env:
   global:
     - GH_REF: github.com/IBM-Watson/design-library
