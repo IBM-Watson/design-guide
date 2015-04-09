@@ -5,7 +5,7 @@
 #########################
 set -e # exit with nonzero exit code if anything fails
 
-if [ "$TRAVIS_BRANCH" != "master" ]
+if [ "$TRAVIS_BRANCH" == "feature/travis" ]
   then
     echo "Conditional Test"
 fi
