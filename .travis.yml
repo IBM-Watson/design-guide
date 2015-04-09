@@ -9,6 +9,8 @@ before_install:
 install:
   - bower install
   - npm install
+script:
+  - sh ./.deploy.sh
 env:
   global:
     - GH_REF: github.com/IBM-Watson/design-library
