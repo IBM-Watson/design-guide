@@ -5,6 +5,9 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get -y install wget p7zip-full
   - sh ./.runner.sh
+  - npm install -g gulp bower
+install:
+  - bower install
 env:
   global:
     - GH_REF: github.com/IBM-Watson/design-library
