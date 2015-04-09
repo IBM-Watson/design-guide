@@ -2,7 +2,8 @@ language: node_js
 node_js:
   - '0.10'
 before_install:
-  - apt-get install wget p7zip-full
+  - sudo apt-get update -qq
+  - sudo apt-get -y install wget p7zip-full
   - sh ./runner.sh
 env:
   global:
