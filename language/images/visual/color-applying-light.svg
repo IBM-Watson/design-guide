@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 792 462.5" enable-background="new 0 0 792 462.5" xml:space="preserve">
-<rect x="0" y="0.3" fill="#F9F9FA" width="489.2" height="462"/>
-<rect x="489.2" y="0.3" fill="#EBEBEB" width="302.8" height="462"/>
-<rect x="489.2" y="285.7" fill="#474747" width="302.8" height="176.5"/>
-<rect x="489.2" y="353.2" fill="#335D80" width="103" height="109.1"/>
-<rect x="489.2" y="285.7" fill="#D64527" width="103" height="67.5"/>
-<rect x="552.9" y="285.7" fill="#04B4A0" width="39.4" height="67.5"/>
-<path fill="#787778" d="M792.2 462.5H-0.2V0h792.5V462.5z M0.2 462h791.5V0.5H0.2V462z"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="1280px" height="800px" viewBox="0 0 1280 800" enable-background="new 0 0 1280 800" xml:space="preserve">
+<rect y="26.7" fill="#F9F9FA" width="790.6" height="746.7"/>
+<rect x="790.6" y="26.7" fill="#EBEBEB" width="489.4" height="746.7"/>
+<rect x="790.6" y="488" fill="#474747" width="489.4" height="285.3"/>
+<rect x="790.6" y="597.1" fill="#335D80" width="166.5" height="176.3"/>
+<rect x="790.6" y="488" fill="#D64527" width="166.5" height="109.1"/>
+<rect x="893.6" y="488" fill="#04B4A0" width="63.7" height="109.1"/>
 </svg>
