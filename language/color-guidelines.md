@@ -111,12 +111,16 @@ rgb(249,249,249)
 ## Applying A Color Palette
 Color is a powerful communication tool to determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users' attention.
 
-**Example: Light Palette**
+![Color Hierarchy on Light Palette](images/visual/color-applying-light.svg)
+
+**Light Palette Example**
 Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40
 
 Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white.
 
-**Example: Dark Palette**
+![Color Hierarchy on Light Palette](images/visual/color-applying-light.svg)
+
+**Dark Palette Example**
 Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30
 
 Consider users who are sensitive to brightness and high contrast colors by using a grey value as a background color instead of pure black.
