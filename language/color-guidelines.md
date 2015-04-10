@@ -15,7 +15,7 @@ Awareness
 Approachability
 
 ### Resources 
-[IBM Color Palette ASE](/assets/visual/WatsonPalette.ase) 
+[IBM Color Palette ASE](/assets/visual/IBMDesignPalette-v1.1.ase) 
 [IBM Design Color Guide](http://www.ibm.com/design/language/framework/visual/color.shtml)
 
 ## Choosing A Color Palette
