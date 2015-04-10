@@ -14,11 +14,11 @@ Utility
 Awareness  
 Approachability
 
-**Resources:**  
+### Resources 
 [IBM Color Palette ASE](/assets/visual/WatsonPalette.ase) 
 [IBM Design Color Guide](http://www.ibm.com/design/language/framework/visual/color.shtml)
 
-### Choosing A Color Palette
+## Choosing A Color Palette
 Choose a primary color, a secondary color, and an accent color. Additional tints and shades of the chosen palette can help to unify the design. These values can add variety to a palette without additional colors. Use the IBM Design Language for a wider variety of colors, values, and neutrals.
 
 #####Choose a primary and secondary color
