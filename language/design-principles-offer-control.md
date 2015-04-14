@@ -16,19 +16,19 @@ examples:
 			- Secondary Action
 			- Alternative Actions
 	offer-two:
-		- image:
+		- image: images/visual/offer-two.svg
 		- description: Support users with copy and visual design that indicate collaboration or a conversation.
 		- explanation:
 			- "You want to accomplish ___________"
 			- "Watson can do these actions to help you get there."
 			- Next steps for the user to choose from
 	offer-three:
-		- image:
+		- image: images/visual/offer-three.svg
 		- description: Provide manual personalization options that are performed by the user, such as feedback mechanisms for users to "teach" Watson.
 		- explanation:
 			- "Teach Watson which filters are important to you"
 	offer-four:
-		- image:
+		- image: images/visual/offer-four.svg
 		- description: Provide automatic personalization options that are performed by Watson, such as gathering user information and preferences to apply to the experience.
 		- explanation:
 			- "Recommendations based on saved queries"
