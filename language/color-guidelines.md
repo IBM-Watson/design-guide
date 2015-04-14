@@ -8,12 +8,12 @@ resources:
 variables:
   palette-application:
     light:
-      title: Light Palette
+      title: Example: Light Palette
       image: /images/visual/light-palette.svg
       description: 'Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40'
       caption: 'Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white.'
     dark:
-      title: Dark Palette
+      title: Example: Dark Palette
       image: /images/visual/dark-palette.svg
       description: 'Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30'
       caption: 'Consider users who are sensitive to brightness and high contrast colors by using a grey value as a background color instead of pure black.'
@@ -34,9 +34,9 @@ variables:
         number: 60
         personality:
           - Awareness
-          - Approchability
+          - Approachability
   accent-colors:
-    instructions: Choose a primary and secondary color
+    instructions: Choose an accent color. Add hues as necessary.
     colors:
       - palette: 'Blue'
         number: 40
@@ -66,6 +66,8 @@ variables:
 ---
 
 Color is a crucial component of our visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.
+
+{{> SOME-FUNCTION-HERE resources}}
 
 ## Colors for Watson
 
