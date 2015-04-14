@@ -44,7 +44,7 @@ variables:
         number: 30
       - palette: 'Teal'
         number: 40
-    - palette: 'Yellow'
+      - palette: 'Yellow'
         number: 30
   supporting-greys:
     instructions: Choose supporting greys and neutrals
