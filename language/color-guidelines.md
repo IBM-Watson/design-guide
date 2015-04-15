@@ -3,66 +3,66 @@ type: guideline
 title: Color
 resources:
   files:
-    - name: IBM Color Palette ASE
+    - name: "IBM Color Palette ASE"
       source: /assets/visual/ibm-color-palette.ase
 variables:
   example:
     paletteApplication:
       light:
-        title: Example: Light Palette
+        title: "Example: Light Palette"
         visualDisplay: /images/visual/light-palette.svg
-        description: 'Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40'
-        caption: 'Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white.'
+        description: "Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40"
+        caption: "Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white."
       dark:
-      title: Example: Dark Palette
+      title: "Example: Dark Palette"
       visualDisplay: /images/visual/dark-palette.svg
-      description: 'Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30'
-      caption: 'Consider users who are sensitive to brightness and high contrast colors by using a grey value as a background color instead of pure black.'
+      description: "Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30"
+      caption: "Consider users who are sensitive to brightness and high contrast colors by using a grey value as a background color instead of pure black."
   primaryColors:
-    instructions: Choose a primary and secondary color
+    instructions: "Choose a primary and secondary color"
     colors:
-      - palette: 'Blue'
+      - palette: Blue
         tone: 60
         adjectives:
           - Trustworthy
           - Systematic
-      - palette: 'Orange'
+      - palette: Orange
         tone: 50
         adjectives: 
           - Innovation
           - Utility
-      - palette: 'Teal'
+      - palette: Teal
         tone: 60
         adjectives:
           - Awareness
           - Approachability
   accentColors:
-    instructions: Choose an accent color. Add hues as necessary.
+    instructions: "Choose an accent color. Add hues as necessary."
     colors:
-      - palette: 'Blue'
+      - palette: Blue
         tone: 40
-      - palette: 'Orange'
+      - palette: Orange
         tone: 30
-      - palette: 'Teal'
+      - palette: Teal
         tone: 40
-      - palette: 'Yellow'
+      - palette: Yellow
         tone: 30
   supportingGreys:
-    instructions: Choose supporting greys and neutrals
+    instructions: "Choose supporting greys and neutrals"
     colors:
-      - palette: 'Grey'
+      - palette: Grey
         tone: 90
-      - palette: 'Grey'
+      - palette: Grey
         tone: 80
-      - palette: 'Grey'
+      - palette: Grey
         tone: 60
-      - palette: 'Grey'
+      - palette: Grey
         tone: 50
-      - palette: 'Grey'
+      - palette: Grey
         tone: 10
-      - palette: 'Neutral'
+      - palette: Neutral
         tone: 4
-      - palette: 'Neutral'
+      - palette: Neutral
         tone: 2
 ---
 
