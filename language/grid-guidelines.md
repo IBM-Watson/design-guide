@@ -2,38 +2,36 @@
 type: guideline
 title: "Grids"
 variables:
-	blockquote:
-		quoteOne:
-			quote: "Grids do not exist in a vacuum. They exist in relation to the content. We never start with a grid. We start with an idea which is then translated into a form, a structure."
-			citation: "Linda van Deursen"
-		quoteTwo:
-			quote: "A ratio-based, modular approach to grids allows us to navigate a medium where we cannot know the container size, nor what type of content will flow into that container."
-			citation: "Nathan Ford"
-			linkToSource: "http://alistapart.com/article/content-out-layout"
-		quoteThree:
-			quote: "Start with the small screen first, then expand until it looks like sh*t. TIME FOR A BREAKPOINT!"
-			citation: "Stephen Hay"
-			linkToSource: "http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/"
-	detail:
-		gridsOne:
-			title: "Custom"
-			visualDisplay: images/visual/grids1.svg
-		gridsTwo:
-			title: "Compound"
-			visualDisplay: images/visual/grids2.svg
-		gridsThree:
-			title: "Ratio-Based"
-			visualDisplay: images/visual/grids3.svg
-		gridsFour:
-			title: "Ratio Spiral-Based"
-			visualDisplay: images/visual/grids4.svg
-		responsiveGridVideo:
-			visualDisplay: videos/visual/grids-responsive.webm
-			callout:
-				title: "Example: Responsive Grid"
-				description: "Begin by designing the smallest size, using as close to real content as possible. As the size expands, the content will determine where the breakpoints should occur, not the device sizes."
-		
-
+  blockquote:
+    quoteOne:
+      quote: "Grids do not exist in a vacuum. They exist in relation to the content. We never start with a grid. We start with an idea which is then translated into a form, a structure."
+      citation: "Linda van Deursen"
+    quoteTwo:
+      quote: "A ratio-based, modular approach to grids allows us to navigate a medium where we cannot know the container size, nor what type of content will flow into that container."
+      citation: "Nathan Ford"
+      linkToSource: "http://alistapart.com/article/content-out-layout"
+    quoteThree:
+      quote: "Start with the small screen first, then expand until it looks like sh*t. TIME FOR A BREAKPOINT!"
+      citation: "Stephen Hay"
+      linkToSource: "http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/"
+  detail:
+    gridsOne:
+      title: "Custom"
+      visualDisplay: images/visual/grids1.svg
+    gridsTwo:
+      title: "Compound"
+      visualDisplay: images/visual/grids2.svg
+    gridsThree:
+      title: "Ratio-Based"
+      visualDisplay: images/visual/grids3.svg
+    gridsFour:
+      title: "Ratio Spiral-Based"
+      visualDisplay: images/visual/grids4.svg
+    responsiveGridVideo:
+      visualDisplay: videos/visual/grids-responsive.webm
+      callout:
+        title: "Example: Responsive Grid"
+        description: "Begin by designing the smallest size, using as close to real content as possible. As the size expands, the content will determine where the breakpoints should occur, not the device sizes."
 ---
 
 # Grids
