@@ -3,8 +3,8 @@ type: guideline
 title: Color
 resources:
   files:
-    - name: "IBM Color Palette ASE"
-      source: /assets/visual/ibm-color-palette.ase
+    name: "IBM Color Palette ASE"
+    source: /assets/visual/ibm-color-palette.ase
 variables:
   example:
     paletteApplication:
@@ -21,49 +21,49 @@ variables:
   primaryColors:
     instructions: "Choose a primary and secondary color"
     colors:
-      - palette: Blue
-        tone: 60
-        adjectives:
-          - Trustworthy
-          - Systematic
-      - palette: Orange
-        tone: 50
-        adjectives: 
-          - Innovation
-          - Utility
-      - palette: Teal
-        tone: 60
-        adjectives:
-          - Awareness
-          - Approachability
+      palette: Blue
+      tone: 60
+      adjectives:
+        Trustworthy
+        Systematic
+      palette: Orange
+      tone: 50
+      adjectives: 
+        Innovation
+        Utility
+      palette: Teal
+      tone: 60
+      adjectives:
+        Awareness
+        Approachability
   accentColors:
     instructions: "Choose an accent color. Add hues as necessary."
     colors:
-      - palette: Blue
-        tone: 40
-      - palette: Orange
-        tone: 30
-      - palette: Teal
-        tone: 40
-      - palette: Yellow
-        tone: 30
+      palette: Blue
+      tone: 40
+      palette: Orange
+      tone: 30
+      palette: Teal
+      tone: 40
+      palette: Yellow
+      tone: 30
   supportingGreys:
     instructions: "Choose supporting greys and neutrals"
     colors:
-      - palette: Grey
-        tone: 90
-      - palette: Grey
-        tone: 80
-      - palette: Grey
-        tone: 60
-      - palette: Grey
-        tone: 50
-      - palette: Grey
-        tone: 10
-      - palette: Neutral
-        tone: 4
-      - palette: Neutral
-        tone: 2
+      palette: Grey
+      tone: 90
+      palette: Grey
+      tone: 80
+      palette: Grey
+      tone: 60
+      palette: Grey
+      tone: 50
+      palette: Grey
+      tone: 10
+      palette: Neutral
+      tone: 4
+      palette: Neutral
+      tone: 2
 ---
 
 Color is a crucial component of our visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.

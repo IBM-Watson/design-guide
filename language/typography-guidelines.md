@@ -2,22 +2,25 @@
 type: guideline
 title: Typography
 variables:
-   aside:
-      description: "We are currently in the process of inquiring about full usage rights and licensing for Helvetica Neue for IBM. During this time, we're unable to provide downloadable font assets. Please defer to the Cross-Platform Fontstack Options below for comparable fontstacks."
-    example:
-      typefaceCombinationOne:
-        title: "Helvetica Neue Roman"
-        visualAlternative: "The quick brown fox jumped over the fence."
-      typefaceCombinationTwo:
-        title: "Helvetica Neue Roman Italic"
-        visualAlternative: "The quick brown fox jumped over the fence."
-      typefaceCombinationThree:
-        title: "Helvetica Neue Bold"
-        visualAlternative: "The quick brown fox jumped over the fence."
-      typefaceCombinationFour:
-        title: "Helvetica Neue Bold Italic"
-        visualAlternative: "The quick brown fox jumped over the fence."
-      responsiveTypography:
+  aside:
+    description: "We are currently in the process of inquiring about full usage rights and licensing for Helvetica Neue for IBM. During this time, we're unable to provide downloadable font assets. Please defer to the Cross-Platform Fontstack Options below for comparable fontstacks."
+  example:
+    typefaceCombinationOne:
+      title: "Helvetica Neue Roman"
+      visualAlternative: "The quick brown fox jumped over the fence."
+    typefaceCombinationTwo:
+      title: "Helvetica Neue Roman Italic"
+      visualAlternative: "The quick brown fox jumped over the fence."
+    typefaceCombinationThree:
+      title: "Helvetica Neue Bold"
+      visualAlternative: "The quick brown fox jumped over the fence."
+    typefaceCombinationFour:
+      title: "Helvetica Neue Bold Italic"
+      visualAlternative: "The quick brown fox jumped over the fence."
+    responsiveTypography:
+      title: "Major Third with a breakpoint at 500px"
+      visualDisplay: /videos/visual/responsive-typography.webm
+      description: "When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes."
 ---
 
 Typography is the atomic element of good interface design. It colors the words in our language and shapes their meaning. It helps to set the visual tone for the entire Watson experience. Text is largely differentiated by size and weight. Keep other properties the same or similar, differentiating only when necessary for the sake of clarity.
@@ -45,25 +48,25 @@ The IBM Design Language recommends using [modular type scales](http://www.ibm.co
 
 IBM Watson recommends the Major Third ratio for screen sizes under 500px and the establishment of breakpoints for higher contrast on larger screens. This ratio is ideal for creating visual hierarchy on small screens without being too jarring.
 
-![Responsive Typography Example](/videos/visual/responsive-typography.webm)
-
-**Major Third with a breakpoint at 500px**
-
-When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes.
-
-
+{{> SOME-FUNCTION-HERE example.responsiveTypography}}
 
 ## Cross-Platform Fontstack Options
-###Desktop or Browser
+
+### Desktop or Browser
+
 `font-family: "Helvetica Neue for IBM", Helvetica, Arial, Roboto, sans-serif;`  
 ######Monospace 
+
 `font-family: 'Source Code Pro', Lucida Console, Andale Mono, monospace;`
 
 ###Apple Watch 
+
 `font-family: “San Francisco”;`
 
 ###iOS
+
 `font-family: "Helvetica Neue";` 
 
 ###Android
+
 `font-family: "Roboto";`
