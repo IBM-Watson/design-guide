@@ -9,12 +9,12 @@ variables:
   example:
     paletteApplication:
       light:
-        title: "**Example: Light Palette**"
+        title: "Example: Light Palette"
         visualDisplay: /images/color/light-palette.svg
         description: "Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40"
         caption: "Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white."
       dark:
-      title: "**Example: Dark Palette**"
+      title: "Example: Dark Palette"
       visualDisplay: /images/color/dark-palette.svg
       description: "Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30"
       caption: "Consider users who are sensitive to brightness and high contrast colors by using a grey value as a background color instead of pure black."
