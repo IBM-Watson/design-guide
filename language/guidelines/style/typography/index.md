@@ -18,8 +18,8 @@ variables:
       title: "Helvetica Neue Bold Italic"
       visualAlternative: "The quick brown fox jumped over the fence."
     responsiveTypography:
-      title: "Major Third with a breakpoint at 500px"
-      visualDisplay: /videos/visual/responsive-typography.webm
+      title: "**Major Third with a breakpoint at 500px**"
+      visualDisplay: /videos/typography/responsive-typography.webm
       description: "When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes."
 ---
 

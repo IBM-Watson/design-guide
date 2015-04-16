@@ -4,49 +4,49 @@ title: Wordmark and Logotype
 resources:
   files:
     name: "Wordmark and Logotype SVG"
-    source: /images/visual/watson_wordmark_logotype.zip
+    source: /images/wordmark/watson_wordmark_logotype.zip
 variables:
   example:
     wordmark:
       title: Wordmark
-      visualDisplay: /images/visual/wordmark.svg
+      visualDisplay: /images/wordmark/wordmark.svg
     logotype:
       title: Logotype
-      visualDisplay: /images/visual/logotype.svg
+      visualDisplay: /images/wordmark/logotype.svg
     wordmarkSpacing:
       title: Wordmark
-      visualDisplay: /images/visual/wordmark-spacing.svg
+      visualDisplay: /images/wordmark/wordmark-spacing.svg
     logotypeSpacing:
       title: Logotype
-      visualDisplay: /images/visual/logotype-spacing.svg
+      visualDisplay: /images/wordmark/logotype-spacing.svg
     wordmarkColor:
       light:
         title: Wordmark
-        visualDisplay: /images/visual/wordmark-color-combination.svg
+        visualDisplay: /images/wordmark/wordmark-color-combination.svg
       dark:
-        visualDisplay: /images/visual/dark-background-wordmark.svg
+        visualDisplay: /images/wordmark/dark-background-wordmark.svg
     logotypeColor:
       light:
         title: Logotype
-        visualDisplay: /images/visual/logotype-color-combination.svg
+        visualDisplay: /images/wordmark/logotype-color-combination.svg
       dark:
-        visualDisplay: /images/visual/dark-background-logotype.svg
+        visualDisplay: /images/wordmark/dark-background-logotype.svg
     incorrectUsage:
       reconfigure:
         title: "Do not reconfigure"
-        visualDisplay: /images/visual/wrong-logotype-configuration.svg
+        visualDisplay: /images/wordmark/wrong-logotype-configuration.svg
         sentiment: negative
       distort:
         title: "Do not distort"
-        visualDisplay: /images/visual/wrong-logotype-distortion.svg
+        visualDisplay: /images/wordmark/wrong-logotype-distortion.svg
         sentiment: negative
       color:
         title: "Do not combine colors"
-        visualDisplay: /images/visual/wrong-color-combination.svg
+        visualDisplay: /images/wordmark/wrong-color-combination.svg
         sentiment: negative
       font:
         title: "Do not change the font"
-        visualDisplay: /images/visual/wrong-logotype-font.svg
+        visualDisplay: /images/wordmark/wrong-logotype-font.svg
         sentiment: negative
 ---
 
