@@ -7,7 +7,7 @@ variables:
         title: "Before"
         description: "Interfaces without animations often produce a choppy, disorienting, and confusing experience for the user."
         visualDisplay: videos/animation/example-animation-1.webm
-    accessibilityAnimation:
+    animationAfter:
         title: "After"
         description: "Interfaces with animations provide orientation and guidance for the user and make for a more pleasant experience."
         visualDisplay: videos/animation/example-animation-2.webm
