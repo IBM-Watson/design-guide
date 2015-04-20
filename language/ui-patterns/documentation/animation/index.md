@@ -109,8 +109,8 @@ Start one property alone then animate the additional properties.
 ```scss
 //box class
 .animation-a {
-	animation: animation-a 1s $ibm-snapin;
-	transform-origin: 0% 100%;
+  animation: animation-a 1s $ibm-snapin;
+  transform-origin: 0% 100%;
 }
 
 //keyframes for animation
@@ -136,8 +136,8 @@ Both Properties start at the same time then one property ends before the other.
 ```scss
 //box class
 .animation-b {
-  	animation: animation-b 1s $ibm-snapin;
- 	transform-origin: 0% 100%;
+  animation: animation-b 1s $ibm-snapin;
+  transform-origin: 0% 100%;
 }
 
 //keyframes for animation
