@@ -20,7 +20,7 @@ variables:
       title: "Example: Dark Palette"
       visualDisplay: /images/color/dark-palette.svg
       description: "Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30"
-      caption: "Consider users who are sensitive to brightness and high contrast colors by using a grey value as a background color instead of pure black."
+      caption: "Consider users who are sensitive to brightness and high contrast colors by using a Gray value as a background color instead of pure black."
   primaryColors:
     instructions: "Choose a primary and secondary color"
     colors:
@@ -50,24 +50,24 @@ variables:
       tone: 40
       palette: Yellow
       tone: 30
-  supportingGreys:
-    instructions: "Choose supporting greys and neutrals"
+  supportingGrays:
+    instructions: "Choose supporting Grays and neutrals"
     colors:
-      palette: Grey
+      palette: Gray
       tone: 90
-      palette: Grey
+      palette: Gray
       tone: 80
-      palette: Grey
+      palette: Gray
       tone: 60
-      palette: Grey
+      palette: Gray
       tone: 50
-      palette: Grey
+      palette: Gray
       tone: 10
-      palette: Neutral
+      palette: Neutral-White
       tone: 4
-      palette: Neutral
+      palette: Neutral-White
       tone: 2
-      palette: Neutral
+      palette: Neutral-White
       tone: 1
 ---
 
@@ -83,13 +83,13 @@ The colors chosen for IBM Watson are flexible and distinguish Watson as a brand 
 
 ## Choosing A Color Palette
 
-Choose a primary color, a secondary color, and an accent color. Additional tints and shades of the chosen palette can help to unify the design. These values can add variety to a palette without additional colors. Use the IBM Design Language for a wider variety of colors, values, and neutrals. When choosing a background color for light or dark palettes, IBM Watson recommends using Neutral 1 and Grey 90, as opposed to pure white and black, as some users are sensitive to brightness and high contrast colors.
+Choose a primary color, a secondary color, and an accent color. Additional tints and shades of the chosen palette can help to unify the design. These values can add variety to a palette without additional colors. Use the IBM Design Language for a wider variety of colors, values, and neutrals. When choosing a background color for light or dark palettes, IBM Watson recommends using Neutral 1 and Gray 90, as opposed to pure white and black, as some users are sensitive to brightness and high contrast colors.
 
 {{> colorPicker primaryColors}}
 
 {{> colorPicker accentColors}}
 
-{{> colorPicker supportingGreys}}
+{{> colorPicker supportingGrays}}
 
 ## Applying A Color Palette
 
