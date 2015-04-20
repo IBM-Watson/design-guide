@@ -1,13 +1,20 @@
 ---
-title: Motion Guidelines
---- 
+type: documentation
+title: Animation
+resources:
+  links:
+    name: "Debugging Chrome Animations"
+    source: http://valhead.com/2015/01/06/quick-tip-chrome-animation-controls/
+---
+
 
 ## Animation Guidelines
-- - -
+
 The metaphor for animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation with subtle offsets.
 
 
 ## Properties
+
 Properties are the elements of an object that will change over time. Below are the properties you can animate within CSS. It is recommended to use the most performant properties first. If the effect cannot be achieved, use the general list of properties as a fall back if the effect cannot be achieved using those.
 
 **Most Performant Properties**
@@ -59,26 +66,27 @@ Great example of all the different properties that can be animated [here.](http:
 
 
 ### Single Property Animations
----
+
 When animating only a single property one should follow the guidelines below. 
 
 ![Single-Attribute](images/motion/examples/Single_Attribute-1.gif)
 
-	//box class
-	.single-attribute {
-		animation: single-attribute 1s $ibm-bouncein;
-	}
-	
-	//keyframes for animation
-	@keyframes single-attribute {
-	  0% {
-	  	transform: scale(0);
-	  }
-	  100% {
-	  	transform: scale(1);
-	  }
-	}
-	
+```scss
+//box class
+.single-attribute {
+	animation: single-attribute 1s $ibm-bouncein;
+}
+
+//keyframes for animation
+@keyframes single-attribute {
+  0% {
+  	transform: scale(0);
+  }
+  100% {
+  	transform: scale(1);
+  }
+}
+```	
 
 **Easing Curves**
 
@@ -90,7 +98,7 @@ When animating only a single property one should follow the guidelines below.
 		* Interactive Elements = `$bounce-in-out`
 
 ### Multiple Property Animations
----
+
 Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take. Direction 1 - Start one property alone then animate the additional properties. Direction 2 - Both Properties start at the same time then one property ends before the other. Don’t start AND stop multiple properties at the same time. Choose one or the other.
 
 **Direction 1**
@@ -98,24 +106,26 @@ Start one property alone then animate the additional properties.
 
 ![Direction-1](images/motion/examples/Option-A.gif)
 
-	//box class
-	.animation-a {
-		animation: animation-a 1s $ibm-snapin;
-		transform-origin: 0% 100%;
-	}
-	
-	//keyframes for animation
-	@keyframes animation-a {
-	  0% {
-	    transform: scale(0 , 0);
-	  }
-	  50% {
-	    transform: scale(.5 , 0);
-	  }
-	  100% {
-	    transform: scale(1 , 1);
-	  }
-	}
+```scss
+//box class
+.animation-a {
+	animation: animation-a 1s $ibm-snapin;
+	transform-origin: 0% 100%;
+}
+
+//keyframes for animation
+@keyframes animation-a {
+  0% {
+    transform: scale(0 , 0);
+  }
+  50% {
+    transform: scale(.5 , 0);
+  }
+  100% {
+    transform: scale(1 , 1);
+  }
+}
+```
 
 **Direction 2**
 Both Properties start at the same time then one property ends before the other.
@@ -123,28 +133,29 @@ Both Properties start at the same time then one property ends before the other.
 
 ![Direction-2](images/motion/examples/Option-B.gif)
 
-	//box class
-	.animation-b {
-	  	animation: animation-b 1s $ibm-snapin;
-	 	transform-origin: 0% 100%;
-	}
-	
-	//keyframes for animation
-	@keyframes animation-b {
-	  0% {
-	    transform: scale(0 , 0);
-	  }
-	  30% {
-	    transform: scale(.2 , 0);
-	  }
-	  80% {
-	    transform: scaleY(.5);
-	  }
-	  100% {
-	    transform: scale(1 , 1);
-	  }
-	}
+```scss
+//box class
+.animation-b {
+  	animation: animation-b 1s $ibm-snapin;
+ 	transform-origin: 0% 100%;
+}
 
+//keyframes for animation
+@keyframes animation-b {
+  0% {
+    transform: scale(0 , 0);
+  }
+  30% {
+    transform: scale(.2 , 0);
+  }
+  80% {
+    transform: scaleY(.5);
+  }
+  100% {
+    transform: scale(1 , 1);
+  }
+}
+```
 
 **Easing Curves**
 * Use of Easing Curves: 
@@ -154,7 +165,7 @@ Both Properties start at the same time then one property ends before the other.
 
 
 ## Singular vs. Sequence of Actions
---- 
+
 Within UI there are instances where only one element moves vs. multiple elements a sequence of elements. Below are the guidelines for those instances.
 
 
@@ -162,13 +173,13 @@ Within UI there are instances where only one element moves vs. multiple elements
 
 A Singluar action animation is when you animate only one element on the screen & does not contain complementary elements.
 
-![Option-B](images/motion/examples/Option-B.gif)
+![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
 A Sequence of actions animation is where you have multiple elements typically a Primary Action then a Secondary action which complements the Primary.
 
-![sequence-of-actions](images/motion/examples/secondary-action.gif)_
+![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the hertical scale](images/motion/examples/secondary-action.gif)
 
 In the example above, the text animations and delay enhance by following the lead of the primary action (scaling of the box).
 
@@ -180,7 +191,3 @@ In the example above, the text animations and delay enhance by following the lea
 
 Delays need to be consistent - needs to have the same rate across similar content.
 
-## Animation Resources
-- - -
-
-[Debugging Chrome Animations](http://valhead.com/2015/01/06/quick-tip-chrome-animation-controls/)
