@@ -74,16 +74,16 @@ When animating only a single property one should follow the guidelines below.
 ```scss
 //box class
 .single-attribute {
-	animation: single-attribute 1s $ibm-bouncein;
+  animation: single-attribute 1s $ibm-bouncein;
 }
 
 //keyframes for animation
 @keyframes single-attribute {
   0% {
-  	transform: scale(0);
+    transform: scale(0);
   }
   100% {
-  	transform: scale(1);
+    transform: scale(1);
   }
 }
 ```	
