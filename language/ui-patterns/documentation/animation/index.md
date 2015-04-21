@@ -224,7 +224,7 @@ $animations: (
 );
 ```
 
-The format of the map is (with everything between <> being variable:
+The format of the map is (with everything between <> being a string:
 
 ```scss
 $animations: (
@@ -239,7 +239,7 @@ $animations: (
 );
 ```
 
-In order to use any of these animations in your product, we've implemented an animate Sass mixin. All you could need to do is include the animation on the element. You do this with the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify the duration and timing function, we have included the default values of 2s and ease-in.
+In order to use any of these animations in your product, we've implemented an animate Sass mixin. All you need to do is include the animation on the element. You do this with the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify the duration and timing function, we have included the default values of 2s and ease-in.
 
 For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snapin);`.
 
