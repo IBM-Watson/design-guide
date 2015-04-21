@@ -86,16 +86,16 @@ When animating only a single property one should follow the guidelines below.
     transform: scale(1);
   }
 }
-```	
+``` 
 
 **Easing Curves**
 
 * Add bounces eases - this add the snap in factor that is lost if you don’t use two properties.
 * Snappy Bounces not physics based bouncing.
-	* Use of Easing Curves:
-		* Entrances = `$bounce-in` (Fast to Slow) 
-		* Exits = `$bounce-out` (Slow to Fast)
-		* Interactive Elements = `$bounce-in-out`
+  * Use of Easing Curves:
+    * Entrances = `$bounce-in` (Fast to Slow) 
+    * Exits = `$bounce-out` (Slow to Fast)
+    * Interactive Elements = `$bounce-in-out`
 
 ### Multiple Property Animations
 
@@ -159,9 +159,9 @@ Both Properties start at the same time then one property ends before the other.
 
 **Easing Curves**
 * Use of Easing Curves: 
-	* Entrances = `$snap-in` (Fast to Slow) 
-	* Exits = `$snap-out` (Slow to Fast)
-	* Interactive Elements = `$snap-in-out`
+  * Entrances = `$snap-in` (Fast to Slow) 
+  * Exits = `$snap-out` (Slow to Fast)
+  * Interactive Elements = `$snap-in-out`
 
 
 ## Singular vs. Sequence of Actions
@@ -190,4 +190,77 @@ In the example above, the text animations and delay enhance by following the lea
 ### Delays
 
 Delays need to be consistent - needs to have the same rate across similar content.
+
+## Animation Library Implementation
+
+All of the animations live within an animation map. It looks a bit like this:
+
+```scss 
+$animations: (
+  'fade-in': (
+    0%: (
+      opacity: 0
+    ),
+    100%: (
+      opacity: 1
+    )
+  ),
+  'slide-in--left' : (
+    0%: (
+      transform: translateY(-100%)
+    ),
+    100%: (
+      transform: translateY(0)
+    )
+  ),
+  'slide-in--right' : (
+    0%: (
+      transform: translateY(100%)
+    ),
+    100%: (
+      transform: translateY(0)
+    )
+  )
+);
+```
+
+The format of the map is (with everything between <> being variable:
+
+```scss
+$animations: (
+  '<animation name>': (
+    <keyframe%>: (
+      <property>: <value>;
+    ),
+    <keyframe%>: (
+      <property>: <value>;
+    )
+  )
+);
+```
+
+In order to use any of these animations in your product, we've implemented an animate Sass mixin. All you could need to do is include the animation on the element. You do this with the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify the duration and timing function, we have included the default values of 2s and ease-in.
+
+For example, you can implement `@include animate(fade-in);` or `@include animate(fade-in, 3s, $snapin);`.
+
+The current animations provided are:
+
+- fade-in
+- slide-in--left
+- slide-in--right
+
+### Timing Functions
+
+The current timing functions provided are:
+
+- ease-in
+- ease-out
+- bounce-out
+- bounce-in
+- bounce-in-out
+- snap-in
+- snap-out
+- snap-in-out
+
+Timing functions are mathematical equations that creates a bezier curve which is: a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like: ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves”.
 
