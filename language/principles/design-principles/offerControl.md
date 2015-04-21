@@ -36,7 +36,6 @@ variables:
         - title: "\"Recommendations based on saved queries\""
           description: "These are modules that display personalized recommendations."
 ---
-
 #Offer Control
 
 ##Let the user choose more help or less help by offering control when it is wanted. Watson experiences should naturally adapt to amplify the user's abilities and expertise.
