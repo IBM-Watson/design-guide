@@ -245,9 +245,27 @@ For example, you can implement `@include animate(fade-in);` or `@include animate
 
 The current animations provided are:
 
+Entrance Animations
 - fade-in
+- fade-in--up
+- fade-in--down
+- fade-in--left
+- fade-in--right
+- slide-in--up
+- slide-in--down
 - slide-in--left
 - slide-in--right
+
+Exit Animations
+- fade-out
+- fade-out--up
+- fade-out--down
+- fade-out--left
+- fade-out--right
+- slide-out--up
+- slide-out--down
+- slide-out--left
+- slide-out--right
 
 ### Timing Functions
 
