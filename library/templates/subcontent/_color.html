@@ -17,7 +17,7 @@
 
 {% macro swatch(color) %}
   <div library-class="color-swatch" style="background: {{ color.palette|ibmHex(color.tone) }}; color: {{color.tone|ibmTextColor }};">
-    <p library-class="color-swatch--name">{{ color.palette}} {{ color.tone }}</p>
+    <p library-class="color-swatch--name">{{ color.palette }} {{ color.tone }}</p>
     <ul library-class="color-swatch--attributes">
       <li>{{ color.palette|ibmSass(color.tone) }}</li>
       <li>{{ color.palette|ibmHex(color.tone) }}</li>
