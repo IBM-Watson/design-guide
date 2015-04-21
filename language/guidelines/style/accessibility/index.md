@@ -22,6 +22,7 @@ variables:
             title: "Help users to distinguish links by using combinations of colors and underlines."
             description: "A log in page using colored text and an underline to indicate a link."
     accessibilityAnimation:
+        description: "When there is an animation that last longer than 5 seconds, provide the user a way to pause, stop, or hide the animation."
         visualDisplay: videos/accessibility/motion-accessibility.webm
 ---
 
