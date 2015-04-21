@@ -40,6 +40,7 @@ No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any
 * Ensure that you have [EditorConfig](http://editorconfig.org/) installed in your editor of choice and that it is functioning properly.
 * Do not squash or rebase your commits when submitting a Pull Request. It makes it much harder to follow your work and make incremental changes.
 * Update the [CHANGELOG](#maintaining-thechangelog) with your changes.
+* Ensure no Emoji tags are used in the title of your Pull Request
 
 ### Git Commit Messages
 
