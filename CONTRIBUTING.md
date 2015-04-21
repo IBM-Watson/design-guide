@@ -56,6 +56,7 @@ No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any
   * `language/` - update to or new piece of long-form text or assets to go along with it
   * `library/` - update to or new code for the site
   * `release/` - for releases
+  * `feature/` - update to or new general feature not covered by other prefixes
 
 ## Creating a New Version
 
