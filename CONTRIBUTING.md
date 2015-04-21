@@ -39,6 +39,7 @@ No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any
 * Follow our JavaScript and CSS styleguides. We have linters set up to catch most of it.
 * Ensure that you have [EditorConfig](http://editorconfig.org/) installed in your editor of choice and that it is functioning properly.
 * Do not squash or rebase your commits when submitting a Pull Request. It makes it much harder to follow your work and make incremental changes.
+* Update the [CHANGELOG](#maintaining-thechangelog) with your changes.
 
 ### Git Commit Messages
 
@@ -63,6 +64,12 @@ No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any
 Versioning is done through [SEMVER](http://semver.org/). When creating a new version, issue a [pull request](#pull-requests) from `develop` into `master` and create new release branch off of `master` with the version's name, and create a new tag with `v` prefixed with the version's name from that branch. 
 
 For instance, if you are creating version `1.1.0`, you would start by merging `develop` into `master`, create a branch `release/1.1.0` from `master`, and create a tag `v1.1.0` from branch `release/1.1.0`.
+
+### Maintaining the Changelog
+
+The Changelog should have a list of changes made for each version. They should be organized so additions come first, changes come second, and deletions come third. Version numbers should be 2nd level headers with the `v` in front (like a tag) and the date of the version's most recent update should be underneath in italics.
+
+Changelog messages do not need to cover each individual commit made, but rather should have individual summaries of the changes made. Changelog messages should be written in the same style as [Git commit messages](#git-commit-messages).
 
 ## Emoji Cheatsheet
 
