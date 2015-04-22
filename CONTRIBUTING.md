@@ -25,18 +25,21 @@ No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any
 ## Submitting Issues
 
 * Before creating a new issue, perform a [cursory search](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+user%3Aibm-watson+) to see if a similar issue has already been submitted.
-* You can create an issue [here](https://github.com/IBM-Watson/design-library/issues). Please include as many details as possible in your report, and consider using our [Emoji cheatsheet](#emoji-cheatsheet) to categorize your issue.
+* You can create an issue [here](https://github.com/IBM-Watson/design-library/issues). Please include as many details as possible in your report.
+* Issue titles should be descriptive, explaining at the high level what it is about, and should be written in the same style as [Git commit messages](#git-commit-messages).
 * Please include the version of the Design Library you are using/viewing
 * Do not open a [pull request](#pull-requests) to resolve an issue without first receiving feedback from a `collaborator` or `owner` and having them agree on a solution forward.
 * Include screenshots and animated GIFs whenever possible; they are immensely helpful.
 * When submitting a browser bug, please include the browser, version, operating system, and operating system version.
 * When submitting an update to or a new feature, pattern, guideline, etc… we prefer to see user research associated with the suggestion including testing methods, results, and sample size, whenever possible. This allows us to make more user-centered decisions and cut through assumptions and individual preferences.
+* Issues that have a number of sub-items that need to be complete should use [task lists](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments) to track the sub-items in the main issue comment.
 
 
 ## Pull Requests
 
 * **DO NOT ISSUE A PULL REQUEST WITHOUT FIRST [SUBMITTING AN ISSUE](#submitting-issues)**
 * Pull requests should reference their related issues. If the pull request closes an issue, [please reference its closing in your commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/). Pull requests not referencing any issues will be closed.
+* Pull request titles should be descriptive, explaining at the high level what it is doing, and should be written in the same style as [Git commit messages](#git-commit-messages).
 * Update the `CHANGELOG` with the changes made by your pull request, making sure to use the proper [Emoji](#emoji-cheatsheet).
 * Make sure you have [installed the development environment](https://github.com/IBM-Watson/design-library#installation), [updated your runner to the latest version](https://github.com/IBM-Watson/design-library#updating-the-runner), and have [run the library locally](https://github.com/IBM-Watson/design-library#running-locally) to ensure that your code works properly.
 * Follow our JavaScript and CSS styleguides. We have linters set up to catch most of it.
@@ -78,7 +81,7 @@ Changelog messages do not need to cover each individual commit made, but rather 
 
 ## Emoji Cheatsheet
 
-When creating pull requests or issues or updating the CHANGELOG, please **start** the issue title, commit message, or update with one of the following applicable emoji:
+When creating creating commits or updating the CHANGELOG, please **start** the commit message or update with one of the following applicable Emoji. Emoji should not be used at the start of issue or pull request titles.
 
 * :art: `:art:` when improving the format/structure of the code
 * :racehorse: `:racehorse:` when improving performance
@@ -91,5 +94,4 @@ When creating pull requests or issues or updating the CHANGELOG, please **start*
 * :arrow_up: `:arrow_up:` when upgrading dependencies
 * :arrow_down: `:arrow_down:` when downgrading dependencies
 * :shirt: `:shirt:` when removing linter warnings
-* :question: `:question` when asking a question
 * :shipit: `:shipit:` when creating a new release
