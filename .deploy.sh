@@ -19,7 +19,7 @@ if [ "$TRAVIS_BRANCH" = "master" ]
 
     # Commit all the things into the repo
     git add .
-    git commit -m "Deploy to GitHub Pages"
+    git commit -m ":shipit: Deploy to GitHub Pages"
 
     # Force push to gh-pages
     git push --force --quite "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
