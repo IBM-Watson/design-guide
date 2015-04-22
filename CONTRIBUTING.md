@@ -27,8 +27,11 @@ No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any
 * Before creating a new issue, perform a [cursory search](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+user%3Aibm-watson+) to see if a similar issue has already been submitted.
 * You can create an issue [here](https://github.com/IBM-Watson/design-library/issues). Please include as many details as possible in your report, and consider using our [Emoji cheatsheet](#emoji-cheatsheet) to categorize your issue.
 * Please include the version of the Design Library you are using/viewing
-* When submitting a browser bug, please include the browser, version, operating system, and operating system version.
+* Do not open a [pull request](#pull-requests) to resolve an issue without first receiving feedback from a `collaborator` or `owner` and having them agree on a solution forward.
 * Include screenshots and animated GIFs whenever possible; they are immensely helpful.
+* When submitting a browser bug, please include the browser, version, operating system, and operating system version.
+* When submitting an update to or a new feature, pattern, guideline, etc… we prefer to see user research associated with the suggestion including testing methods, results, and sample size, whenever possible. This allows us to make more user-centered decisions and cut through assumptions and individual preferences.
+
 
 ## Pull Requests
 
