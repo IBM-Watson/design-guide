@@ -70,7 +70,7 @@ Use only the supplied artwork when using the wordmark or logotype. It is importa
 
 ### Color Usage
 
-The wordmark and logotype for IBM Watson should only appear in the approved color combinations. Any one of the [three primary colors](color.html) for IBM Watson may be used in combination with Grey 90 or Neutral 1 for use on light or dark backgrounds, respectively. For dark color palettes, use lighter values of the IBM Watson primary colors.
+The wordmark and logotype for IBM Watson should only appear in the approved color combinations. Any one of the [three primary colors](color.html) for IBM Watson may be used in combination with black or white for use on light or dark backgrounds, respectively. For dark color palettes, use lighter values of the IBM Watson primary colors.
 
 {{> SomeFunctionHere example.wordmarkColor.light}}
 
