@@ -24,51 +24,51 @@ variables:
   primaryColors:
     instructions: "Choose a primary and secondary color"
     colors:
-      palette: Blue
-      tone: 60
-      adjectives:
-        Trustworthy
-        Systematic
-      palette: Orange
-      tone: 50
-      adjectives: 
-        Innovation
-        Utility
-      palette: Teal
-      tone: 60
-      adjectives:
-        Awareness
-        Approachability
+      - palette: Blue
+        tone: 60
+        adjectives:
+          - Trustworthy
+          - Systematic
+      - palette: Orange
+        tone: 50
+        adjectives: 
+          - Innovation
+          - Utility
+      - palette: Teal
+        tone: 60
+        adjectives:
+          - Awareness
+          - Approachability
   accentColors:
     instructions: "Choose an accent color. Add hues as necessary."
     colors:
-      palette: Blue
-      tone: 40
-      palette: Orange
-      tone: 30
-      palette: Teal
-      tone: 40
-      palette: Yellow
-      tone: 30
+      - palette: Blue
+        tone: 40
+      - palette: Orange
+        tone: 30
+      - palette: Teal
+        tone: 40
+      - palette: Yellow
+        tone: 30
   supportingGrays:
     instructions: "Choose supporting Grays and neutrals"
     colors:
-      palette: Gray
-      tone: 90
-      palette: Gray
-      tone: 80
-      palette: Gray
-      tone: 60
-      palette: Gray
-      tone: 50
-      palette: Gray
-      tone: 10
-      palette: Neutral-White
-      tone: 4
-      palette: Neutral-White
-      tone: 2
-      palette: Neutral-White
-      tone: 1
+      - palette: Gray
+        tone: 90
+      - palette: Gray
+        tone: 80
+      - palette: Gray
+        tone: 60
+      - palette: Gray
+        tone: 50
+      - palette: Gray
+        tone: 10
+      - palette: Neutral-White
+        tone: 40
+      - palette: Neutral-White
+        tone: 20
+      - palette: Neutral-White
+        tone: 10
 ---
 
 Color is a crucial component of our visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.
@@ -79,17 +79,17 @@ Color is a crucial component of our visual vernacular, helping to unify the look
 
 The colors chosen for IBM Watson are flexible and distinguish Watson as a brand across all user experiences. The colors were chosen based on color psychology to support the Watson [brand attributes](brand-attributes.html), reinforce Watson's personality, and set the tone of each specific product.
 
-{{> primaryColorDisplay primaryColors}}
+{{ _color.adjectiveSwatches(primaryColors) }}
 
 ## Choosing A Color Palette
 
 Choose a primary color, a secondary color, and an accent color. Additional tints and shades of the chosen palette can help to unify the design. These values can add variety to a palette without additional colors. Use the IBM Design Language for a wider variety of colors, values, and neutrals. When choosing a background color for light or dark palettes, IBM Watson recommends using Neutral 1 and Gray 90, as opposed to pure white and black, as some users are sensitive to brightness and high contrast colors.
 
-{{> colorPicker primaryColors}}
+{{ _color.groupSwatches(primaryColors) }}
 
-{{> colorPicker accentColors}}
+{{ _color.groupSwatches(accentColors) }}
 
-{{> colorPicker supportingGrays}}
+{{ _color.groupSwatches(supportingGrays) }}
 
 ## Applying A Color Palette
 
