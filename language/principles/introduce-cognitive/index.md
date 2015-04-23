@@ -30,9 +30,7 @@ variables:
         - title: "\"Did you know?...\""
           description: "This is copy that displays beside the primary content."
 ---
-#Introduce Cognitive
-
-##Give first-time users a set of "cognitive training wheels" and continue to provide unobtrusive support as needed.
+**Give first-time users a set of "cognitive training wheels" and continue to provide unobtrusive support as needed.**
 
 {{> SOME-FUNCTION-HERE display detail.introduceOne}}
 {{> SOME-FUNCTION-HERE display detail.introduceTwo}}

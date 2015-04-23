@@ -32,9 +32,7 @@ variables:
         - title: "Additional explanation"
           description: "This is a module that displays additional information."
 ---
-#Inform Interactions
-
-##Reduce the complexity of using Watson by informing the user's interactions as they collaborate with Watson to accomplish desired tasks.
+**Reduce the complexity of using Watson by informing the user's interactions as they collaborate with Watson to accomplish desired tasks.**
 
 {{> SOME-FUNCTION-HERE display detail.informOne}}
 {{> SOME-FUNCTION-HERE display detail.informTwo}}
