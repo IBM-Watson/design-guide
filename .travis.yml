@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get -y install wget p7zip-full
+  - sh ./.runner.sh
+  - npm install -g gulp bower
+install:
+  - bower install
+  - npm install
+script:
+  - gulp build
+  - sh ./.deploy.sh
+env:
+  global:
+    - GH_REF: github.com/IBM-Watson/design-library
+    - secure: SlohvJ34FCcvF902t4gu0fnrYEerTrQFiLsKwV6VgqGHd2dLKWMTiIkezRH9qRmphzB4XY83pNs/vhhNE8a2ey/S+YWKXj+o5N/uEuVmUcUVNtVYdhGi4OLuZM34RDhCqxMHnbV8fqKWka0uZ9ryHiQWD0G7lN/MCX9c6bbQB0I=
+notifications:
+  slack:
+    secure: mN+9lpQZPWm1QdUCreWmJ/MQaGi42yTgHQ1yeZJ3iU7NSVMu5uWdcQ5EXjT2+2ge2cCkfzMQb5EeeAXSw20DLggyC+xOcmIZTeYQY3Y8K0Yrky930z/k/IWpn9h5+yRbzYNp+4jWzcQXKMHNJdswVI25BewE4RpqIcxIsoVHGnw=
