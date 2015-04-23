@@ -1,0 +1,57 @@
+<!-- Display Object -->
+{% macro object(example) %}
+  {% if example.visualDisplay|fileType === 'image' %}
+    <img library-class="example--image" src="{{ example.visualDisplay }}" alt="{{ example.title }}">
+  {% elseif example.visualDisplay|fileType === 'video' %}
+    <video library-class="example--video" controls loop>
+      <source src="{{ example.visualDisplay }}" type="video/{{ example.visualDisplay|fileExtension }}">
+      <div class="base--STYLED">
+        <p><a href="{{ example.visualDisplay }}">Download video <strong>{{ example.title }}</strong></a></p>
+      </div>
+    </video>
+  {% endif %}
+{% endmacro %}
+
+<!-- Sentiment Builder -->
+{% macro sentiment(example) %}
+  {% if example.sentiment %}
+    {% if feels|lower === 'positive' %}
+      <span library-class="example--positive">Do This</span>
+    {% elseif feels|lower === 'negative' %}
+      <span library-class="example--negative">Don't Do This</span>
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
+<!-- Example Title -->
+{% macro title(example) %}
+  <p library-class="example--title">{{ sentiment(example) }}{{ example.title }}</p>
+{% endmacro %}
+
+<!-- Small Example -->
+{% macro small(example) %}
+<div library-class="example--SMALL">
+  {{ title(example) }}
+  {{ object(example) }}
+</div>
+{% endmacro %}
+
+<!-- Large Example -->
+{% macro large(example) %}
+<div library-class="example--LARGE">
+  {{ object(example) }}
+  <div library-class="example--body">
+    {{ title(example) }}
+    {% if example.description %}
+      <p library-class="example--description">{{ example.description }}</p>
+    {% endif %}
+  </div>
+</div>
+{% endmacro %}
+
+<!-- Compare examples -->
+{% macro compare(examples) %}
+  {% for example in examples %}
+    {{ small(example) }}
+  {% endif %}
+{% endmacro %}
