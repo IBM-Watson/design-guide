@@ -1,16 +1,4 @@
-<!-- Display Object -->
-{% macro object(example) %}
-  {% if example.visualDisplay|fileType === 'image' %}
-    <img library-class="example--image" src="{{ example.visualDisplay }}" alt="{{ example.title }}">
-  {% elseif example.visualDisplay|fileType === 'video' %}
-    <video library-class="example--video" controls loop>
-      <source src="{{ example.visualDisplay }}" type="video/{{ example.visualDisplay|fileExtension }}">
-      <div class="base--STYLED">
-        <p><a href="{{ example.visualDisplay }}">Download video <strong>{{ example.title }}</strong></a></p>
-      </div>
-    </video>
-  {% endif %}
-{% endmacro %}
+{% import './_media.html' as media %}
 
 <!-- Sentiment Builder -->
 {% macro sentiment(example) %}
@@ -32,14 +20,14 @@
 {% macro small(example) %}
 <div library-class="example--SMALL">
   {{ title(example) }}
-  {{ object(example) }}
+  {{ media.object(example) }}
 </div>
 {% endmacro %}
 
 <!-- Large Example -->
 {% macro large(example) %}
 <div library-class="example--LARGE">
-  {{ object(example) }}
+  {{ media.object(example) }}
   <div library-class="example--body">
     {{ title(example) }}
     {% if example.description %}
