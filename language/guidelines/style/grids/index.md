@@ -1,6 +1,6 @@
 ---
 type: guideline
-title: "Grids"
+title: Grids
 variables:
   blockquote:
     quoteOne:
@@ -17,18 +17,18 @@ variables:
   detail:
     gridsOne:
       title: "Custom"
-      visualDisplay: images/visual/grids1.svg
+      visualDisplay: /images/grids/grids1.svg
     gridsTwo:
       title: "Compound"
-      visualDisplay: images/visual/grids2.svg
+      visualDisplay: /images/grids/grids2.svg
     gridsThree:
       title: "Ratio-Based"
-      visualDisplay: images/visual/grids3.svg
+      visualDisplay: /images/grids/grids3.svg
     gridsFour:
       title: "Ratio Spiral-Based"
-      visualDisplay: images/visual/grids4.svg
+      visualDisplay: /images/grids/grids4.svg
     responsiveGridVideo:
-      visualDisplay: videos/visual/grids-responsive.webm
+      visualDisplay: /videos/grids/grids-responsive.webm
       callout:
         title: "Example: Responsive Grid"
         description: "Begin by designing the smallest size, using as close to real content as possible. As the size expands, the content will determine where the breakpoints should occur, not the device sizes."
