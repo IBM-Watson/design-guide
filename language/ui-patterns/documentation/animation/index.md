@@ -102,6 +102,7 @@ When animating only a single property one should follow the guidelines below.
 Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take. Direction 1 - Start one property alone then animate the additional properties. Direction 2 - Both Properties start at the same time then one property ends before the other. Don’t start AND stop multiple properties at the same time. Choose one or the other.
 
 **Direction 1**
+
 Start one property alone then animate the additional properties.
 
 ![Direction-1](images/motion/examples/Option-A.gif)
@@ -128,6 +129,7 @@ Start one property alone then animate the additional properties.
 ```
 
 **Direction 2**
+
 Both Properties start at the same time then one property ends before the other.
 
 
@@ -241,7 +243,7 @@ $animations: (
 
 In order to use any of these animations in your product, we've implemented an animate Sass mixin. All you need to do is include the animation on the element. You do this with the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify the duration and timing function, we have included the default values of 2s and ease-in.
 
-For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snapin);`.
+For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
 
 The current animations provided are:
 
