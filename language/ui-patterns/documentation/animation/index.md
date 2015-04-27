@@ -69,12 +69,12 @@ Great example of all the different properties that can be animated [here.](http:
 
 When animating only a single property one should follow the guidelines below. 
 
-![Single-Attribute](images/motion/examples/Single_Attribute-1.gif)
+![Scaling of a box from 0% to 100%](images/motion/examples/Single_Attribute-1.gif)
 
 ```scss
 //box class
 .single-attribute {
-  animation: single-attribute 1s $ibm-bouncein;
+  animation: single-attribute 1s $bounce-in;
 }
 
 //keyframes for animation
@@ -88,29 +88,28 @@ When animating only a single property one should follow the guidelines below.
 }
 ``` 
 
-**Easing Curves**
+**Timing Function**
 
-* Add bounces eases - this add the snap in factor that is lost if you don’t use two properties.
-* Snappy Bounces not physics based bouncing.
-  * Use of Easing Curves:
+* Adding a bounce timing function add a snap in factor to the interface that is lost if you don’t animate two properties.
+  * Use of Timing Function:
     * Entrances = `$bounce-in` (Fast to Slow) 
     * Exits = `$bounce-out` (Slow to Fast)
     * Interactive Elements = `$bounce-in-out`
 
 ### Multiple Property Animations
 
-Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take. Direction 1 - Start one property alone then animate the additional properties. Direction 2 - Both Properties start at the same time then one property ends before the other. Don’t start AND stop multiple properties at the same time. Choose one or the other.
+Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take. Direction 1 - Start one property alone then animate the additional properties. Direction 2 - Both Properties start at the same time then one property ends before the other. It is recommneded to not start and stop multiple properties at the same time. Please choose one or the other.
 
 **Direction 1**
 
 Start one property alone then animate the additional properties.
 
-![Direction-1](images/motion/examples/Option-A.gif)
+![Scaling box animation starting with X axis scale then the Y axis scale follows.](images/motion/examples/Option-A.gif)
 
 ```scss
 //box class
 .animation-a {
-  animation: animation-a 1s $ibm-snapin;
+  animation: animation-a 1s $snap-in;
   transform-origin: 0% 100%;
 }
 
@@ -133,12 +132,12 @@ Start one property alone then animate the additional properties.
 Both Properties start at the same time then one property ends before the other.
 
 
-![Direction-2](images/motion/examples/Option-B.gif)
+![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](images/motion/examples/Option-B.gif)
 
 ```scss
 //box class
 .animation-b {
-  animation: animation-b 1s $ibm-snapin;
+  animation: animation-b 1s $snap-in;
   transform-origin: 0% 100%;
 }
 
@@ -168,18 +167,18 @@ Both Properties start at the same time then one property ends before the other.
 
 ## Singular vs. Sequence of Actions
 
-Within UI there are instances where only one element moves vs. multiple elements a sequence of elements. Below are the guidelines for those instances.
+Within UI there are instances where only one element of the UI moves and there are instances where multiple elements move. There are different treatments for both of these cases. Below are the guidelines for those instances.
 
 
 ### Singular Action
 
-A Singluar action animation is when you animate only one element on the screen & does not contain complementary elements.
+A singluar action animation is when you animate only one element on the screen.
 
 ![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
-A Sequence of actions animation is where you have multiple elements typically a Primary Action then a Secondary action which complements the Primary.
+A sequence of actions animation is where you have multiple elements typically a primary action then a secondary action which complements the primary.
 
 ![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the hertical scale](images/motion/examples/secondary-action.gif)
 
@@ -191,7 +190,7 @@ In the example above, the text animations and delay enhance by following the lea
 
 ### Delays
 
-Delays need to be consistent - needs to have the same rate across similar content.
+Delays need to be consistent - needs to have the same rate across similar content types.
 
 ## Animation Library Implementation
 
