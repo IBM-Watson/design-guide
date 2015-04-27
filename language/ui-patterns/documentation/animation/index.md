@@ -10,12 +10,12 @@ resources:
 
 ## Animation Guidelines
 
-The metaphor for animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation with subtle offsets.
+The overarching metaphor for our animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation, plus subtle offsets.
 
 
 ## Properties
 
-Properties are the elements of an object that will change over time. Below are the properties you can animate within CSS. It is recommended to use the most performant properties first. If the effect cannot be achieved, use the general list of properties as a fall back if the effect cannot be achieved using those.
+Properties are the elements of an object that will change over time. The properties you can animate within CSS are listed below. We recommend using the most performant properties first. If the desired effect cannot be achieved, use the general list of properties as a fallback.
 
 **Most Performant Properties**
 
@@ -24,9 +24,9 @@ Properties are the elements of an object that will change over time. Below are t
 * Rotation: `transform: rotate(ndeg);`
 * Opacity: `opacity: 0...1;`
 
-More Information about why these are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+For more information about why these properties are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
-General list of the other properties you can animate:
+General list of animatable properties:
 - `background-color`
 - `border-width`
 - `clip`
@@ -62,12 +62,12 @@ General list of the other properties you can animate:
 - `vertical-align`
 - `word-spacing`
 
-Great example of all the different properties that can be animated [here.](http://leaverou.github.io/animatable/)
+A great example of all the animatable properties can be seen [here.](http://leaverou.github.io/animatable/)
 
 
 ### Single Property Animations
 
-When animating only a single property one should follow the guidelines below. 
+When animating only a single property, you should follow the guidelines below. 
 
 ![Scaling of a box from 0% to 100%](images/motion/examples/Single_Attribute-1.gif)
 
@@ -90,15 +90,16 @@ When animating only a single property one should follow the guidelines below.
 
 **Timing Function**
 
-* Adding a bounce timing function add a snap in factor to the interface that is lost if you don’t animate two properties.
-  * Use of Timing Function:
+Using bounces eases to add the snap in factor that is lost if you don't use two properties. These bounces are snappy bounces, not physics-based bounces.
+
+  * Use of Timing Functions:
     * Entrances = `$bounce-in` (Fast to Slow) 
     * Exits = `$bounce-out` (Slow to Fast)
     * Interactive Elements = `$bounce-in-out`
 
 ### Multiple Property Animations
 
-Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take. Direction 1 - Start one property alone then animate the additional properties. Direction 2 - Both Properties start at the same time then one property ends before the other. It is recommneded to not start and stop multiple properties at the same time. Please choose one or the other.
+Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take: Direction 1 - Start one property alone, then animate the additional properties, or Direction 2 - Both Properties start at the same time, then one property ends before the other. It is recommneded to not start and stop multiple properties at the same time; choose one or the other.
 
 **Direction 1**
 
@@ -129,7 +130,7 @@ Start one property alone then animate the additional properties.
 
 **Direction 2**
 
-Both Properties start at the same time then one property ends before the other.
+Both properties start at the same time then one property ends before the other.
 
 
 ![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](images/motion/examples/Option-B.gif)
@@ -158,8 +159,11 @@ Both Properties start at the same time then one property ends before the other.
 }
 ```
 
-**Easing Curves**
-* Use of Easing Curves: 
+**Timing Function**
+
+Using snap in eases addes very strong eases to quick movements which enhances the elegant machine motion metaphor.
+
+* Use of Timing Functions: 
   * Entrances = `$snap-in` (Fast to Slow) 
   * Exits = `$snap-out` (Slow to Fast)
   * Interactive Elements = `$snap-in-out`
@@ -167,30 +171,27 @@ Both Properties start at the same time then one property ends before the other.
 
 ## Singular vs. Sequence of Actions
 
-Within UI there are instances where only one element of the UI moves and there are instances where multiple elements move. There are different treatments for both of these cases. Below are the guidelines for those instances.
+Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions. The guidelines for both kind of instances are listed below.
 
 
 ### Singular Action
 
-A singluar action animation is when you animate only one element on the screen.
+A singluar action animation occurs when only one element on the screen is animated, and there are no other complementary elements.
 
 ![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
-A sequence of actions animation is where you have multiple elements typically a primary action then a secondary action which complements the primary.
+A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action, followed by a secondary action that complements the primary.
 
 ![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the hertical scale](images/motion/examples/secondary-action.gif)
 
-In the example above, the text animations and delay enhance by following the lead of the primary action (scaling of the box).
+In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
 #### Things to consider with Sequence of Actions
 
- * Choreography: - Elements should have coordinate within hierarchy.
-
-### Delays
-
-Delays need to be consistent - needs to have the same rate across similar content types.
+  * Choreography: Elements should have coordinate within the determined hierarchy.
+  * Delays: Delays need to be consistent and should have the same rate across similar content.
 
 ## Animation Library Implementation
 
@@ -240,7 +241,7 @@ $animations: (
 );
 ```
 
-In order to use any of these animations in your product, we've implemented an animate Sass mixin. All you need to do is include the animation on the element. You do this with the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify the duration and timing function, we have included the default values of 2s and ease-in.
+In order to use any of these animations in your product, we have implemented an animate Sass mixin. All you need to do is include the animation on the element, by using the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify the duration and timing function, we have included the default values of 2s and ease-in.
 
 For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
 
