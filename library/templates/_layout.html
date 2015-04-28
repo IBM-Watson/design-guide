@@ -16,8 +16,8 @@
 
   {# JavaScript -#}
   {% for js in layout.js %}
-    {%if js.head %}
-      {%if js.inline %}
+    {% if js.head %}
+      {% if js.inline %}
         <script>{{ js.src | safe -}}</script>
       {% else %}
         <script src="{{js.src}}" {%if js.async %}async{% endif %} {%if js.defer %}defer{% endif %}></script>
@@ -67,8 +67,8 @@
 
   {# JavaScript -#}
   {% for js in layout.js %}
-    {%if not js.head %}
-      {%if js.inline %}
+    {% if not js.head %}
+      {% if js.inline %}
         <script>{{ js.src | safe -}}</script>
       {% else %}
         <script src="{{js.src}}" {%if js.async %}async{% endif %} {%if js.defer %}defer{% endif %}></script>
