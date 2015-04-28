@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {# Page Title -#}
-  <title>Watson Design Library{{ layout.title }}</title>
+  <title>Watson Design Guide{{ layout.title }}</title>
 
   {# CSS -#}
   <link rel="stylesheet" href="/css/crick.css">
@@ -16,8 +16,8 @@
 
   {# JavaScript -#}
   {% for js in layout.js %}
-    {% if js.head %}
-      {% if js.inline %}
+    {%if js.head %}
+      {%if js.inline %}
         <script>{{ js.src | safe -}}</script>
       {% else %}
         <script src="{{js.src}}" {%if js.async %}async{% endif %} {%if js.defer %}defer{% endif %}></script>
@@ -29,21 +29,46 @@
 <body>
 
   {# Page Heading -#}
-  {% if layout.heading %}
   <header library-class="heading">
-    {{ layout.heading.navigation | safe -}}
+    {% if navigation.main %}
+    <nav>
+      {% for nav in navigation.main %}
+      <a href="/{{ nav.url }}">{{ nav.title }}</a>
+      {% endfor %}
+    </nav>
+    {% endif %}
   </header>
-  {% endif %}
 
   {# Page Body -#}
   <main library-class="body">
-    {{ layout.content | safe -}}
+    {% if navigation.sub %}
+    <aside library-class="subnav">
+      <nav>
+        {% for subnav in navigation.sub %}
+          {% if subnav.url %}
+          <a href="{{ subnav.url }}">{{ subnav.title }}</a>
+          {% else %}
+          <strong>{{ subnav.title }}</strong>
+          <ul>
+            {% for subnavItem in subnav.subnav %}
+            <li><a href="{{ subnavItem.url }}">{{ subnavItem.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        {% endfor %}
+      </nav>
+
+    </aside>
+    {% endif %}
+    <article library-class="main-content">
+      {{ layout.content | safe -}}
+    </article>
   </main>
 
   {# JavaScript -#}
   {% for js in layout.js %}
-    {% if not js.head %}
-      {% if js.inline %}
+    {%if not js.head %}
+      {%if js.inline %}
         <script>{{ js.src | safe -}}</script>
       {% else %}
         <script src="{{js.src}}" {%if js.async %}async{% endif %} {%if js.defer %}defer{% endif %}></script>
