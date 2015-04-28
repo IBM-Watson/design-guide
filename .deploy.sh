@@ -7,8 +7,9 @@ set -e # exit with nonzero exit code if anything fails
 
 if [ "$TRAVIS_BRANCH" = "master" ]
   then
-    # Copy goodies from .www to www (build folder)
-    cp -r .www/ www/
+    # Copy CNAME from .www to www (build folder)
+    mv .www/CNAME www/CNAME
+
     # Move to build folder and init it
     cd www
     git init
