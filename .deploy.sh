@@ -15,7 +15,7 @@ if [ "$TRAVIS_BRANCH" = "master" ]
 
     # Configure Git
     git config user.name "Travis CI"
-    git config user.email "travis@watson.ibm"
+    git config user.email "sam.richard@us.ibm.com"
 
     # Commit all the things into the repo
     git add .
