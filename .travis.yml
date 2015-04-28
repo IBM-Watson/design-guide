@@ -14,7 +14,7 @@ script:
   - sh ./.deploy.sh
 env:
   global:
-    - GH_REF: github.com/IBM-Watson/design-library
+    - GH_REF: github.com/IBM-Watson/design-library.git
     - secure: "ZaEkng1TALd1FianddZJmahdIBTW9QBfwOjxaYDG+PkBc8zEBM4pR+BbBzG5UT5huVGJ91SssWL5Xvx+yqWIbY2N1/vFzzCkgAzt+B0vWQim15oezyxtX8sREF3/RjjRzQ9kQ58JyYk6oigwu191eINyVVwn7pjxuApa0gwFcOM="
 notifications:
   slack:
