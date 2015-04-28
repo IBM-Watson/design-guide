@@ -1,7 +1,7 @@
 # Watson Design Library Changelog
 
 ## v1.0.0-rc.2
-*April 23, 2015*
+*April 27, 2015*
 
 **New**
 
@@ -11,3 +11,4 @@
 **Changes**
 
 * :memo: Update the Contributing guidelines
+* Update `layout` template to use new navigation variables
