@@ -1,7 +1,7 @@
 %base--thead {
   font-weight: bold;
   color: color('white');
-  background-color: setting-get('primary color');
+  background-color: color('gray');
 }
 
 %base--td {

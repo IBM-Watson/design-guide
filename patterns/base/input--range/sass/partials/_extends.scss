@@ -1,14 +1,14 @@
 // @import '../../../input/sass/partials/extends';
-@import 'vars';
+@import 'settings';
 @import 'mixins';
 
 %base--range-input {
   @extend %base--input;
-  height: $range-height;
+  height: setting-get('range height');
   padding: 0;
   background-color: color('white');
-  border-radius: $range-height;
-  box-shadow: inset 0 0 0 $range-outline setting-get('input border color');
+  border-radius: setting-get('range height');
+  box-shadow: inset 0 0 0 setting-get('range outline width') setting-get('input border color');
 
   &:hover,
   &:focus {
@@ -20,11 +20,11 @@
   }
 
   &::-moz-range-track {
-    height: $range-height;
+    height: setting-get('range height');
     padding: 0;
     background-color: color('white');
-    border-radius: $range-height;
-    box-shadow: inset 0 0 0 $range-outline setting-get('input border color');
+    border-radius: setting-get('range height');
+    box-shadow: inset 0 0 0 setting-get('range outline width') setting-get('input border color');
   }
 
   @include range--thumb('webkit', 'slider');

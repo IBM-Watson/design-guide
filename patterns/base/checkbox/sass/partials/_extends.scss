@@ -10,13 +10,13 @@
       height: .8em;
       margin-right: 1em;
       vertical-align: middle;
-      border: $input-border-width solid color('gray', 30);
+      border: setting-get('input border width') solid color('gray', 30);
       content: '';
     }
   }
 
   &:checked + label:before {
     background: color('gray', 80);
-    box-shadow: inset 0 0 0 $input-border-width/1.5 color('white');
+    box-shadow: inset 0 0 0 setting-get('input border width')/1.5 color('white');
   }
 }
