@@ -26,42 +26,6 @@ Properties are the elements of an object that will change over time. The propert
 
 For more information about why these properties are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
-General list of animatable properties:
-- `background-color`
-- `border-width`
-- `clip`
-- `font-size`
-- `left`
-- `margin`
-- `min-height`
-- `outline-color`
-- `padding`
-- `text-shadow`
-- `visibility`
-- `z-index`
-- `background-position`
-- `border-spacing`
-- `color`
-- `font-weight`
-- `letter-spacing`
-- `max-height`
-- `min-width`
-- `outline-offset`
-- `right`
-- `top`
-- `width`
-- `border-color`
-- `bottom`
-- `crop`
-- `height`
-- `line-height`
-- `max-width`
-- `opacity`
-- `outline-width`
-- `text-indent`
-- `vertical-align`
-- `word-spacing`
-
 A great example of all the animatable properties can be seen [here.](http://leaverou.github.io/animatable/)
 
 
