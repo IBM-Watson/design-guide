@@ -1,9 +1,8 @@
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
-  border-radius: 0.3em;
-  margin-bottom: 2em;
-  max-height: 500px;
-}
+<ul role="radiogroup" class="base--radiogroup">
+  {% for radio in radios %}
+  {% set radio = {id: 'radio-' + loop.index, label: radio} %}
+  <li class="radiogroup--item">
+    {% pattern radio from base %}
+  </li>
+  {% endfor %}
+</ul>
