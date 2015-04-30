@@ -212,39 +212,39 @@ For example, one can implement `@include animate('fade-in');` or `@include anima
 The current animations provided are:
 
 Entrance Animations
-- fade-in
-- fade-in--up
-- fade-in--down
-- fade-in--left
-- fade-in--right
-- slide-in--up
-- slide-in--down
-- slide-in--left
-- slide-in--right
+- `fade-in`
+- `fade-in--up`
+- `fade-in--down`
+- `fade-in--left`
+- `fade-in--right`
+- `slide-in--up`
+- `slide-in--down`
+- `slide-in--left`
+- `slide-in--right`
 
 Exit Animations
-- fade-out
-- fade-out--up
-- fade-out--down
-- fade-out--left
-- fade-out--right
-- slide-out--up
-- slide-out--down
-- slide-out--left
-- slide-out--right
+- `fade-out`
+- `fade-out--up`
+- `fade-out--down`
+- `fade-out--left`
+- `fade-out--right`
+- `slide-out--up`
+- `slide-out--down`
+- `slide-out--left`
+- `slide-out--right`
 
 ### Timing Functions
 
 The current timing functions provided are:
 
-- ease-in
-- ease-out
-- bounce-out
-- bounce-in
-- bounce-in-out
-- snap-in
-- snap-out
-- snap-in-out
+- `ease-in`
+- `ease-out`
+- `bounce-out`
+- `bounce-in`
+- `bounce-in-out`
+- `snap-in`
+- `snap-out`
+- `snap-in-out`
 
 Timing functions are mathematical equations that creates a bezier curve which is: a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like: ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves”.
 
