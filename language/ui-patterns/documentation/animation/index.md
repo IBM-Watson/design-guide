@@ -57,9 +57,9 @@ When animating only a single property, follow the guidelines below.
 Using bounces eases to add the snap in factor that is lost if two properties are not used. These bounces are snappy bounces, not physics-based bounces.
 
   * Use of Timing Functions:
-    * Entrances = `map-get($timing-function, bounce-in)` (Fast to Slow) 
-    * Exits = `map-get($timing-function, bounce-out)` (Slow to Fast)
-    * Interactive Elements = `map-get($timing-function, bounce-in-out)`
+    * **Entrances** = `map-get($timing-function, bounce-in)` (Fast to Slow) 
+    * **Exits** = `map-get($timing-function, bounce-out)` (Slow to Fast)
+    * **Interactive Elements** = `map-get($timing-function, bounce-in-out)`
 
 ### Multiple Property Animations
 
@@ -128,9 +128,9 @@ Both properties start at the same time then one property ends before the other.
 Using snap in eases addes very strong eases to quick movements which enhances the elegant machine motion metaphor.
 
 * Use of Timing Functions: 
-  * Entrances = `map-get($timing-function, snap-in)` (Fast to Slow) 
-  * Exits = `map-get($timing-function, snap-out)` (Slow to Fast)
-  * Interactive Elements = `map-get($timing-function, snap-in-out)`
+  * **Entrances** = `map-get($timing-function, snap-in)` (Fast to Slow) 
+  * **Exits** = `map-get($timing-function, snap-out)` (Slow to Fast)
+  * **Interactive Elements** = `map-get($timing-function, snap-in-out)`
 
 
 ## Singular vs. Sequence of Actions
