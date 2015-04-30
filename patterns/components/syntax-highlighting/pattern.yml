@@ -1,8 +1,4 @@
-name: Radio Group
-description: A group of radio buttons
+name: Syntax Highlighting
+description: Syntax highlighting for code blocks and inline code
 displayTemplate: pattern
 variables:
-  radios:
-    - First Option
-    - Second Option
-    - Third Option
