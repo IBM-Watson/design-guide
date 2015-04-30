@@ -26,7 +26,7 @@ Properties are the elements of an object that will change over time. The propert
 
 For more information about why these properties are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
-A great example of all the animatable properties can be seen [here.](http://leaverou.github.io/animatable/)
+To see a full list of properties and examples of them animating visit [Animatable.](http://leaverou.github.io/animatable/)
 
 
 ### Single Property Animations
