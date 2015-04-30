@@ -5,10 +5,118 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
-.base--radiogroup {
-  @extend %base--radiogroup;
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #fff;
+  font-family: 'Source Code Pro', Lucida Console, Andale Mono, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
-.radiogroup--item {
-  @extend %radiogroup--item;
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+  margin-bottom: 2em;
+  max-height: 500px;
 }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: $grey-80;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .25em;
+  font-size: .8em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #fff;
+}
+
+.token.punctuation {
+  color: #fff;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: $magenta-30;
+}
+
+.token.boolean,
+.token.number {
+  color: $purple-20;
+}
+
+.token.selector,
+.token.attr-name,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: $green-20;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: $grey-10;
+}
+
+.token.atrule,
+.token.string,
+.token.attr-value,
+.token.function {
+  color: $yellow-10;
+}
+
+.token.keyword {
+  color: $blue-20;
+}
+
+.token.regex,
+.token.important {
+  color: $orange-20;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
