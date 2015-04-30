@@ -26,5 +26,5 @@ Import Modernizr to the base html.
 - SVG and Gif fallback animations are housed in the `img` folder
 
 - All of the Animation is housed within the SVG file. There are 2 types of animation in the SVG file:
-  - `SMIL`- Animates the smaller elements like strokes and dots animating 
+  - SMIL`- Animates the smaller elements like strokes and dots animating 
   - `CSS` - Animate the larger elements like scaling of the entire SVG
