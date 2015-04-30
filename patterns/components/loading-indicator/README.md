@@ -19,7 +19,7 @@ Copy the two images `WatsonAvatar.svg` & `WatsonAvatar.gif` within the image fol
 Import Modernizr to the base html.
 
 ```html
-<script src="js/modernizr.svg-smil.js" type="text/javascript"></script> 
+<script src="js/modernizr.svg-smil.min.js" type="text/javascript"></script> 
 ```
 
 ### SVG Animations
