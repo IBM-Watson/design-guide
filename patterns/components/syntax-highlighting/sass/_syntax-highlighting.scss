@@ -9,15 +9,11 @@
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #fff;
+  color: color('white');
 }
 
 .token.punctuation {
-  color: #fff;
-}
-
-.namespace {
-  opacity: .7;
+  color: color('white');
 }
 
 .token.property,
@@ -25,12 +21,12 @@
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: $magenta-30;
+  color: color('magenta', 30);
 }
 
 .token.boolean,
 .token.number {
-  color: $purple-20;
+  color: color('purple', 20);
 }
 
 .token.selector,
@@ -38,7 +34,7 @@
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: $green-20;
+  color: color('green', 20);
 }
 
 .token.operator,
@@ -47,23 +43,23 @@
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: $grey-10;
+  color: color('gray', 10);
 }
 
 .token.atrule,
 .token.string,
 .token.attr-value,
 .token.function {
-  color: $yellow-10;
+  color: color('yellow', 10);
 }
 
 .token.keyword {
-  color: $blue-20;
+  color: color('blue', 20);
 }
 
 .token.regex,
 .token.important {
-  color: $orange-20;
+  color: color('orange', 20);
 }
 
 .token.important,
