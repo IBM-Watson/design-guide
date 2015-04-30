@@ -5,48 +5,6 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #fff;
-  font-family: 'Source Code Pro', Lucida Console, Andale Mono, monospace;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  line-height: 1.5;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
-  border-radius: 0.3em;
-  margin-bottom: 2em;
-  max-height: 500px;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: $grey-80;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .25em;
-  font-size: .8em;
-}
-
 .token.comment,
 .token.prolog,
 .token.doctype,
