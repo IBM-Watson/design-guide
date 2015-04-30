@@ -15,7 +15,7 @@ The overarching metaphor for our animation comes from the IBM Design Language me
 
 ## Properties
 
-Properties are the elements of an object that will change over time. The properties you can animate within CSS are listed below. We recommend using the most performant properties first. If the desired effect cannot be achieved, use the general list of properties as a fallback.
+Properties are the elements of an object that will change over time. The properties that can animate within CSS are listed below. We recommend using the most performant properties first. If the desired effect cannot be achieved, use the general list of properties as a fallback.
 
 **Most Performant Properties**
 
@@ -67,14 +67,14 @@ A great example of all the animatable properties can be seen [here.](http://leav
 
 ### Single Property Animations
 
-When animating only a single property, you should follow the guidelines below. 
+When animating only a single property, follow the guidelines below. 
 
 ![Scaling of a box from 0% to 100%](images/motion/examples/Single_Attribute-1.gif)
 
 ```scss
 //box class
 .single-attribute {
-  animation: single-attribute 1s $bounce-in;
+  animation: single-attribute 1s map-get($timing-function, bounce-in);
 }
 
 //keyframes for animation
@@ -90,12 +90,12 @@ When animating only a single property, you should follow the guidelines below.
 
 **Timing Function**
 
-Using bounces eases to add the snap in factor that is lost if you don't use two properties. These bounces are snappy bounces, not physics-based bounces.
+Using bounces eases to add the snap in factor that is lost if two properties are not used. These bounces are snappy bounces, not physics-based bounces.
 
   * Use of Timing Functions:
-    * Entrances = `$bounce-in` (Fast to Slow) 
-    * Exits = `$bounce-out` (Slow to Fast)
-    * Interactive Elements = `$bounce-in-out`
+    * Entrances = `map-get($timing-function, bounce-in)` (Fast to Slow) 
+    * Exits = `map-get($timing-function, bounce-out)` (Slow to Fast)
+    * Interactive Elements = `map-get($timing-function, bounce-in-out)`
 
 ### Multiple Property Animations
 
@@ -110,7 +110,7 @@ Start one property alone then animate the additional properties.
 ```scss
 //box class
 .animation-a {
-  animation: animation-a 1s $snap-in;
+  animation: animation-a 1s map-get($timing-function, snap-in);
   transform-origin: 0% 100%;
 }
 
@@ -138,7 +138,7 @@ Both properties start at the same time then one property ends before the other.
 ```scss
 //box class
 .animation-b {
-  animation: animation-b 1s $snap-in;
+  animation: animation-b 1s map-get($timing-function, snap-in);
   transform-origin: 0% 100%;
 }
 
@@ -164,9 +164,9 @@ Both properties start at the same time then one property ends before the other.
 Using snap in eases addes very strong eases to quick movements which enhances the elegant machine motion metaphor.
 
 * Use of Timing Functions: 
-  * Entrances = `$snap-in` (Fast to Slow) 
-  * Exits = `$snap-out` (Slow to Fast)
-  * Interactive Elements = `$snap-in-out`
+  * Entrances = `map-get($timing-function, snap-in)` (Fast to Slow) 
+  * Exits = `map-get($timing-function, snap-out)` (Slow to Fast)
+  * Interactive Elements = `map-get($timing-function, snap-in-out)`
 
 
 ## Singular vs. Sequence of Actions
@@ -182,7 +182,7 @@ A singluar action animation occurs when only one element on the screen is animat
 
 ### Sequence of Actions
 
-A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action, followed by a secondary action that complements the primary.
+A _sequence of actions_ animation is an animation in which multiple elements animation, typically a primary action then a secondary action that complements the primary action.
 
 ![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the hertical scale](images/motion/examples/secondary-action.gif)
 
@@ -241,9 +241,9 @@ $animations: (
 );
 ```
 
-In order to use any of these animations in your product, we have implemented an animate Sass mixin. All you need to do is include the animation on the element, by using the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify the duration and timing function, we have included the default values of 2s and ease-in.
+In order to use any of these animations in a product, we have implemented an animate Sass mixin. All that is needed to include the animation on the element, by using the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If duration and timing function are not specified, we have included the default values of 2s and ease-in.
 
-For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
+For example, one can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
 
 The current animations provided are:
 
