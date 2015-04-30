@@ -1,0 +1,25 @@
+#########################
+## Modernizr Configuration
+#########################
+modernizr:
+  classPrefix: ''
+  'feature-detects':
+    - svg/smil
+
+
+#########################
+## JavaScript Assets to Include, in order
+##
+## Use <<modernizr>> to include the custom Modernizr build from above
+#########################
+js:
+  modernizr:
+    - <<modernizr>>
+  app:
+    - bower_components/prism/prism.js
+    - bower_components/prism/components/prism-css.js
+    - bower_components/prism/components/prism-css-extras.js
+    - bower_components/prism/components/prism-git.js
+    - bower_components/prism/components/prism-http.js
+    - bower_components/prism/components/prism-markup.js
+    - bower_components/prism/components/prism-javascript.js
