@@ -1,0 +1,31 @@
+// @import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.loader {
+  width: 100%;
+
+  // Loader Fallback
+  &--fallback {
+    // If SMIL is available
+    .smil & {
+      display: none;
+    }
+    // If SMIL is not available
+    .no-smil &,
+    .no-svg & {
+      display: block;
+    }
+  }
+
+  &--svg {
+    // If SMIL or SVG are not available
+    .no-svg &,
+    .no-smil & {
+      display: none;
+    }
+  }
+}
