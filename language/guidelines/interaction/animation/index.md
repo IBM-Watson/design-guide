@@ -2,7 +2,7 @@
 type: guideline
 title: Animation
 variables:
-  example:
+  examples:
     animationBefore:
       title: "Before"
       visualDisplay: videos/animation/example-animation-1.webm
