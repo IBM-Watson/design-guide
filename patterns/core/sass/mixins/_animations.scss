@@ -45,7 +45,7 @@
 // Usage:
 //
 // @include animate(fade-in);
-// @include animate(fade-in, 3s, $ibm-snapin);
+// @include animate(fade-in, 3s, snapin);
 //////////////////////////////
 @mixin animate($name, $duration: 2s, $timing: ease-in) {
   $exists: index($included-animations, '#{$name}');
