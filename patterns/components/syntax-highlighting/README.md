@@ -7,4 +7,4 @@ Syntax highlighting uses Prism, a lightweight, extensible syntax highlighter, to
 Styling can be applied in the following ways:
 
 * include the `prism.css` and `prism.js` 
-* `css` `html` `javascript` `sass` - included languages classes
+* `language-css` `language-html` `language-javascript` `language-sass` - included language classes
