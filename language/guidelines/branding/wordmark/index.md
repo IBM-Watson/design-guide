@@ -73,7 +73,7 @@ For an app that has been developed by an Ecosystem partner using IBM Watson, and
 
 ### Spacing considerations
 
-Use only the supplied artwork when using the wordmark or logotype. It is important to include adequate spacing around these elements to avoid visual clutter.
+It is important to include adequate spacing around these elements to avoid visual clutter. Keep the area around the IBM Watson wordmark separated from other visual elements by a distance approximately equal to the height of the IBM Watson wordmark. This distance is considered the minimum uninterrupted space surrounding the mark.
 
 {{> SomeFunctionHere example.wordmarkSpacing}}
 
