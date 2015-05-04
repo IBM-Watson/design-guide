@@ -2,9 +2,7 @@
 
 All documentation, guidelines, assets, etc… licensed as follows:
 
-[![Creative Commons License - By 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
-
-Watson Design Guide documentation by [International Business Machines Corporation](http://www.ibm.com/us/en/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Based on a work at [https://github.com/IBM-Watson/design-library](https://github.com/IBM-Watson/design-library).
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Watson Design Guide documentation</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.ibm.com/us/en/" property="cc:attributionName" rel="cc:attributionURL">International Business Machines Corporation</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/IBM-Watson/design-library" rel="dct:source">https://github.com/IBM-Watson/design-library</a>.
 
 ## Code
 
