@@ -5,6 +5,16 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
+pre[class^="language-"],
+pre[class*=" language-"] {
+  background: color('gray', 80);
+
+ > code[class^="language-"],
+ > code[class*=" language-"] {
+    color: color('gray', 10);
+  }
+}
+
 .token.comment,
 .token.prolog,
 .token.doctype,
