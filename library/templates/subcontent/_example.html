@@ -21,6 +21,9 @@
 <div library-class="example--SMALL">
   {{ title(example) }}
   {{ media.object(example) }}
+  {% if example.description %}
+    <p library-class="example--description">{{ example.description }}</p>
+  {% endif %}
 </div>
 {% endmacro %}
 
