@@ -13,15 +13,9 @@ variables:
     logo:
       title: Logo
       visualDisplay: /images/wordmark/logo.svg
-    poweredWordmark:
-      title: Ecosystem Partner Wordmark
-      visualDisplay: /images/wordmark/powered-wordmark.svg
     wordmarkSpacing:
       title: Wordmark
       visualDisplay: /images/wordmark/wordmark-spacing.svg
-    poweredSpacing:
-      title: Ecosystem Partner Wordmark
-      visualDisplay: /images/wordmark/powered-wordmark-spacing.svg
     wordmarkColor:
       light:
         title: Wordmark
@@ -34,12 +28,6 @@ variables:
         visualDisplay: /images/wordmark/logo-color-pos.svg
       dark:
         visualDisplay: /images/wordmark/logo-color-neg.svg
-    poweredColor:
-      light:
-        title: Ecosystem Partner Wordmark
-        visualDisplay: /images/wordmark/powered-wordmark-color-pos.svg
-      dark:
-        visualDisplay: /images/wordmark/powered-wordmark-color-neg.svg
     incorrectUsage:
       reconfigure:
         title: "Do not reconfigure"
@@ -65,12 +53,6 @@ The IBM Watson wordmark and logo represents our brand and should be managed care
 
 {{> SomeFunctionHere example.logo}}
 
-### Powered by IBM Watson™ Wordmark
-
-For an app that has been developed by an Ecosystem partner using IBM Watson, and has either launched for commercial release or is in late-stage development, the recommended mark is "Powered by IBM Watson™". Use the wordmark within applications on screens specific to IBM Watson capabilities and on application-specific websites or communications that refer to IBM Watson technology.
-
-{{> SomeFunctionHere example.poweredWordmark}}
-
 ## Specifications
 
 ### Spacing considerations
@@ -78,8 +60,6 @@ For an app that has been developed by an Ecosystem partner using IBM Watson, and
 It is important to include adequate spacing around these elements to avoid visual clutter. Keep the area around the IBM Watson wordmark separated from other visual elements by a distance approximately equal to the height of the IBM Watson wordmark. This distance is considered the minimum uninterrupted space surrounding the mark.
 
 {{> SomeFunctionHere example.wordmarkSpacing}}
-
-{{> SomeFunctionHere example.poweredSpacing}}
 
 ### Color Usage
 
@@ -92,10 +72,6 @@ The wordmark and logo for IBM Watson should only appear in the approved color co
 {{> SomeFunctionHere example.logoColor.light}}
 
 {{> SomeFunctionHere example.logoColor.dark}}
-
-{{> SomeFunctionHere example.poweredColor.light}}
-
-{{> SomeFunctionHere example.poweredColor.dark}}
 
 ### Incorrect Usage
 
