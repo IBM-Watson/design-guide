@@ -10,12 +10,12 @@ resources:
 
 ## Animation Guidelines
 
-The metaphor for animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation with subtle offsets.
+The overarching metaphor for our animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation, plus subtle offsets.
 
 
 ## Properties
 
-Properties are the elements of an object that will change over time. Below are the properties you can animate within CSS. It is recommended to use the most performant properties first. If the effect cannot be achieved, use the general list of properties as a fall back if the effect cannot be achieved using those.
+Properties are the elements of an object that will change over time. The properties that can animate within CSS are listed below. We recommend using the most performant properties first. If the desired effect cannot be achieved, use the general list of properties as a fallback.
 
 **Most Performant Properties**
 
@@ -24,57 +24,21 @@ Properties are the elements of an object that will change over time. Below are t
 * Rotation: `transform: rotate(ndeg);`
 * Opacity: `opacity: 0...1;`
 
-More Information about why these are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+For more information about why these properties are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
-General list of the other properties you can animate:
-- `background-color`
-- `border-width`
-- `clip`
-- `font-size`
-- `left`
-- `margin`
-- `min-height`
-- `outline-color`
-- `padding`
-- `text-shadow`
-- `visibility`
-- `z-index`
-- `background-position`
-- `border-spacing`
-- `color`
-- `font-weight`
-- `letter-spacing`
-- `max-height`
-- `min-width`
-- `outline-offset`
-- `right`
-- `top`
-- `width`
-- `border-color`
-- `bottom`
-- `crop`
-- `height`
-- `line-height`
-- `max-width`
-- `opacity`
-- `outline-width`
-- `text-indent`
-- `vertical-align`
-- `word-spacing`
-
-Great example of all the different properties that can be animated [here.](http://leaverou.github.io/animatable/)
+To see a full list of animatable properties and examples of them animating visit [Animatable.](http://leaverou.github.io/animatable/)
 
 
 ### Single Property Animations
 
-When animating only a single property one should follow the guidelines below. 
+When animating only a single property, follow the guidelines below. 
 
-![Single-Attribute](images/motion/examples/Single_Attribute-1.gif)
+![Scaling of a box from 0% to 100%](images/motion/examples/Single_Attribute-1.gif)
 
 ```scss
 //box class
 .single-attribute {
-  animation: single-attribute 1s $ibm-bouncein;
+  animation: single-attribute 1s map-get($timing-function, bounce-in);
 }
 
 //keyframes for animation
@@ -86,30 +50,31 @@ When animating only a single property one should follow the guidelines below.
     transform: scale(1);
   }
 }
-```	
+``` 
 
-**Easing Curves**
+**Timing Function**
 
-* Add bounces eases - this add the snap in factor that is lost if you don’t use two properties.
-* Snappy Bounces not physics based bouncing.
-	* Use of Easing Curves:
-		* Entrances = `$bounce-in` (Fast to Slow) 
-		* Exits = `$bounce-out` (Slow to Fast)
-		* Interactive Elements = `$bounce-in-out`
+Use bounce eases to add the snap-in factor that is typically achieved with multiple properties. Bounce eases are snappy bounces, not physics-based bounces.
+
+  * Use of Timing Functions:
+    * **Entrances** - `map-get($timing-function, bounce-in)` (Fast to Slow) 
+    * **Exits** - `map-get($timing-function, bounce-out)` (Slow to Fast)
+    * **Interactive Elements** - `map-get($timing-function, bounce-in-out)`
 
 ### Multiple Property Animations
 
-Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take. Direction 1 - Start one property alone then animate the additional properties. Direction 2 - Both Properties start at the same time then one property ends before the other. Don’t start AND stop multiple properties at the same time. Choose one or the other.
+Multiple property animations are animations where multiple properties are being animated together. With multiple property animations there are two different options. The first option is to start one property alone, then animate any additional properties. The second option is for both properties to start at the same time, then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
 
-**Direction 1**
-Start one property alone then animate the additional properties.
+**Option One**
 
-![Direction-1](images/motion/examples/Option-A.gif)
+Start one property alone, then animate any additional properties.
+
+![Scaling box animation starting with X axis scale then the Y axis scale follows.](images/motion/examples/Option-A.gif)
 
 ```scss
 //box class
 .animation-a {
-  animation: animation-a 1s $ibm-snapin;
+  animation: animation-a 1s map-get($timing-function, snap-in);
   transform-origin: 0% 100%;
 }
 
@@ -127,16 +92,17 @@ Start one property alone then animate the additional properties.
 }
 ```
 
-**Direction 2**
-Both Properties start at the same time then one property ends before the other.
+**Option Two**
+
+Both properties start at the same time, then one property ends before the other.
 
 
-![Direction-2](images/motion/examples/Option-B.gif)
+![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](images/motion/examples/Option-B.gif)
 
 ```scss
 //box class
 .animation-b {
-  animation: animation-b 1s $ibm-snapin;
+  animation: animation-b 1s map-get($timing-function, snap-in);
   transform-origin: 0% 100%;
 }
 
@@ -157,37 +123,128 @@ Both Properties start at the same time then one property ends before the other.
 }
 ```
 
-**Easing Curves**
-* Use of Easing Curves: 
-	* Entrances = `$snap-in` (Fast to Slow) 
-	* Exits = `$snap-out` (Slow to Fast)
-	* Interactive Elements = `$snap-in-out`
+**Timing Function**
+
+Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
+
+* Use of Timing Functions: 
+  * **Entrances** - `map-get($timing-function, snap-in)` (Fast to Slow) 
+  * **Exits** - `map-get($timing-function, snap-out)` (Slow to Fast)
+  * **Interactive Elements** - `map-get($timing-function, snap-in-out)`
 
 
 ## Singular vs. Sequence of Actions
 
-Within UI there are instances where only one element moves vs. multiple elements a sequence of elements. Below are the guidelines for those instances.
+Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions.
 
 
 ### Singular Action
 
-A Singluar action animation is when you animate only one element on the screen & does not contain complementary elements.
+A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
 ![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
-A Sequence of actions animation is where you have multiple elements typically a Primary Action then a Secondary action which complements the Primary.
+A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the hertical scale](images/motion/examples/secondary-action.gif)
+![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](images/motion/examples/secondary-action.gif)
 
-In the example above, the text animations and delay enhance by following the lead of the primary action (scaling of the box).
+In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
-#### Things to consider with Sequence of Actions
+#### Things to Consider with Sequence of Actions
 
- * Choreography: - Elements should have coordinate within hierarchy.
+  * Choreography: elements should coordinate within the determined hierarchy.
+  * Delays: delays need to be consistent and should have the same rate across similar content.
 
-### Delays
+## Animation Library Implementation
 
-Delays need to be consistent - needs to have the same rate across similar content.
+All of the animations live within an animation map. It looks a bit like this:
+
+```scss 
+$animations: (
+  'fade-in': (
+    0%: (
+      opacity: 0
+    ),
+    100%: (
+      opacity: 1
+    )
+  ),
+  'slide-in--left' : (
+    0%: (
+      transform: translateY(-100%)
+    ),
+    100%: (
+      transform: translateY(0)
+    )
+  ),
+  'slide-in--right' : (
+    0%: (
+      transform: translateY(100%)
+    ),
+    100%: (
+      transform: translateY(0)
+    )
+  )
+);
+```
+
+This is the format of the map, and everything between <> is a string:
+
+```scss
+$animations: (
+  '<animation name>': (
+    <keyframe%>: (
+      <property>: <value>;
+    ),
+    <keyframe%>: (
+      <property>: <value>;
+    )
+  )
+);
+```
+
+In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. We have included defaults for duration (2s) and timing function (ease-in), in case you do not specify your own.
+
+For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
+
+We currently provide these animations:
+
+Entrance Animations
+- `fade-in`
+- `fade-in--up`
+- `fade-in--down`
+- `fade-in--left`
+- `fade-in--right`
+- `slide-in--up`
+- `slide-in--down`
+- `slide-in--left`
+- `slide-in--right`
+
+Exit Animations
+- `fade-out`
+- `fade-out--up`
+- `fade-out--down`
+- `fade-out--left`
+- `fade-out--right`
+- `slide-out--up`
+- `slide-out--down`
+- `slide-out--left`
+- `slide-out--right`
+
+### Timing Functions
+
+A timing function is a mathematical equation that creates a bezier curve, which is a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves."
+
+We currently provide these timing functions:
+
+- `ease-in`
+- `ease-out`
+- `bounce-out`
+- `bounce-in`
+- `bounce-in-out`
+- `snap-in`
+- `snap-out`
+- `snap-in-out`
 
