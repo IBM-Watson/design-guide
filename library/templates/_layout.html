@@ -21,7 +21,8 @@
 <body>
 
   {# Page Heading -#}
-  <header library-class="heading">
+  <header id="wdg-top" library-class="heading">
+    <a href="#wdg-main" library-class="a11y--hidden-focusable">Skip to Content</a>
     {% if navigation.main %}
     <nav>
       {% for nav in navigation.main %}
@@ -52,18 +53,22 @@
 
     </aside>
     {% endif %}
-    <article library-class="main-content">
+    <article id="wdg-main" library-class="main-content">
       {{ layout.content | safe -}}
-      {%if navigation.next || navigation.previous %}
         <footer library-class="main-content--footer">
-          {%if navigation.previous %}
-            <a href="{{ navigation.previous.url }}" library-class="main-content--previous">{{ navigation.previous.title }} <span library-class="icon">(previous)</span></a>
-          {% endif %}
-          {%if navigation.next %}
-            <a href="{{ navigation.next.url }}" library-class="main-content--next">{{ navigation.next.title }} <span library-class="icon">(next)</span></a>
-          {% endif %}
+        <a href="#wdg-top"><span library-class="icon">(top)</span> Back to top</a>
+        {%if navigation.next || navigation.previous %}
+          <div library-class="main-content--section-nav">
+            {%if navigation.previous %}
+              <a href="{{ navigation.previous.url }}" library-class="main-content--previous">{{ navigation.previous.title }} <span library-class="icon">(previous)</span></a>
+            {% endif %}
+            {%if navigation.next %}
+              <a href="{{ navigation.next.url }}" library-class="main-content--next">{{ navigation.next.title }} <span library-class="icon">(next)</span></a>
+            {% endif %}
+          </div>
+        {% endif %}
         </footer>
-      {% endif %}
+
     </article>
   </main>
 
