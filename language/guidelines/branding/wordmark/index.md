@@ -61,11 +61,13 @@ variables:
 
 The IBM Watson wordmark and logo represents our brand and should be managed carefully. It is typeset in a combination of Helvetica Neue Light and Helvetica Neue Bold to align with IBM standards. When possible, it should be used in all internal and external communications that focus on the IBM Watson brand.
 
-For an app that has been developed by an Ecosystem partner using IBM Watson, and has either launched for commercial release or is in late-stage development, the recommended mark is "Powered by IBM Watson™". Use the wordmark within applications on screens specific to IBM Watson capabilities and on application-specific websites or communications that refer to IBM Watson technology.
-
 {{> SomeFunctionHere example.wordmark}}
 
 {{> SomeFunctionHere example.logo}}
+
+### Powered by IBM Watson™ Wordmark
+
+For an app that has been developed by an Ecosystem partner using IBM Watson, and has either launched for commercial release or is in late-stage development, the recommended mark is "Powered by IBM Watson™". Use the wordmark within applications on screens specific to IBM Watson capabilities and on application-specific websites or communications that refer to IBM Watson technology.
 
 {{> SomeFunctionHere example.poweredWordmark}}
 
