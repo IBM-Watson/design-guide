@@ -54,6 +54,16 @@
     {% endif %}
     <article library-class="main-content">
       {{ layout.content | safe -}}
+      {%if navigation.next || navigation.previous %}
+        <footer library-class="main-content--footer">
+          {%if navigation.previous %}
+            <a href="{{ navigation.previous.url }}" library-class="main-content--previous">{{ navigation.previous.title }} <span library-class="icon">(previous)</span></a>
+          {% endif %}
+          {%if navigation.next %}
+            <a href="{{ navigation.next.url }}" library-class="main-content--next">{{ navigation.next.title }} <span library-class="icon">(next)</span></a>
+          {% endif %}
+        </footer>
+      {% endif %}
     </article>
   </main>
 
