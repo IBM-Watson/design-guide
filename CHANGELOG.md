@@ -15,6 +15,7 @@
 * Add `library` Sass file and folder
 * Change some details to examples in grids guidelines
 * Add sub-content templates to grids guidelines
+* Change detail to example
 
 ## v1.0.0-beta.3
 *April 28, 2015*
