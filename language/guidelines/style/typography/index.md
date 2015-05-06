@@ -5,20 +5,20 @@ variables:
   aside:
     usageRights:
       description: "We are currently in the process of inquiring about full usage rights and licensing for Helvetica Neue for IBM. During this time, we're unable to provide downloadable font assets. Please defer to the Cross-Platform Fontstack Options below for comparable fontstacks."
-  examples:
-    typefaceCombinationOne:
-      title: "Helvetica Neue Roman"
-      visualAlternative: "The quick brown fox jumped over the fence."
-    typefaceCombinationTwo:
-      title: "Helvetica Neue Roman Italic"
-      visualAlternative: "The quick brown fox jumped over the fence."
-    typefaceCombinationThree:
-      title: "Helvetica Neue Bold"
-      visualAlternative: "The quick brown fox jumped over the fence."
-    typefaceCombinationFour:
-      title: "Helvetica Neue Bold Italic"
-      visualAlternative: "The quick brown fox jumped over the fence."
-  detail:
+  example:
+    typefaceCombinations:
+      typefaceCombinationOne:
+        title: "Helvetica Neue Roman"
+        visualAlternative: "The quick brown fox jumped over the fence."
+      typefaceCombinationTwo:
+        title: "Helvetica Neue Roman Italic"
+        visualAlternative: "The quick brown fox jumped over the fence."
+      typefaceCombinationThree:
+        title: "Helvetica Neue Bold"
+        visualAlternative: "The quick brown fox jumped over the fence."
+      typefaceCombinationFour:
+        title: "Helvetica Neue Bold Italic"
+        visualAlternative: "The quick brown fox jumped over the fence."
     responsiveTypography:
       title: "Major Third with a breakpoint at 500px"
       visualDisplay: /videos/typography/responsive-typography.webm
@@ -37,7 +37,7 @@ As a rule and wherever possible, use Helvetica Neue. It is the font of science a
 
 When presenting large amounts of content, it is important to consider how multiple font downloads can affect the browser’s performance for the user. To ensure optimized performance for all users, IBM Watson recommends choosing a combination of no more than 4 different weights and styles (light and light oblique being 2 different styles, for instance). 
 
-{{ _example.compare(examples) }}
+{{ _example.compare(typefaceCombinations) }}
 
 ## Typographic Scale
 
@@ -47,7 +47,7 @@ The IBM Design Language recommends using [modular type scales](http://www.ibm.co
 
 IBM Watson recommends the Major Third ratio for screen sizes under 500px and the establishment of breakpoints for higher contrast on larger screens. This ratio is ideal for creating visual hierarchy on small screens without being too jarring.
 
-{{ _detail.view(detail.responsiveTypography) }}
+{{ _example.large(responsiveTypography) }}
 
 ## Cross-Platform Fontstack Options
 
