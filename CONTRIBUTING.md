@@ -22,6 +22,10 @@ The `patterns` folder contains all of the UI patterns and their documentation. D
 
 No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any pattern submissions that do will be asked to be rewritten without said dependencies. Acceptable JavaScript dependencies include core JavaScript that we provide and any current dependencies already included in the project. Any additional external dependencies will need to be approved before they can be used. Styling should be written without vendor prefixes. Only web standard features that have [moved beyond](http://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Specification_Maturation) the Candidate Recommendation stage (or equivalent for the relevant standards body) will be considered for inclusion.
 
+## Developing for the Watson Design Library
+
+Whether working on language, library, or patterns, there are a specific set of steps that should be followed in order contribute in a standard and consistent manner. Our wiki contains the full instructions for [setting up and working with the Watson Design Library](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Library).
+
 ## Submitting Issues
 
 * Before creating a new issue, perform a [cursory search](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+user%3Aibm-watson+) to see if a similar issue has already been submitted.
