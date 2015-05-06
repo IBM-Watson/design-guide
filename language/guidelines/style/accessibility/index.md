@@ -22,8 +22,8 @@ variables:
         - title: "Help users to distinguish links by using combinations of colors and underlines."
           description: "A log in page using colored text and an underline to indicate a link."
     accessibilityAnimation:
-        description: "When there is an animation that last longer than 5 seconds, provide the user a way to pause, stop, or hide the animation."
-        visualDisplay: videos/accessibility/motion-accessibility.webm
+      description: "When there is an animation that last longer than 5 seconds, provide the user a way to pause, stop, or hide the animation."
+      visualDisplay: videos/accessibility/motion-accessibility.webm
 ---
 
 When choosing colors and contrast ratios for typography it is important to adhere to the [IBM Design Language recommendations for accessibility](http://www.ibm.com/design/language/framework/visual/color.shtml#contrast), as we must meet [WCAG 2.0 AA requirements](http://www.w3.org/TR/WCAG20/). High color contrast helps users who are partially or completely color blind see differences between certain colors. It creates a strong visual hierarchy and improved usability for everyone. Never rely on color as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.  
