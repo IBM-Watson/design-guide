@@ -247,4 +247,3 @@ The current timing functions provided are:
 - `snap-in-out`
 
 Timing functions are mathematical equations that creates a bezier curve which is: a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like: ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves”.
-
