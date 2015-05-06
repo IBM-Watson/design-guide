@@ -58,6 +58,7 @@ No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any
 ### Branching Model
 
 * Branches must be made off of the most current `develop` branch from `git@github.com:IBM-Watson/design-library.git`
+* Branch names should be descriptive, describing what is being done in that branch
 * Pull requests must be made into our [develop](https://github.com/IBM-Watson/design-library/tree/develop) branch.
 * The following branch prefixes should be used when creating a new branch:
   * `hotfix/` - bug fixes that got through and need to be squashed
