@@ -47,7 +47,7 @@ variables:
         sentiment: negative
 ---
 
-The IBM Watson wordmark and logo represents our brand and should be managed carefully. It is typeset in a combination of Helvetica Neue Light and Helvetica Neue Bold to align with IBM standards. When possible, it should be used in all internal and external communications that focus on the IBM Watson brand.
+The IBM Watson wordmark and logo represents our brand and should be managed carefully. It is typeset in a combination of Helvetica Neue Light and Helvetica Neue Bold to align with [IBM standards](http://www.ibm.com/design/language/framework/visual/typography.shtml). When possible, it should be used in all internal and external communications that focus on the IBM Watson brand.
 
 {{ _example.compare(wordmark) }}
 
