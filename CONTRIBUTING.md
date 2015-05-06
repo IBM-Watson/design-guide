@@ -1,6 +1,6 @@
 # Contributing to the IBM Watson Design Library
 
-The Watson Design Library contains the design and development guidelines and resources for creating cognitive experiences. It's built using Sass and available via Bower, so it's easy to include all or part of it within your own project.
+The Watson Design Library contains the design and development guidelines and resources for creating cognitive experiences. It's built using Sass and available via Bower, so it's easy to include all or part of it within a project.
 
 _**Heads Up!** We love open source, but the Watson Design Library is unlikely to add new guidelines or features that are not in-line with the work we're doing or won't be used at IBM Watson. Inclusion is at the discretion of the Watson Design team. We really love to share, though, so hopefully that means we're still friends :blue_heart:_
 
@@ -29,9 +29,9 @@ Whether working on language, library, or patterns, there are a specific set of s
 ## Submitting Issues
 
 * Before creating a new issue, perform a [cursory search](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+user%3Aibm-watson+) to see if a similar issue has already been submitted.
-* You can create an issue [here](https://github.com/IBM-Watson/design-library/issues). Please include as many details as possible in your report.
+* Can create an issue [here](https://github.com/IBM-Watson/design-library/issues). Please include as many details as possible when filing an issue.
 * Issue titles should be descriptive, explaining at the high level what it is about, and should be written in the same style as [Git commit messages](#git-commit-messages).
-* Please include the version of the Design Library you are using/viewing
+* Please include the version of the Design Library being used or viewed
 * Do not open a [pull request](#pull-requests) to resolve an issue without first receiving feedback from a `collaborator` or `owner` and having them agree on a solution forward.
 * Include screenshots and animated GIFs whenever possible; they are immensely helpful.
 * When submitting a browser bug, please include the browser, version, operating system, and operating system version.
@@ -42,15 +42,14 @@ Whether working on language, library, or patterns, there are a specific set of s
 ## Pull Requests
 
 * **DO NOT ISSUE A PULL REQUEST WITHOUT FIRST [SUBMITTING AN ISSUE](#submitting-issues)**
-* Pull requests should reference their related issues. If the pull request closes an issue, [please reference its closing in your commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/). Pull requests not referencing any issues will be closed.
+* Pull requests should reference their related issues. If the pull request closes an issue, [please reference its closing from a commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/). Pull requests not referencing any issues will be closed.
 * Pull request titles should be descriptive, explaining at the high level what it is doing, and should be written in the same style as [Git commit messages](#git-commit-messages).
-* Update the `CHANGELOG` with the changes made by your pull request, making sure to use the proper [Emoji](#emoji-cheatsheet).
-* Make sure you have [installed the development environment](https://github.com/IBM-Watson/design-library#installation), [updated your runner to the latest version](https://github.com/IBM-Watson/design-library#updating-the-runner), and have [run the library locally](https://github.com/IBM-Watson/design-library#running-locally) to ensure that your code works properly.
+* Update the [CHANGELOG](#maintaining-thechangelog) with the changes made by the pull request, making sure to use the proper [Emoji](#emoji-cheatsheet).
+* Make sure that the steps for [Developing for the Watson Design Library](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Library) have been followed
 * Follow our JavaScript and CSS styleguides. We have linters set up to catch most of it.
-* Ensure that you have [EditorConfig](http://editorconfig.org/) installed in your editor of choice and that it is functioning properly.
-* Do not squash or rebase your commits when submitting a Pull Request. It makes it much harder to follow your work and make incremental changes.
-* Update the [CHANGELOG](#maintaining-thechangelog) with your changes.
-* Ensure no Emoji tags are used in the title of your Pull Request
+* Ensure that [EditorConfig](http://editorconfig.org/) installed in the editor used to work on the library and that it is functioning properly.
+* Do not squash or rebase commits when submitting a Pull Request. It makes it much harder to follow work and make incremental changes.
+* Ensure no Emoji tags are used in the title of the Pull Request
 
 ### Git Commit Messages
 
@@ -76,7 +75,7 @@ Whether working on language, library, or patterns, there are a specific set of s
 
 Versioning is done through [SEMVER](http://semver.org/). When creating a new version, issue a [pull request](#pull-requests) from `develop` into `master` and create new release branch off of `master` with the version's name, and create a new tag with `v` prefixed with the version's name from that branch. 
 
-For instance, if you are creating version `1.1.0`, you would start by merging `develop` into `master`, create a branch `release/1.1.0` from `master`, and create a tag `v1.1.0` from branch `release/1.1.0`.
+For instance, when creating version `1.1.0`, start by merging `develop` into `master`, create a branch `release/1.1.0` from `master`, and create a tag `v1.1.0` from branch `release/1.1.0`.
 
 ### Maintaining the Changelog
 
