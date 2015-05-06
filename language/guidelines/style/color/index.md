@@ -95,6 +95,6 @@ Choose a primary color, a secondary color, and an accent color. Additional tints
 
 Color is a powerful communication tool to determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users' attention.
 
-{{> example paletteApplication.light }}
+{{ _example.large(paletteApplication.light) }}
 
-{{> example paletteApplication.dark }}
+{{ _example.large(paletteApplication.dark) }}
