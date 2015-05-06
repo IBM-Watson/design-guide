@@ -56,7 +56,7 @@
     <article id="wdg-main" library-class="main-content">
       {{ layout.content | safe -}}
         <footer library-class="main-content--footer">
-        <a href="#wdg-top"><span library-class="icon">(top)</span> Back to top</a>
+        <a href="#wdg-top" library-class="main-content--back-to-top"><span library-class="icon">(top)</span> Back to top</a>
         {%if navigation.next || navigation.previous %}
           <div library-class="main-content--section-nav">
             {%if navigation.previous %}
