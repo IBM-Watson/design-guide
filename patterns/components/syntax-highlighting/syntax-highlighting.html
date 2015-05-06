@@ -1,7 +1,18 @@
 <pre><code class="language-markup">
-<form>
-<input type="radio" name="sex" value="male" checked>Male
-<br>
-<input type="radio" name="sex" value="female">Female
-</form>
+  <form>
+    <ul role="radiogroup" class="base--radiogroup">
+      <li class="radiogroup--item">
+          <input role="radio" class="base--radio" type="radio" id="fruit-options--apple" name="fruit" value="apple">
+          <label class="base--inline-label" for="fruit-options--apple">Apple</label>
+      </li>
+      <li class="radiogroup--item">
+          <input role="radio" class="base--radio" type="radio" id="fruit-options--banana" name="fruit" value="apple">
+          <label class="base--inline-label" for="fruit-options--banana">Banana</label>
+      </li>
+      <li class="radiogroup--item">
+          <input role="radio" class="base--radio" type="radio" id="fruit-options--orange" name="fruit" value="apple">
+          <label class="base--inline-label" for="fruit-options--orange">Orange</label>
+      </li>
+    </ul>
+  </form>
 </code></pre>
