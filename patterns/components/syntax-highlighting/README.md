@@ -6,6 +6,6 @@ Syntax highlighting uses Prism, a lightweight, extensible syntax highlighter, to
 
 Styling can be applied in the following ways:
 
-* include `syntax-highlighting.scss` in Sass folder
-* include `prism.js` in Bower folder - Install [Prism](http://prismjs.com/) from Bower
+* Include `syntax-highlighting.scss` in Sass folder
+* Install [Prism](http://prismjs.com/) from Bower
 * Add `language-xxx` class to a `<code>` block
