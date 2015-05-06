@@ -1,0 +1,86 @@
+// @import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+pre[class^="language-"],
+pre[class*=" language-"] {
+  background: color('gray', 80);
+
+ > code[class^="language-"],
+ > code[class*=" language-"] {
+    color: color('gray', 10);
+  }
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: color('white');
+}
+
+.token.punctuation {
+  color: color('white');
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: color('magenta', 30);
+}
+
+.token.boolean,
+.token.number {
+  color: color('purple', 20);
+}
+
+.token.selector,
+.token.attr-name,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: color('green', 20);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: color('gray', 10);
+}
+
+.token.atrule,
+.token.string,
+.token.attr-value,
+.token.function {
+  color: color('yellow', 10);
+}
+
+.token.keyword {
+  color: color('blue', 20);
+}
+
+.token.regex,
+.token.important {
+  color: color('orange', 20);
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+

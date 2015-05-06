@@ -1,0 +1,4 @@
+name: Syntax Highlighting
+description: Syntax highlighting for code blocks and inline code
+displayTemplate: pattern
+variables:
