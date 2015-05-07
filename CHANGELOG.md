@@ -15,6 +15,7 @@
 * Add `library` Sass file and folder
 * Add subcontent templates to typography guidelines
 * Change detail to large example
+* Update subcontent templates
 
 ## v1.0.0-beta.3
 *April 28, 2015*
