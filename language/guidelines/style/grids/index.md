@@ -49,7 +49,7 @@ Ratios can be used to help set the tone for compositions. Choose one that makes 
 
 ### Asymmetric Grid Examples
 
-{{ _example.compare(gridTypes) }}
+{{ _example.compare(example.gridTypes) }}
 
 ## Responsive Grids
 
@@ -59,4 +59,5 @@ When designing for the ever evolving, unstable medium of the web, we must take c
 
 When designing responsive grids, the smallest size should be designed first, using as close to real content as possible. The content and design determine the breaking point of that grid, not the device sizes, so it's necessary to work in the medium of the final product. In the web, this means low-fidelity wireframing in code and browser. Different combinations and types of content and content displays will likely require different breakpoints and different grids, sometimes requiring only one grid for the whole range of displays, sometimes requiring many grids. The responsive layouts created for these content and design pairs can and should be reused even if the individual grids and breakpoints that make them up are not.
 
-{{ _example.large(responsiveGridVideo) }}
+{{ _example.large(example.responsiveGridVideo) }}
+
