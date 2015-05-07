@@ -25,7 +25,7 @@ variables:
           description: "These are modules that display available actions."
     offerThree:
       visualDisplay: images/principles/offer-three.svg
-      description: "Provide manual personalization options that are performed by the user, such as feedback mechanisms for use\"teach\" Watson."
+      description: "Provide manual personalization options that are performed by the user, such as feedback mechanisms for users to \"teach\" Watson."
       callout:
         - title: "\"Teach Watson which filters are important to you\""
           description: "This is copy that displays above the filter modules."
