@@ -3,8 +3,8 @@ type: guideline
 title: Wordmark and Logo
 resources:
   files:
-    name: "Wordmark and Logo SVG"
-    source: /images/wordmark/watson_wordmark_logotype.zip
+    - name: "Wordmark and Logo SVG"
+      source: /images/wordmark/watson_wordmark_logotype.zip
 variables:
   example:
     firstCompare:
