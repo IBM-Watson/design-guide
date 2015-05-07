@@ -17,10 +17,10 @@ variables:
         description: "Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40"
         caption: "Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white."
       dark:
-      title: "Example: Dark Palette"
-      visualDisplay: /images/color/dark-palette.svg
-      description: "Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30"
-      caption: "Consider users who are sensitive to brightness and high contrast colors by using a Gray value as a background color instead of pure black."
+        title: "Example: Dark Palette"
+        visualDisplay: /images/color/dark-palette.svg
+        description: "Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30"
+        caption: "Consider users who are sensitive to brightness and high contrast colors by using a Gray value as a background color instead of pure black."
   primaryColors:
     instructions: "Choose a primary and secondary color"
     colors:
@@ -51,7 +51,7 @@ variables:
       - palette: Yellow
         tone: 30
   supportingGrays:
-    instructions: "Choose supporting Grays and neutrals"
+    instructions: "Choose supporting grays and neutrals"
     colors:
       - palette: Gray
         tone: 90
@@ -95,6 +95,6 @@ Choose a primary color, a secondary color, and an accent color. Additional tints
 
 Color is a powerful communication tool to determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users' attention.
 
-{{ _example.large(paletteApplication.light) }}
+{{ _example.large(example.paletteApplication.light) }}
 
-{{ _example.large(paletteApplication.dark) }}
+{{ _example.large(example.paletteApplication.dark) }}
