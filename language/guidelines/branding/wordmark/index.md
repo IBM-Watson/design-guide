@@ -4,7 +4,7 @@ title: Wordmark and Logo
 resources:
   files:
     name: "Wordmark and Logo SVG"
-    source: /images/wordmark/watson_wordmark.zip
+    source: /images/wordmark/watson_wordmark_logotype.zip
 variables:
   example:
     firstCompare:
@@ -76,5 +76,3 @@ Never distort or reconfigure the wordmark or logo. Do not attempt to create the 
 ## Logo versus Avatar
 
 The logo for IBM Watson serves as the visual representation of the brand. The logo may be used as a static element as it pertains to products. The IBM Watson avatar is recommended in situations when Watson is interacting with, aiding, or responding to a user.
-
-{{> SomeFunctionHere resources}}
