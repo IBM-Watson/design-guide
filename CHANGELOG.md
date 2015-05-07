@@ -16,6 +16,7 @@
 * Change some details to examples in grids guidelines
 * Add sub-content templates to grids guidelines
 * Change detail to example
+* Update subcontent templates
 
 ## v1.0.0-beta.3
 *April 28, 2015*
