@@ -14,6 +14,7 @@
 * Rename `crick.scss` to `_watson-patterns.scss` to distribute as a partial and align name
 * Add `library` Sass file and folder
 * Add sub-content templates to color guidelines
+* Update variables in sub-content templates
 
 ## v1.0.0-beta.3
 *April 28, 2015*
