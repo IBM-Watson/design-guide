@@ -56,6 +56,25 @@
     <article id="wdg-main" library-class="main-content">
       {{ layout.content | safe -}}
         <footer library-class="main-content--footer">
+        {%if resources %}
+        <div library-class="resources">
+          <h3 library-class="resources--title">Resources</h3>
+          {% if resources.files %}
+          <ul class="resources--file-list">
+            {% for resource in resources.files %}
+            <li class="resources--item"><a href="{{ resource.source }}" class="resources--link">{{ resource.name }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if resources.links %}
+          <ul class="resources--file-list">
+            {% for resource in resources.links %}
+            <li class="resources--item"><a href="{{ resource.source }}" class="resources--link">{{ resource.name }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+        {% endif %}
         <a href="#wdg-top" library-class="main-content--back-to-top"><span library-class="icon">(top)</span> Back to top</a>
         {%if navigation.next || navigation.previous %}
           <div library-class="main-content--section-nav">
