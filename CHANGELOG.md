@@ -17,6 +17,7 @@
 * Add sub-content templates to grids guidelines
 * Change detail to example
 * Update subcontent templates
+* Update front matter for responsiveGridVideo
 
 ## v1.0.0-beta.3
 *April 28, 2015*
