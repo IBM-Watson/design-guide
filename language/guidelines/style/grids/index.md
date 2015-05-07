@@ -30,9 +30,8 @@ variables:
         visualDisplay: /images/grids/grids4.svg
     responsiveGridVideo:
       visualDisplay: /videos/grids/grids-responsive.webm
-      callout:
-        - title: "Example: Responsive Grid"
-          description: "Begin by designing the smallest size, using as close to real content as possible. As the size expands, the content will determine where the breakpoints should occur, not the device sizes."
+      title: "Example: Responsive Grid"
+      description: "Begin by designing the smallest size, using as close to real content as possible. As the size expands, the content will determine where the breakpoints should occur, not the device sizes."
 ---
 
 # Grids
