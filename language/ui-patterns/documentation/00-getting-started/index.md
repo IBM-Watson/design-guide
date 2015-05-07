@@ -59,10 +59,10 @@ The Pattern Library is at its best when being customized for the needs of a give
 
 Import paths vary based on their precise location in regards to the main Sass file. Imports should only be imported once; this can be accomplished using [Compass Import Once](https://github.com/Compass/compass/tree/master/import-once) or [Node Sass Import Once](https://github.com/at-import/node-sass-import-once), amongst other tools.
 
-Each pattern also includes an Application Methods section that will include the available mixins, extends, classes, and settings, as needed.
+Each pattern also includes an *Application Methods* section that will include the available mixins, extends, classes, and settings, as needed.
 
 ### JavaScript Interactivity
 
-Some patterns will include JavaScript. When they do, the Application Methods section of a pattern will explain what files are needed (internally or as a 3rd party dependency) or if files can be ignored in favor of adding something else (for instance, including a [Modernizr](http://modernizr.com/) detect to a custom Modernizr build).
+Some patterns will include JavaScript. When they do, the *Application Methods* section of a pattern will explain what files are needed (internally or as a 3rd party dependency) or if files can be ignored in favor of adding something else (for instance, including a [Modernizr](http://modernizr.com/) detect to a custom Modernizr build).
 
 All JavaScript is written following our [JavaScript Development Guidelines](/guidelines/development/javascript).
