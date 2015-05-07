@@ -3,11 +3,11 @@ type: guideline
 title: Color
 resources:
   files:
-    name: "IBM Color Palette ASE"
-    source: /assets/color/ibm-color-palette.ase
+    - name: "IBM Color Palette ASE"
+      source: /assets/color/ibm-color-palette.ase
   links:
-    name: "IBM Color Guidelines"
-    source: http://www.ibm.com/design/language/framework/visual/color.shtml
+    - name: "IBM Color Guidelines"
+      source: http://www.ibm.com/design/language/framework/visual/color.shtml
 variables:
   example:
     paletteApplication:
@@ -72,8 +72,6 @@ variables:
 ---
 
 Color is a crucial component of our visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.
-
-{{> SomeFunctionHere resources}}
 
 ## Colors for Watson
 
