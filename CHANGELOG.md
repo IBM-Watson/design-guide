@@ -8,6 +8,7 @@
 * Add JavaScript config for rendering the site's JavaScript
 * Add Apache 2.0 and CC-BY licenses! All source code is licensed under the Apache 2.0 license, documentation and assets under the CC-BY license
 * Add Bottom (previous/next) Nav
+* Add Resource panel to Layout template
 
 **Changes**
 
