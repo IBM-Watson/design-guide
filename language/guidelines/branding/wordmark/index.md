@@ -51,7 +51,7 @@ variables:
 
 The IBM Watson wordmark and logo represents our brand and should be managed carefully. It is typeset in a combination of Helvetica Neue Light and Helvetica Neue Bold to align with [IBM standards](http://www.ibm.com/design/language/framework/visual/typography.shtml). When possible, it should be used in all internal and external communications that focus on the IBM Watson brand.
 
-{{ _example.compare(firstCompare) }}
+{{ _example.compare(example.firstCompare) }}
 
 ## Specifications
 
@@ -59,19 +59,19 @@ The IBM Watson wordmark and logo represents our brand and should be managed care
 
 It is important to include adequate spacing around these elements to avoid visual clutter. Keep the area around the IBM Watson wordmark separated from other visual elements by a distance approximately equal to the height of the IBM Watson wordmark. This distance is considered the minimum uninterrupted space surrounding the mark.
 
-{{ _example.small(smallExample) }}
+{{ _example.small(example.smallExample) }}
 
 ### Color Usage
 
 The wordmark and logo for IBM Watson should only appear in the approved color combinations. Any one of the [three primary colors](color.html) for IBM Watson may be used in combination with black or white for use on light or dark backgrounds, respectively. For dark color palettes, use lighter values of the IBM Watson primary colors.
 
-{{ _example.compare(thirdCompare) }}
+{{ _example.compare(example.secondCompare) }}
 
 ### Incorrect Usage
 
 Never distort or reconfigure the wordmark or logo. Do not attempt to create the wordmark yourself, change the font, or alter the size or proportions.
 
-{{ _example.compare(firstCompare) }}
+{{ _example.compare(example.thirdCompare) }}
 
 ## Logo versus Avatar
 
