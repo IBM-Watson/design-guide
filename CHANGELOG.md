@@ -1,7 +1,7 @@
 # Watson Design Library Changelog
 
 ## v1.0.0-rc.1
-*May 5, 2015*
+*May 7, 2015*
 
 **New**
 
@@ -14,6 +14,7 @@
 * Move `_base.scss`, `_components.scss`, `_layouts.scss`, and `_core.scss` to `_index.scss` to better align with Node importing
 * Rename `crick.scss` to `_watson-patterns.scss` to distribute as a partial and align name
 * Add `library` Sass file and folder
+* Fix bugs in Subcontent Template ([#255](https://github.com/IBM-Watson/design-library/issues/255))
 
 ## v1.0.0-beta.3
 *April 28, 2015*
