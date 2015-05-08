@@ -18,6 +18,9 @@
 * Add sub-content templates to Offer Control
 * Fix a typo on Offer Control
 * Remove resources template from Accessibility
+* Add subcontent templates to typography guidelines
+* Change detail to large example
+* Update subcontent templates
 
 ## v1.0.0-beta.3
 *April 28, 2015*
