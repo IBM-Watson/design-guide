@@ -10,9 +10,22 @@
   <div library-class="pattern--readme" class="base--STYLED">
     {{ pattern.readme | safe -}}
   </div>
-  <div library-class="pattern--methods" class="base--STYLED">
-    {{ pattern.applicationMethods | safe -}}
-  </div>
+  <header library-class="pattern--header">
+-   <h3>Application Methods</h3>
+- </header>
+  <ul>
+    {% for method in pattern.applicationMethods %}
+    <li><code>{{ method.code }}</code> - {{ method.description }}</li>
+    {% endfor %}
+  </ul>
+  <header library-class="pattern--header">
+-   <h3>Settings</h3>
+- </header>
+  <ul>
+    {% for method in pattern.settings %}
+    <li><code>{{ setting.code }}</code> - {{ setting.description }}</li>
+    {% endfor %}
+  </ul>
 </article>
 
 
