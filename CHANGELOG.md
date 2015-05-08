@@ -31,6 +31,7 @@
 * Update variables in sub-content templates
 * Remove resources template and update front matter
 * Add sub-content templates to Introduce Cognitive
+* Add sub-content templates to Inform Interactions
 
 ## v1.0.0-beta.3
 *April 28, 2015*
