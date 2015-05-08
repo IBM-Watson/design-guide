@@ -22,6 +22,11 @@
 * Change detail to large example
 * Update subcontent templates
 * Fix bugs in Subcontent Template ([#255](https://github.com/IBM-Watson/design-library/issues/255))
+* Change some details to examples in grids guidelines
+* Add sub-content templates to grids guidelines
+* Change detail to example
+* Update subcontent templates
+* Update front matter for responsiveGridVideo
 
 ## v1.0.0-beta.3
 *April 28, 2015*
