@@ -1,7 +1,7 @@
 # Watson Design Library Changelog
 
 ## v1.0.0-rc.1
-*May 5, 2015*
+*May 7, 2015*
 
 **New**
 
@@ -21,6 +21,7 @@
 * Add subcontent templates to typography guidelines
 * Change detail to large example
 * Update subcontent templates
+* Fix bugs in Subcontent Template ([#255](https://github.com/IBM-Watson/design-library/issues/255))
 
 ## v1.0.0-beta.3
 *April 28, 2015*

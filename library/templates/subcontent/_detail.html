@@ -1,9 +1,9 @@
-{% import './_media.html' as media %}
+{% import '_media.html' as _media %}
 
 {% macro view(detail) %}
   <div library-class="detail">
     <div library-class="detail--display">
-      {{ media.object(detail) }}
+      {{ _media.object(detail) }}
     </div>
     <div library-class="detail--details">
       {% if detail.description %}
@@ -17,7 +17,6 @@
         <dd library-class="detail--callout-description">{{ callout.description }}</dd>
         {% endfor %}
       </dl>
-        }
     </div>
   </div>
 {% endmacro %}
