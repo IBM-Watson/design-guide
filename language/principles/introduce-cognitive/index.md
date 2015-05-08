@@ -25,14 +25,14 @@ variables:
           description: "This is an empty module with copy that explains the user's next action."
     introduceFour:
       visualDisplay: images/principles/introduce-four.svg
-      description: "Integrate additional explanation into the vhierarchy as a secondary focus so that it doesn’t get in thof more experienced users."
+      description: "Integrate additional explanation into the hierarchy as a secondary focus so that it doesn’t get in the way of more experienced users."
       callout:
         - title: "\"Did you know?...\""
           description: "This is copy that displays beside the primary content."
 ---
 **Give first-time users a set of "cognitive training wheels" and continue to provide unobtrusive support as needed.**
 
-{{> SOME-FUNCTION-HERE display detail.introduceOne}}
-{{> SOME-FUNCTION-HERE display detail.introduceTwo}}
-{{> SOME-FUNCTION-HERE display detail.introduceThree}}
-{{> SOME-FUNCTION-HERE display detail.introduceFour}}
+{{ _detail.view(detail.introduceOne) }}
+{{ _detail.view(detail.introduceTwo) }}
+{{ _detail.view(detail.introduceThree) }}
+{{ _detail.view(detail.introduceFour) }}
