@@ -5,7 +5,7 @@ variables:
   detail:
     offerOne:
       visualDisplay: images/principles/offer-one.svg
-      description: "Denote a clear best path through the experiwhile accommodating alternatives and seamless undos."
+      description: "Denote a clear best path through the experience, while accommodating alternatives and seamless undos."
       callout:
         - title: "Primary Action"
           description: "This is a module in which the primary action occurs."
@@ -15,7 +15,7 @@ variables:
           description: "This is a module that displays alternative actions that are separate from the primary best path."
     offerTwo:
       visualDisplay: images/principles/offer-two.svg
-      description: "Support users with copy and visual designindicate collaboration or a conversation."
+      description: "Support users with copy and visual design that indicate collaboration or a conversation."
       callout:
         - title: "\"You want to accomplish ___________\""
           description: "This is copy that displays at the top of the page."
@@ -25,20 +25,20 @@ variables:
           description: "These are modules that display available actions."
     offerThree:
       visualDisplay: images/principles/offer-three.svg
-      description: "Provide manual personalization options thaperformed by the user, such as feedback mechanisms for use\"teach\" Watson."
+      description: "Provide manual personalization options that are performed by the user, such as feedback mechanisms for users to \"teach\" Watson."
       callout:
         - title: "\"Teach Watson which filters are important to you\""
           description: "This is copy that displays above the filter modules."
     offerFour:
       visualDisplay: images/principles/offer-four.svg
-      description: "Provide automatic personalization options thaperformed by Watson, such as gathering user informatiopreferences to apply to the experience."
+      description: "Provide automatic personalization options that are performed by Watson, such as gathering user information and preferences to apply to the experience."
       callout:
         - title: "\"Recommendations based on saved queries\""
           description: "These are modules that display personalized recommendations."
 ---
 **Let the user choose more help or less help by offering control when it is wanted. Watson experiences should naturally adapt to amplify the user's abilities and expertise.**
 
-{{> SOME-FUNCTION-HERE display detail.offerOne}}
-{{> SOME-FUNCTION-HERE display detail.offerTwo}}
-{{> SOME-FUNCTION-HERE display detail.offerThree}}
-{{> SOME-FUNCTION-HERE display detail.offerFour}}
+{{ _detail.view(detail.offerOne) }}
+{{ _detail.view(detail.offerTwo) }}
+{{ _detail.view(detail.offerThree) }}
+{{ _detail.view(detail.offerFour) }}

@@ -15,6 +15,8 @@
 * Rename `crick.scss` to `_watson-patterns.scss` to distribute as a partial and align name
 * Add `library` Sass file and folder
 * Update colors to current standards
+* Add sub-content templates to Offer Control
+* Fix a typo on Offer Control
 
 ## v1.0.0-beta.3
 *April 28, 2015*
