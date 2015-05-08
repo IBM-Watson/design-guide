@@ -3,11 +3,11 @@ type: guideline
 title: Color
 resources:
   files:
-    name: "IBM Color Palette ASE"
-    source: /assets/color/ibm-color-palette.ase
+    - name: "IBM Color Palette ASE"
+      source: /assets/color/ibm-color-palette.ase
   links:
-    name: "IBM Color Guidelines"
-    source: http://www.ibm.com/design/language/framework/visual/color.shtml
+    - name: "IBM Color Guidelines"
+      source: http://www.ibm.com/design/language/framework/visual/color.shtml
 variables:
   example:
     paletteApplication:
@@ -17,10 +17,10 @@ variables:
         description: "Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40"
         caption: "Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white."
       dark:
-      title: "Example: Dark Palette"
-      visualDisplay: /images/color/dark-palette.svg
-      description: "Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30"
-      caption: "Consider users who are sensitive to brightness and high contrast colors by using a Gray value as a background color instead of pure black."
+        title: "Example: Dark Palette"
+        visualDisplay: /images/color/dark-palette.svg
+        description: "Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30"
+        caption: "Consider users who are sensitive to brightness and high contrast colors by using a Gray value as a background color instead of pure black."
   primaryColors:
     instructions: "Choose a primary and secondary color"
     colors:
@@ -51,7 +51,7 @@ variables:
       - palette: Yellow
         tone: 30
   supportingGrays:
-    instructions: "Choose supporting Grays and neutrals"
+    instructions: "Choose supporting grays and neutrals"
     colors:
       - palette: Gray
         tone: 90
@@ -73,8 +73,6 @@ variables:
 
 Color is a crucial component of our visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.
 
-{{> SomeFunctionHere resources}}
-
 ## Colors for Watson
 
 The colors chosen for IBM Watson are flexible and distinguish Watson as a brand across all user experiences. The colors were chosen based on color psychology to support the Watson [brand attributes](brand-attributes.html), reinforce Watson's personality, and set the tone of each specific product.
@@ -95,6 +93,6 @@ Choose a primary color, a secondary color, and an accent color. Additional tints
 
 Color is a powerful communication tool to determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users' attention.
 
-{{> example paletteApplication.light }}
+{{ _example.large(example.paletteApplication.light) }}
 
-{{> example paletteApplication.dark }}
+{{ _example.large(example.paletteApplication.dark) }}
