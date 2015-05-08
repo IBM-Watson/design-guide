@@ -1,97 +1,78 @@
 ---
 type: guideline
-title: Wordmark and Logotype
+title: Wordmark and Logo
 resources:
   files:
-    name: "Wordmark and Logotype SVG"
-    source: /images/wordmark/watson_wordmark_logotype.zip
+    - name: "Wordmark and Logo SVG"
+      source: /images/wordmark/watson_wordmark_logotype.zip
 variables:
   example:
-    wordmark:
-      title: Wordmark
-      visualDisplay: /images/wordmark/wordmark.svg
-    logotype:
-      title: Logotype
-      visualDisplay: /images/wordmark/logotype.svg
-    wordmarkSpacing:
+    firstCompare:
+      exampleOne:
+        title: Wordmark
+        visualDisplay: /images/wordmark/wordmark.svg
+      exampleTwo:
+        title: Logo
+        visualDisplay: /images/wordmark/logo.svg
+    smallExample:
       title: Wordmark
       visualDisplay: /images/wordmark/wordmark-spacing.svg
-    logotypeSpacing:
-      title: Logotype
-      visualDisplay: /images/wordmark/logotype-spacing.svg
-    wordmarkColor:
-      light:
-        title: Wordmark
-        visualDisplay: /images/wordmark/wordmark-color-combination.svg
-      dark:
-        visualDisplay: /images/wordmark/dark-background-wordmark.svg
-    logotypeColor:
-      light:
-        title: Logotype
-        visualDisplay: /images/wordmark/logotype-color-combination.svg
-      dark:
-        visualDisplay: /images/wordmark/dark-background-logotype.svg
-    incorrectUsage:
-      reconfigure:
-        title: "Do not reconfigure"
-        visualDisplay: /images/wordmark/wrong-logotype-configuration.svg
-        sentiment: negative
-      distort:
-        title: "Do not distort"
-        visualDisplay: /images/wordmark/wrong-logotype-distortion.svg
-        sentiment: negative
-      color:
-        title: "Do not combine colors"
-        visualDisplay: /images/wordmark/wrong-color-combination.svg
-        sentiment: negative
-      font:
-        title: "Do not change the font"
-        visualDisplay: /images/wordmark/wrong-logotype-font.svg
-        sentiment: negative
+    secondCompare:
+      exampleOne:
+        light:
+          title: Wordmark
+          visualDisplay: /images/wordmark/wordmark-color-pos.svg
+        dark:
+          visualDisplay: /images/wordmark/wordmark-color-neg.svg
+      exampleTwo:
+        light:
+          title: Logo
+          visualDisplay: /images/wordmark/logo-color-pos.svg
+        dark:
+          visualDisplay: /images/wordmark/logo-color-neg.svg
+    thirdCompare:
+        exampleOne:
+          title: "Do not reconfigure"
+          visualDisplay: /images/wordmark/wrong-configuration.svg
+          sentiment: negative
+        exampleTwo:
+          title: "Do not distort"
+          visualDisplay: /images/wordmark/wrong-distortion.svg
+          sentiment: negative
+        exampleThree:
+          title: "Do not combine colors"
+          visualDisplay: /images/wordmark/wrong-color-combination.svg
+          sentiment: negative
+        exampleFour:
+          title: "Do not change the font"
+          visualDisplay: /images/wordmark/wrong-font.svg
+          sentiment: negative
 ---
 
-The IBM Watson wordmark and logotype represents our brand and should be managed carefully. It is typeset in Helvetica Neue to align with IBM standards. When possible, it should be used in all internal and external communications that focus on the IBM Watson brand.
+The IBM Watson wordmark and logo represents our brand and should be managed carefully. It is typeset in a combination of Helvetica Neue Light and Helvetica Neue Bold to align with [IBM standards](http://www.ibm.com/design/language/framework/visual/typography.shtml). When possible, it should be used in all internal and external communications that focus on the IBM Watson brand.
 
-{{> SomeFunctionHere example.wordmark}}
-
-{{> SomeFunctionHere example.logotype}}
-
-{{> SomeFunctionHere resources}}
+{{ _example.compare(example.firstCompare) }}
 
 ## Specifications
 
 ### Spacing considerations
 
-Use only the supplied artwork when using the wordmark or logotype. It is important to include adequate spacing around these elements to avoid visual clutter.
+It is important to include adequate spacing around these elements to avoid visual clutter. Keep the area around the IBM Watson wordmark separated from other visual elements by a distance approximately equal to the height of the IBM Watson wordmark. This distance is considered the minimum uninterrupted space surrounding the mark.
 
-{{> SomeFunctionHere example.wordmarkSpacing}}
-
-{{> SomeFunctionHere example.logotypeSpacing}}
+{{ _example.small(example.smallExample) }}
 
 ### Color Usage
 
-The wordmark and logotype for IBM Watson should only appear in the approved color combinations. Any one of the [three primary colors](color.html) for IBM Watson may be used in combination with black or white for use on light or dark backgrounds, respectively. For dark color palettes, use lighter values of the IBM Watson primary colors.
+The wordmark and logo for IBM Watson should only appear in the approved color combinations. Any one of the [three primary colors](color.html) for IBM Watson may be used in combination with black or white for use on light or dark backgrounds, respectively. For dark color palettes, use lighter values of the IBM Watson primary colors.
 
-{{> SomeFunctionHere example.wordmarkColor.light}}
-
-{{> SomeFunctionHere example.logotypeColor.light}}
-
-{{> SomeFunctionHere example.wordmarkColor.dark}}
-
-{{> SomeFunctionHere example.logotypeColor.dark}}
+{{ _example.compare(example.secondCompare) }}
 
 ### Incorrect Usage
 
-Never distort or reconfigure the logotype. Do not attempt to create the logotype yourself, change the font, or alter the size or proportions.
+Never distort or reconfigure the wordmark or logo. Do not attempt to create the wordmark yourself, change the font, or alter the size or proportions.
 
-{{> SomeFunctionHere example.incorrectUsage.reconfigure}}
-
-{{> SomeFunctionHere example.incorrectUsage.distort}}
-
-{{> SomeFunctionHere example.incorrectUsage.color}}
-
-{{> SomeFunctionHere example.incorrectUsage.font}}
+{{ _example.compare(example.thirdCompare) }}
 
 ## Logo versus Avatar
 
-The logo for IBM Watson serves as the visual representation of the brand. The logo may be used outside of the logotype configuration as a static element as it pertains to products. The IBM Watson avatar is recommended in situations when Watson is interacting with, aiding, or responding to a user.
+The logo for IBM Watson serves as the visual representation of the brand. The logo may be used as a static element as it pertains to products. The IBM Watson avatar is recommended in situations when Watson is interacting with, aiding, or responding to a user.
