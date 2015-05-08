@@ -54,7 +54,7 @@ When animating only a single property, follow the guidelines below.
 
 **Timing Function**
 
-Using bounces eases to add the snap in factor that is lost if two properties are not used. These bounces are snappy bounces, not physics-based bounces.
+Use bounce eases to add the snap-in factor that is typically achieved with multiple properties. Bounce eases are snappy bounces, not physics-based bounces.
 
   * Use of Timing Functions:
     * **Entrances** - `map-get($timing-function, bounce-in)` (Fast to Slow) 
@@ -63,11 +63,11 @@ Using bounces eases to add the snap in factor that is lost if two properties are
 
 ### Multiple Property Animations
 
-Mutliple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take: Direction 1 - Start one property alone, then animate the additional properties, or Direction 2 - Both Properties start at the same time, then one property ends before the other. It is recommneded to not start and stop multiple properties at the same time; choose one or the other.
+Multiple property animations are animations where multiple properties are being animated together. With multiple property animations there are two different options. The first option is to start one property alone, then animate any additional properties. The second option is for both properties to start at the same time, then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
 
-**Direction 1**
+**Option One**
 
-Start one property alone then animate the additional properties.
+Start one property alone, then animate any additional properties.
 
 ![Scaling box animation starting with X axis scale then the Y axis scale follows.](images/motion/examples/Option-A.gif)
 
@@ -92,9 +92,9 @@ Start one property alone then animate the additional properties.
 }
 ```
 
-**Direction 2**
+**Option Two**
 
-Both properties start at the same time then one property ends before the other.
+Both properties start at the same time, then one property ends before the other.
 
 
 ![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](images/motion/examples/Option-B.gif)
@@ -125,7 +125,7 @@ Both properties start at the same time then one property ends before the other.
 
 **Timing Function**
 
-Using snap in eases addes very strong eases to quick movements which enhances the elegant machine motion metaphor.
+Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
 
 * Use of Timing Functions: 
   * **Entrances** - `map-get($timing-function, snap-in)` (Fast to Slow) 
@@ -135,27 +135,27 @@ Using snap in eases addes very strong eases to quick movements which enhances th
 
 ## Singular vs. Sequence of Actions
 
-Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions. The guidelines for both kind of instances are listed below.
+Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions.
 
 
 ### Singular Action
 
-A singluar action animation occurs when only one element on the screen is animated, and there are no other complementary elements.
+A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
 ![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
-A _sequence of actions_ animation is an animation in which multiple elements animation, typically a primary action then a secondary action that complements the primary action.
+A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the hertical scale](images/motion/examples/secondary-action.gif)
+![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](images/motion/examples/secondary-action.gif)
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
-#### Things to consider with Sequence of Actions
+#### Things to Consider with Sequence of Actions
 
-  * Choreography: Elements should have coordinate within the determined hierarchy.
-  * Delays: Delays need to be consistent and should have the same rate across similar content.
+  * Choreography: elements should coordinate within the determined hierarchy.
+  * Delays: delays need to be consistent and should have the same rate across similar content.
 
 ## Animation Library Implementation
 
@@ -190,7 +190,7 @@ $animations: (
 );
 ```
 
-The format of the map is (with everything between <> being a string:
+This is the format of the map, and everything between <> is a string:
 
 ```scss
 $animations: (
@@ -205,11 +205,11 @@ $animations: (
 );
 ```
 
-In order to use any of these animations in a product, we have implemented an animate Sass mixin. All that is needed to include the animation on the element, by using the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If duration and timing function are not specified, we have included the default values of 2s and ease-in.
+In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. We have included defaults for duration (2s) and timing function (ease-in), in case you do not specify your own.
 
-For example, one can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
+For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
 
-The current animations provided are:
+We currently provide these animations:
 
 Entrance Animations
 - `fade-in`
@@ -235,7 +235,9 @@ Exit Animations
 
 ### Timing Functions
 
-The current timing functions provided are:
+A timing function is a mathematical equation that creates a bezier curve, which is a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves."
+
+We currently provide these timing functions:
 
 - `ease-in`
 - `ease-out`
@@ -245,6 +247,3 @@ The current timing functions provided are:
 - `snap-in`
 - `snap-out`
 - `snap-in-out`
-
-Timing functions are mathematical equations that creates a bezier curve which is: a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like: ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves”.
-
