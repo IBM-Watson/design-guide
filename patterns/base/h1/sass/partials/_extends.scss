@@ -1,6 +1,6 @@
 %base--h1 {
   font-size: ms(5);
-  font-weight: setting-get('normal weight font');
+  font-weight: setting-get('bold weight font');
   color: setting-get('secondary color');
 
   @include breakpoint(setting-get('large typography breakpoint')) {
