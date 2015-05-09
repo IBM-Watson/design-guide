@@ -1,6 +1,18 @@
 name: Button
 description: A button element to trigger an action
 displayTemplate: pattern
+applicationMethods:
+  - code: .base--button
+    description: Add this class to an element
+  - code: .base--STYLED button
+    description: `<button>` tag inside a class of `.base--STYLED`
+  - code: %base--button
+    description: Extend this silent selector through Sass
+settings:
+  - setting: secondary color
+    description: Background color of button
+  - setting: white
+    description: Text color of button
 variables:
   buttons:
     basic:
