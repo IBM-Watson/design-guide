@@ -11,6 +11,8 @@ resources:
       source: http://www.webperformancetoday.com/2012/03/21/neuroscience-page-speed-web-performance/
     - name: "Powers of 10: Time Scales in User Experience"
       source: http://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/
+    - name: "Jank Free"
+      source: http://jankfree.org/
     - name: "Web Page Test"
       source: http://www.webpagetest.org/
 ---
@@ -52,6 +54,14 @@ With an understanding of memory in hand, along with Jakob's research, users shou
 * **<=100ms** - If a response takes 100ms or less, no notification is needed
 * **>100ms** - If a response takes more than 100ms, an indication that a user's response is being processed should be provided. This is commonly a loading indicator or (ideally) a progress bar showing percent complete
 * **>3s** - If a response takes more than 3s, the task should be backgrounded, giving the user the ability to subscribe to updates for when the task completes. Backgrounded tasks should include context of the original request in order to assist the user recall the reason the request was made.
+
+## Creating Smooth Interfaces
+
+A human's sensory memory, acting at 100ms, is able to identify around 10 unique images per second. In order to create the illusion of smooth movement for users, as opposed to a series of independent images, more images are needed. The number of images per second, or frame rate, is often expressed as either Frames per Second (FPS), or in hertz (Hz) when working with progressive scan monitors. For a frame of reference, the *de facto* standard for movies and television with sound is 24 FPS.
+
+When creating interfaces, however, 24 FPS will not provide the fluid movement it does on film. Film relies on a number of effects, the most prominent one being [motion blur](http://en.wikipedia.org/wiki/Motion_blur), to hide inter-frame judder. When [animating interface elements](/guidelines/interaction/animation/) or having users interact with our interfaces in a way that would cause motion (such as scrolling), we cannot rely upon those same effects as they are unique to the film medium. Instead, our interfaces should update at the same rate the device's screen is refreshing. When interfaces are not able to refresh at this rate, the result, called [Jank](http://jankfree.org/), is a "…stuttering, juddering, or just plain halting" of the interface.
+
+Most devices today have a **refresh rate of 60Hz**, so that is what we should aim our interfaces to refresh at.
 
 ## Grading and Measuring Performance
 
