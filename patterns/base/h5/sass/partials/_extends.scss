@@ -1,5 +1,5 @@
 %base--h5 {
   font-size: ms(0);
   font-weight: setting-get('bold weight font');
-  color: setting-get('primary color');
+  color: color('grayscale', 70);
 }
