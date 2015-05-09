@@ -1,1 +1,12 @@
 name: Label
+applicationMethods:
+  - code: '.base--inline-label'
+    description: 'Add this class to an element that is to be inline'
+  - code: '.base--STYLED label'
+    description: '`<label>` tag inside a class of `.base--STYLED`'
+  - code: '%base--inline-label'
+    description: 'Extend this silent selector through Sass that is to be inline'
+  - code: '.base--block-label'
+    description: 'Add this class to an element that is to be block'
+  - code: '%base--block-label'
+    description: 'Extend this silent selector through Sass that is to be block'
