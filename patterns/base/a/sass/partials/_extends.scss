@@ -1,5 +1,6 @@
 %base--a {
   color: setting-get('primary color');
+  font-weight: setting-get('bold weight font');
   text-decoration: underline;
 
   &:hover,
