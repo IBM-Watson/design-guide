@@ -1,6 +1,28 @@
 name: Table
 description: Tabular information display
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--thead'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED thead'
+    description: '`<thead>` tag inside a class of `.base--STYLED`'
+  - code: '%base--thead'
+    description: 'Extend this silent selector through Sass'
+  - code: '.base--td'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED td'
+    description: '`<td>` tag inside a class of `.base--STYLED`'
+  - code: '%base--td'
+    description: 'Extend this silent selector through Sass'
+  - code: '.base--tr'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED tr'
+    description: '`<tr>` tag inside a class of `.base--STYLED`'
+  - code: '%base--tr'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
 variables:
   table:
     head:
