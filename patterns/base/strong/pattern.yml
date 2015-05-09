@@ -1,5 +1,12 @@
 name: Strong
 description: Important (strong) text
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--strong'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED strong'
+    description: '`<strong>` tag inside a class of `.base--STYLED`'
+  - code: '%base--strong'
+    description: 'Extend this silent selector through Sass'
 variables:
   text: important text
