@@ -1,6 +1,16 @@
 name: Check Box
 description: A form field option where multiple choices may be selected, including, but not requiring this particular element.
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--checkbox'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED input[type="checkbox"]'
+    description: '`<input type="checkbox">` tag inside a class of `.base--STYLED`'
+  - code: '%base--checkbox'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: input border width
+    description: Border width of checkbox
 variables:
   checkbox:
     id: cb1
