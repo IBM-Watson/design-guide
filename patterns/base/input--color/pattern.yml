@@ -1,6 +1,22 @@
 name: Color Input
 description: Color input field for a form
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--input-color'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED input[type="color"]'
+    description: '`<input type="color">` tag inside a class of `.base--STYLED`'
+  - code: '%base--input-color'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: white
+    description: Background color of input box
 variables:
   inputs:
     basic:

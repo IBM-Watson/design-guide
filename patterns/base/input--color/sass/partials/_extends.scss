@@ -3,6 +3,6 @@
 %base--color-input {
   @extend %base--input;
   height: 3em;
-  padding: .25em; //not actually reading this padding
-  background: color('white');
+  padding: .25em;
+  background: setting-get('white');
 }
