@@ -2,12 +2,12 @@ name: Blockquote
 description: An extended quotation
 displayTemplate: pattern
 applicationMethods:
-  - code: .base--blockquote
-    description: Add this class to an element
-  - code: .base--STYLED blockquote
-    description: `<blockquote>` tag inside a class of `.base--STYLED`
-  - code: %base--blockquote
-    description: Extend this silent selector through Sass
+  - code: '.base--blockquote'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED blockquote'
+    description: '`<blockquote>` tag inside a class of `.base--STYLED`'
+  - code: '%base--blockquote'
+    description: 'Extend this silent selector through Sass'
 settings:
   - setting: secondary color
     description: Left border of quote
