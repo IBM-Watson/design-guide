@@ -1,6 +1,6 @@
 %base--h6 {
   font-size: ms(0);
   font-style: normal;
-  font-weight: bold;
+  font-weight: setting-get('normal weight font');
   color: color('gray', 60);
 }
