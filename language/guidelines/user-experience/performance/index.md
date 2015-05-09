@@ -7,7 +7,7 @@ resources:
       source: http://pointnorth.io/#performance
     - name: "Have Your Cake and Eat it Too: A Primer on Performance"
       source: http://una.im/slides-nom-nom-perf/#/
-    - name: "Our need for web speed: It’s about neuroscience, not entitlement"
+    - name: "Our need for web speed: It's about neuroscience, not entitlement"
       source: http://www.webperformancetoday.com/2012/03/21/neuroscience-page-speed-web-performance/
     - name: "Powers of 10: Time Scales in User Experience"
       source: http://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/
