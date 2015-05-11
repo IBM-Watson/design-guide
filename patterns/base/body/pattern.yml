@@ -6,6 +6,6 @@ applicationMethods:
     description: Applied to the `<body>` tag
 settings:
   - setting: sans serif font
-    description: Font faimly for site
+    description: Font family for site
   - setting: light weight font
     description: Font weight for light weight fonts. Used as default for whole site
