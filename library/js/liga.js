@@ -25,6 +25,8 @@
 	var icons;
 	if (!supportsProperty('fontFeatureSettings')) {
 		icons = {
+			'(yes)': '&#xe606;',
+			'(no)': '&#xe605;',
 			'(up)': '&#xe602;',
 			'(issues)': '&#xe601;',
 			'(code)': '&#xe60a;',
