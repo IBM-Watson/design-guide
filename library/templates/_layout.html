@@ -55,6 +55,23 @@
     {% endif %}
     <article id="wdg-main" library-class="main-content">
       {{ layout.content | safe -}}
+
+      {% if navigation.children %}
+      <aside library-class="main-content--children">
+        {% for navC in navigation.children %}
+          {% if navC.children.length %}
+          <dl library-class="page-children">
+            <lh library-class="page-children--group">{{ navC.title }}</lh>
+            {% for child in navC.children %}
+            <dl library-class="page-children--title"><a href="{{ child.url }}">{{ child.title }}</a></dl>
+            <dt library-class="page-children--description">{{ child.description }}</dt>
+            {% endfor %}
+          </dl>
+          {% endif %}
+        {% endfor %}
+      </aside>
+      {% endif %}
+
         <footer library-class="main-content--footer">
         {%if resources %}
         <div library-class="resources">
