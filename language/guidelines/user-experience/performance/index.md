@@ -47,7 +47,7 @@ Working memory's capacity has been hard to pin down exactly, but the two most pr
 
 ### The Size and Speed of Immersion
 
-Sensory memory, short-term memory, and working memory combine to determine how immersive an interface feels to a user. The faster an interface is able to respond to a user, the faster that user's sensory memory can pick up the response, the faster that response can be stored in short-term memory, and the faster that working memory can start processing the result in context of the input. The longer that initial step takes, or the larger the amount being asked for and retrieved, the more likely that a user's memory for the task at hand will decay. This decay is what causes *web stress* and leads users abandon tasks and sites entirely.
+Sensory memory, short-term memory, and working memory combine to determine how immersive an interface feels to a user. The faster an interface is able to respond to a user, the faster that user's sensory memory can pick up the response, the faster that response can be stored in short-term memory, and the faster that working memory can start processing the result in context of the input. The longer that initial step takes, or the larger the amount being asked for and retrieved, the more likely that a user's memory for the task at hand will decay. This decay is what causes web stress and leads users abandon tasks and sites entirely.
 
 ## Notifying Users About Interface Delays
 
