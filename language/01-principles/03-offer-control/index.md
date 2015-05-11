@@ -6,7 +6,7 @@ variables:
     offerOne:
       visualDisplay: /images/principles/offer-one.svg
       description: "Denote a clear best path through the experience, while accommodating alternatives and seamless undos."
-      callout:
+      callouts:
         - title: "Primary Action"
           description: "This is a module in which the primary action occurs."
         - title: "Secondary Action"
@@ -16,7 +16,7 @@ variables:
     offerTwo:
       visualDisplay: /images/principles/offer-two.svg
       description: "Support users with copy and visual design that indicate collaboration or a conversation."
-      callout:
+      callouts:
         - title: "\"You want to accomplish ___________\""
           description: "This is copy that displays at the top of the page."
         - title: "\"Watson can do these actions to help you get there.\""
@@ -26,13 +26,13 @@ variables:
     offerThree:
       visualDisplay: /images/principles/offer-three.svg
       description: "Provide manual personalization options that are performed by the user, such as feedback mechanisms for users to \"teach\" Watson."
-      callout:
+      callouts:
         - title: "\"Teach Watson which filters are important to you\""
           description: "This is copy that displays above the filter modules."
     offerFour:
       visualDisplay: /images/principles/offer-four.svg
       description: "Provide automatic personalization options that are performed by Watson, such as gathering user information and preferences to apply to the experience."
-      callout:
+      callouts:
         - title: "\"Recommendations based on saved queries\""
           description: "These are modules that display personalized recommendations."
 ---
