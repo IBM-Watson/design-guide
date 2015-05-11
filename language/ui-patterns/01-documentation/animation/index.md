@@ -33,7 +33,7 @@ To see a full list of animatable properties and examples of them animating visit
 
 When animating only a single property, follow the guidelines below. 
 
-![Scaling of a box from 0% to 100%](images/motion/examples/Single_Attribute-1.gif)
+![Scaling of a box from 0% to 100%](/images/motion/examples/Single_Attribute-1.gif)
 
 ```scss
 //box class
@@ -69,7 +69,7 @@ Multiple property animations are animations where multiple properties are being 
 
 Start one property alone, then animate any additional properties.
 
-![Scaling box animation starting with X axis scale then the Y axis scale follows.](images/motion/examples/Option-A.gif)
+![Scaling box animation starting with X axis scale then the Y axis scale follows.](/images/motion/examples/Option-A.gif)
 
 ```scss
 //box class
@@ -97,7 +97,7 @@ Start one property alone, then animate any additional properties.
 Both properties start at the same time, then one property ends before the other.
 
 
-![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](images/motion/examples/Option-B.gif)
+![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](/images/motion/examples/Option-B.gif)
 
 ```scss
 //box class
@@ -142,13 +142,13 @@ Within user interfaces, there are instances where only one element moves, as wel
 
 A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
-![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
+![Singular action shows a box animating scaling horizontally then vertically](/images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
 A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](images/motion/examples/secondary-action.gif)
+![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](/images/motion/examples/secondary-action.gif)
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
