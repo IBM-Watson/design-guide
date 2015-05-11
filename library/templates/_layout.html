@@ -54,6 +54,7 @@
     </aside>
     {% endif %}
     <article id="wdg-main" library-class="main-content">
+      <h1 library-class="main-content--title" class="base--h1">{{ main.title }}</h1>
       {{ layout.content | safe -}}
 
       {% if navigation.children %}
