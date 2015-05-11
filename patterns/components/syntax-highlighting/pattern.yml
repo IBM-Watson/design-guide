@@ -1,4 +1,9 @@
 name: Syntax Highlighting
 description: Syntax highlighting for code blocks and inline code
 displayTemplate: pattern
+applicationMethods:
+  - code: 'Prism'
+    description: 'Install [Prism](http://prismjs.com/) from Bower (or other means) and include it and the relevant languages to be highlighted'
+  - code: '.language-xxx'
+    description: 'Add `language-xxx` class to a `<code>` block, replacing `xxx` with the language name'
 variables:
