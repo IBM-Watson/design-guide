@@ -1,9 +1,11 @@
 %base--a {
-  color: setting-get('secondary color');
+  color: setting-get('primary color');
+  font-weight: setting-get('bold weight font');
   text-decoration: underline;
 
   &:hover,
   &:focus {
-    color: mix(setting-get('secondary color'), setting-get('black'), 20%);
+    color: color('grayscale', 70);
+    text-decoration: none;
   }
 }

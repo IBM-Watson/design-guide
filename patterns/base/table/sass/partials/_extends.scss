@@ -1,6 +1,6 @@
 %base--thead {
   font-weight: bold;
-  color: color('white');
+  color: setting-get('white');
   background-color: color('gray');
 }
 
@@ -10,6 +10,6 @@
 
 %base--tr {
   &:nth-of-type(even) {
-    background-color: color('neutral-white', 4);
+    background-color: color('grayscale', 40);
   }
 }
