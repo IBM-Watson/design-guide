@@ -7,6 +7,7 @@
 
 pre[class^="language-"],
 pre[class*=" language-"] {
+  @extend %base--pre;
   background: color('grayscale', 80);
 
  > code[class^="language-"],
