@@ -1,6 +1,16 @@
 name: Heading Level 1
 description: First level heading for associated section
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--h1'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED h1'
+    description: '`<h1>` tag inside a class of `.base--STYLED`'
+  - code: '%base--h1'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
 variables:
   header:
     text: Header 1

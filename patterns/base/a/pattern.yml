@@ -1,5 +1,15 @@
 name: Anchor link
 description: Anchor link
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--a'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED a'
+    description: '`<a>` tag inside a class of `.base--STYLED`'
+  - code: '%base--a'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: secondary color
+    description: Text color
 variables:
   text: Link to something

@@ -1,6 +1,13 @@
 name: Ordered List
 description: Ordered list of items
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--ol'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED ol'
+    description: '`<ol>` tag inside a class of `.base--STYLED`'
+  - code: '%base--ol'
+    description: 'Extend this silent selector through Sass'
 variables:
   listitems:
     - List item 1

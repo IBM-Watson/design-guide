@@ -1,6 +1,16 @@
 name: Heading Level 5
 description: Fifth level heading within an associated section
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--h5'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED h5'
+    description: '`<h5>` tag inside a class of `.base--STYLED`'
+  - code: '%base--h5'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
 variables:
   header:
     text: Header 5

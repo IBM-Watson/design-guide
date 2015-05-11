@@ -6,7 +6,7 @@
   padding: setting-get('input padding');
   font-size: 1em;
   font-weight: 300;
-  border: 1px solid setting-get('input border color');
+  border: setting-get('input border width') solid setting-get('input border color');
   background-color: setting-get('background color');
 
   &:focus {

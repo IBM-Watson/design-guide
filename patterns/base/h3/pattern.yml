@@ -1,6 +1,16 @@
 name: Heading Level 3
 description: Third level heading within an associated section
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--h3'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED h3'
+    description: '`<h3>` tag inside a class of `.base--STYLED`'
+  - code: '%base--h3'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
 variables:
   header:
     text: Header 3

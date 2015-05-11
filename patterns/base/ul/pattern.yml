@@ -1,6 +1,13 @@
 name: Unordered List
 description: Unordered list of items
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--ul'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED ul'
+    description: '`<ul>` tag inside a class of `.base--STYLED`'
+  - code: '%base--ul'
+    description: 'Extend this silent selector through Sass'
 variables:
   listitems:
     - List item 1
