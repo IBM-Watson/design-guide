@@ -2,20 +2,34 @@
   <h2 library-class="pattern--name">{{ pattern.metadata.name }}</h2>
   <p library-class="pattern--description">{{ pattern.metadata.description }}</p>
   <div library-class="pattern--rendered">
-    <header library-class="pattern--header">
-      <h3>Rendered Pattern</h3>
-    </header>
     {{ pattern.markup | safe -}}
   </div>
   <div library-class="pattern--code">
-    <header library-class="pattern--header">
-      <h3>Pattern Code</h3>
-    </header>
     <pre class="base--pre"><code class="language-html base--code">{{ pattern.markup | escape -}}</code></pre>
   </div>
   <div library-class="pattern--readme" class="base--STYLED">
     {{ pattern.readme | safe -}}
   </div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+  -   <h3>Application Methods</h3>
+  - </header>
+    <ul class="base--ul">
+      {% for method in pattern.metadata.applicationMethods %}
+      <li class="base--li"><code>{{ method.code }}</code> - {{ method.description|markdown | safe -}}</li>
+      {% endfor %}
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+  -   <h3>Settings</h3>
+  - </header>
+    <ul class="base--ul">
+      {% for setting in pattern.metadata.settings %}
+      <li class="base--li"><code>{{ setting.code }}</code> - {{ setting.description|markdown | safe -}}</li>
+      {% endfor %}
+    </ul>
+</aside>
 </article>
 
 
