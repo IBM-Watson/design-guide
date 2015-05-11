@@ -1,4 +1,4 @@
-name: Color Input
+name: Input - Color
 description: Color input field for a form
 displayTemplate: pattern
 applicationMethods:
