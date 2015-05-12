@@ -9,6 +9,12 @@ variables:
     multiPropAni1: 
       title: "Visual Example"
       visualDisplay: /videos/animation-docs/multiPropAni1.webmHD.webm
+    multiPropAni2: 
+      title: "Visual Example"
+      visualDisplay: /videos/animation-docs/multiPropAni2.webmHD.webm
+    sequenceAni: 
+      title: "Visual Example"
+      visualDisplay: /videos/animation-docs/sequenceAni.webmHD.webm
 resources:
   links:
     name: "Debugging Chrome Animations"
@@ -100,7 +106,7 @@ Start one property alone, then animate any additional properties.
 Both properties start at the same time, then one property ends before the other.
 
 
-![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](/images/motion/examples/Option-B.gif)
+{{ _example.small(example.multiPropAni2) }}
 
 ```scss
 //box class
@@ -145,13 +151,13 @@ Within user interfaces, there are instances where only one element moves, as wel
 
 A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
-![Singular action shows a box animating scaling horizontally then vertically](/images/motion/examples/Option-B.gif)
+{{ _example.small(example.multiPropAni1) }}
 
 ### Sequence of Actions
 
 A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](/images/motion/examples/secondary-action.gif)
+{{ _example.small(example.sequenceAni) }}
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
