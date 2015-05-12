@@ -1,0 +1,8 @@
+@include font-face('wdg', (
+  'woff': '/fonts/wdg/wdg.woff',
+  'ttf': '/fonts/wdg/wdg.ttf'
+));
+
+[library-class='icon'] {
+  @include icon-font('wdg');
+}
