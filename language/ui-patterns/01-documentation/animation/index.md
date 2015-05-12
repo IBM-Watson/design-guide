@@ -47,7 +47,7 @@ When animating only a single property, follow the guidelines below.
 ```scss
 //box class
 .single-attribute {
-  animation: single-attribute 1s map-get($timing-functions, bounce-in);
+  animation: single-attribute 1s map-get($timing-functions, snap-in);
 }
 
 //keyframes for animation
@@ -61,14 +61,14 @@ When animating only a single property, follow the guidelines below.
 }
 ``` 
 
-**Timing Function**
+**Timing Functions**
 
-Use bounce eases to add the snap-in factor that is typically achieved with multiple properties. Bounce eases are snappy bounces, not physics-based bounces.
+Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
 
   * Use of Timing Functions:
-    * **Entrances** - `map-get($timing-functions, bounce-in)` (Fast to Slow) 
-    * **Exits** - `map-get($timing-functions, bounce-out)` (Slow to Fast)
-    * **Interactive Elements** - `map-get($timing-functions, bounce-in-out)`
+    * **Entrances** - `map-get($timing-functions, snap-in)` (Fast to Slow) 
+    * **Exits** - `map-get($timing-functions, snap-out)` (Slow to Fast)
+    * **Interactive Elements** - `map-get($timing-functions, snap-in-out)`
 
 ### Multiple Property Animations
 
@@ -132,7 +132,7 @@ Both properties start at the same time, then one property ends before the other.
 }
 ```
 
-**Timing Function**
+**Timing Functions**
 
 Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
 
