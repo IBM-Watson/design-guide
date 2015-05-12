@@ -1,0 +1,11 @@
+[library-class='wordmark'] {
+  display: block;
+  text-align: center;
+  margin-top: setting-get('rhythm') / 2;
+
+  @include breakpoint(565px) {
+    margin-top: setting-get('rhythm');
+    float: left;
+    margin-left: setting-get('rhythm');
+  }
+}

@@ -1,14 +1,14 @@
 [library-class~='subnav'] {
   background: color('grayscale', 40);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: setting-get('rhythm');
+  padding-bottom: setting-get('rhythm');
 }
 
 [library-class='subnav--heading'] {
   @extend %base--strong;
   display: block;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: setting-get('rhythm');
+  padding-right: setting-get('rhythm');
 }
 
 [library-class*='subnav--list'] {
@@ -22,7 +22,7 @@
     background: color('grayscale', 50);
 
     [library-class='subnav--item'] {
-      padding-left: calc(1rem - 5px);
+      padding-left: calc(#{setting-get('rhythm')} - 5px);
     }
   }
 
@@ -32,7 +32,7 @@
     background: color('grayscale', 50);
 
     [library-class='subnav--item'] {
-      padding-left: calc(1rem - 5px);
+      padding-left: calc(#{setting-get('rhythm')} - 5px);
       color: setting-get('primary color');
     }
   }
@@ -41,7 +41,7 @@
 [library-class='subnav--item'] {
   color: color('grayscale', 70);
   text-decoration: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: setting-get('rhythm');
+  padding-right: setting-get('rhythm');
   display: block;
 }
