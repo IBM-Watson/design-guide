@@ -1,9 +1,3 @@
 %base--a {
-  color: setting-get('secondary color');
-  text-decoration: underline;
-
-  &:hover,
-  &:focus {
-    color: mix(setting-get('secondary color'), setting-get('black'), 20%);
-  }
+  @include base--a;
 }

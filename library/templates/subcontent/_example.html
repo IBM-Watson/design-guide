@@ -1,12 +1,12 @@
-{% import './_media.html' as media %}
+{% import '_media.html' as _media %}
 
 <!-- Sentiment Builder -->
 {% macro sentiment(example) %}
   {% if example.sentiment %}
-    {% if feels|lower === 'positive' %}
-      <span library-class="example--positive">Do This</span>
-    {% elseif feels|lower === 'negative' %}
-      <span library-class="example--negative">Don't Do This</span>
+    {% if example.sentiment|lower === 'positive' %}
+      <span library-class="example--positive icon">(yes)</span>
+    {% elseif example.sentiment|lower === 'negative' %}
+      <span library-class="example--negative icon">(no)</span>
     {% endif %}
   {% endif %}
 {% endmacro %}
@@ -20,14 +20,17 @@
 {% macro small(example) %}
 <div library-class="example--SMALL">
   {{ title(example) }}
-  {{ media.object(example) }}
+  {{ _media.object(example) }}
+  {% if example.description %}
+    <p library-class="example--description">{{ example.description }}</p>
+  {% endif %}
 </div>
 {% endmacro %}
 
 <!-- Large Example -->
 {% macro large(example) %}
 <div library-class="example--LARGE">
-  {{ media.object(example) }}
+  {{ _media.object(example) }}
   <div library-class="example--body">
     {{ title(example) }}
     {% if example.description %}

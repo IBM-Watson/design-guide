@@ -1,0 +1,14 @@
+[library-class='pattern--inline-description'] {
+  > p {
+    display: inline;
+  }
+}
+
+[library-class='pattern--application'],
+[library-class='pattern--settings'] {
+  @include breakpoint(940px) {
+    width: 50%;
+    float: left;
+  }
+
+}

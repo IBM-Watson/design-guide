@@ -7,4 +7,11 @@
 
 body {
   @extend %body--typography;
+
+  background: setting-get('background color');
+  color: setting-get('text color');
+
+  * + * {
+    margin-top: setting-get('rhythm');
+  }
 }

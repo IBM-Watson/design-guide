@@ -5,8 +5,8 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
-.base--radiogroup {
-  @extend %base--radiogroup;
+.radiogroup {
+  @extend %radiogroup;
 }
 
 .radiogroup--item {

@@ -6,7 +6,7 @@
   @extend %base--input;
   height: setting-get('range height');
   padding: 0;
-  background-color: color('white');
+  background-color: setting-get('white');
   border-radius: setting-get('range height');
   box-shadow: inset 0 0 0 setting-get('range outline width') setting-get('input border color');
 
@@ -22,7 +22,7 @@
   &::-moz-range-track {
     height: setting-get('range height');
     padding: 0;
-    background-color: color('white');
+    background-color: setting-get('white');
     border-radius: setting-get('range height');
     box-shadow: inset 0 0 0 setting-get('range outline width') setting-get('input border color');
   }

@@ -1,5 +1,15 @@
 name: Blockquote
 description: An extended quotation
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--blockquote'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED blockquote'
+    description: '`<blockquote>` tag inside a class of `.base--STYLED`'
+  - code: '%base--blockquote'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: secondary color
+    description: Left border of quote
 variables:
   quote: "I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time! Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony. Found them? In Mercia?! The coconut's tropical! Why do you think that she is a witch?"

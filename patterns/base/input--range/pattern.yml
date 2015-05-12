@@ -1,6 +1,28 @@
-name: Range Input
+name: Input - Range
 description: Range input field for a form
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--range-input'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED input[type="range"]'
+    description: '`<input type="range">` tag inside a class of `.base--STYLED`'
+  - code: '%base--range-input'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: background color
+    description: Background color of input box
+  - setting: range height
+    description: Height of the range target
+  - setting: range outline width
+    description: Width of the range's outline
+  - setting: range thumb size
+    description: Size of the range's slider grab
 variables:
   inputs:
     basic:

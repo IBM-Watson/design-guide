@@ -1,10 +1,31 @@
 $ColorScheme: (
   'primary color': color('teal', 60),
-  'secondary color': color('blue', 60),
-  'tertiary color': color('orange', 30),
+  'secondary color': color('orange', 50),
+  'primary accent color': color('teal', 30),
+  'secondary accent color': color('orange', 30),
+  'primary support color': color('teal', 40),
+  'secondary support color': color('orange', 60),
+  'grayscale': (
+    'core': color('gray', 50),
+    10: color('white'),
+    20: color('neutral-white', 10),
+    30: color('neutral-white', 20),
+    40: color('neutral-white', 40),
+    50: color('gray', 10),
+    60: color('gray', 50),
+    70: color('gray', 60),
+    80: color('gray', 80),
+    90: color('gray', 90)
+  ),
   'background color': color('white'),
-  'black': color('black'),
+  'text color': color('black'),
+  'black': color('gray', 90),
   'white': color('white')
 );
 
 $GlobalSettings: map-merge($GlobalSettings, $ColorScheme);
+
+//////////////////////////////
+// Set Watson Greyscale into IBM Colors
+//////////////////////////////
+$__ibm-color-palettes: map-merge($__ibm-color-palettes, ('grayscale': setting-get('grayscale')));

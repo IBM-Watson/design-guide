@@ -17,6 +17,6 @@
   }
 
   &:checked + label:before {
-    background: radial-gradient(color('gray', 80) 40%, transparent 40%);
+    background: radial-gradient(color('grayscale', 80) 40%, transparent 40%);
   }
 }

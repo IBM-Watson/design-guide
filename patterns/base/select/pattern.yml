@@ -1,6 +1,22 @@
-name: Textarea
-description: A flexible and configurable area for a long-form text input
+name: Select Box
+description: A flexible and configurable way of selecting an indivdual item from a list
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--select'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED select'
+    description: '`<select>` tag inside a class of `.base--STYLED`'
+  - code: '%base--select'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border and downward triangle
+  - setting: background color
+    description: Background color of input box
 variables:
   textarea:
     rows: 10

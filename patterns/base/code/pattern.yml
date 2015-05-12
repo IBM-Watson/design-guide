@@ -1,5 +1,17 @@
 name: Code
 description: Computer code in text
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--code'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED code'
+    description: '`<code>` tag inside a class of `.base--STYLED`'
+  - code: '%base--code'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: secondary color
+    description: Color of text
+  - setting: monospace font
+    description: Font family used for code
 variables:
   snippet: '<link rel="stylesheet" href="#" />'

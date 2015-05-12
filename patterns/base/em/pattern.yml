@@ -1,5 +1,12 @@
 name: Em
 description: Emphasized text
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--em'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED em'
+    description: '`<em>` tag inside a class of `.base--STYLED`'
+  - code: '%base--em'
+    description: 'Extend this silent selector through Sass'
 variables:
   text: emphasized text

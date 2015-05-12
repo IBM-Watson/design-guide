@@ -21,7 +21,63 @@ $animations: (
       opacity: 1
     )
   ),
-  'slide-in--left' : (
+  'fade-in--up': (
+    0%: (
+      opacity: 0,
+      transform: translateY(100%)
+    ),
+    80%: (
+      opacity: 1
+      ),
+    100%: (
+      transform: translateY(0)
+    )
+  ),
+  'fade-in--down': (
+    0%: (
+      opacity: 0,
+      transform: translateY(-100%)
+    ),
+    80%: (
+      opacity: 1
+      ),
+    100%: (
+      transform: translateY(0)
+    )
+  ),
+  'fade-in--left': (
+    0%: (
+      opacity: 0,
+      transform: translateX(-100%)
+    ),
+    80%: (
+      opacity: 1
+      ),
+    100%: (
+      transform: translateX(0)
+    )
+  ),
+  'fade-in--right': (
+    0%: (
+      opacity: 0,
+      transform: translateX(100%)
+    ),
+    80%: (
+      opacity: 1
+      ),
+    100%: (
+      transform: translateX(0)
+    )
+  ),
+  'slide-in--up' : (
+    0%: (
+      transform: translateY(100%)
+    ),
+    100%: (
+      transform: translateY(0)
+    )
+  ),
+  'slide-in--down' : (
     0%: (
       transform: translateY(-100%)
     ),
@@ -29,12 +85,108 @@ $animations: (
       transform: translateY(0)
     )
   ),
-  'slide-in--right' : (
+  'slide-in--left' : (
     0%: (
-      transform: translateY(100%)
+      transform: translateX(-100%)
     ),
     100%: (
+      transform: translateX(0)
+    )
+  ),
+  'slide-in--right' : (
+    0%: (
+      transform: translateX(100%)
+    ),
+    100%: (
+      transform: translateX(0)
+    )
+  ),
+  'fade-out': (
+    0%: (
+      opacity: 1
+    ),
+    100%: (
+      opacity: 0
+    )
+  ),
+  'fade-out--up': (
+    0%: (
+      opacity: 1,
       transform: translateY(0)
+    ),
+    80%: (
+      opacity: 0
+      ),
+    100%: (
+      transform: translateY(-100%)
+    )
+  ),
+  'fade-out--down': (
+    0%: (
+      opacity: 1,
+      transform: translateY(0)
+    ),
+    80%: (
+      opacity: 0
+      ),
+    100%: (
+      transform: translateY(100%)
+    )
+  ),
+  'fade-out--left': (
+    0%: (
+      opacity: 1,
+      transform: translateX(0)
+    ),
+    80%: (
+      opacity: 0
+      ),
+    100%: (
+      transform: translateX(-100%)
+    )
+  ),
+  'fade-out--right': (
+    0%: (
+      opacity: 1,
+      transform: translateX(0)
+    ),
+    80%: (
+      opacity: 0
+      ),
+    100%: (
+      transform: translateX(100%)
+    )
+  ),
+  'slide-out--up': (
+    0%: (
+      transform: translateY(0)
+    ),
+    100%: (
+      transform: translateY(100%)
+    )
+  ),
+  'slide-out--down': (
+    0%: (
+      transform: translateY(0)
+    ),
+    100%: (
+      transform: translateY(-100%)
+    )
+  ),
+  'slide-out--left': (
+    0%: (
+      transform: translateX(0)
+    ),
+    100%: (
+      transform: translateX(-100%)
+    )
+  ),
+  'slide-out--right': (
+    0%: (
+      transform: translateX(0)
+    ),
+    100%: (
+      transform: translateX(100%)
     )
   )
 );

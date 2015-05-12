@@ -1,0 +1,10 @@
+name: Loading Indicator
+description: A loader for when Watson is thinking.
+displayTemplate: pattern
+applicationMethods:
+  - code: 'loading-indicator.svg'
+    description: 'Move to Images folder'
+  - code: 'loading-indicator.gif'
+    description: 'Move to Images folder'
+  - code: 'svg-smil'
+    description: 'Either include the included Modernizr JavaScript file, or add a check for `svg-smil` to your custom Modernizr build (or similar feature detection suite)'

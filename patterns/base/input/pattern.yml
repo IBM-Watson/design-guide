@@ -1,6 +1,22 @@
 name: Input Field
 description: Input field for a form
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--input'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED input:not([type])'
+    description: '`<input>` tag inside a class of `.base--STYLED` without any associated type'
+  - code: '%base--input'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: background color
+    description: Background color of input box
 variables:
   inputs:
     basic:

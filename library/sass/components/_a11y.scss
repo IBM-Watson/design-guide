@@ -1,0 +1,20 @@
+[library-class^='a11y--'] {
+  color: white;
+
+  &[library-class*='hidden'] {
+    color: transparent;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    display: block;
+  }
+
+  &[library-class*='focusable'] {
+    &:focus {
+      display: block;
+      height: auto;
+      width: 100%;
+      color: inherit;
+    }
+  }
+}

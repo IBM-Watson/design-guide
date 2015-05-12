@@ -1,6 +1,16 @@
 name: Radio Button
 description: A form field option where only one choice may be selected
 displayTemplate: pattern
+applicationMethods:
+  - code: '.base--radio'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED input[type="radio"]'
+    description: '`<input type="radio">` tag inside a class of `.base--STYLED`'
+  - code: '%base--radio'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: input border width
+    description: Color of radio border
 variables:
   radio:
     id: rb1
