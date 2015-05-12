@@ -4,16 +4,16 @@ title: Animation
 variables:
   example:
     singlePropAni: 
-      title: "Visual Example"
+      title: "Single Property Animation Visual Example"
       visualDisplay: /videos/animation-docs/singlePropAni.webm
     multiPropAni1: 
-      title: "Visual Example"
+      title: "First Option for Multiple Property Animations Visual Example"
       visualDisplay: /videos/animation-docs/multiPropAni1.webm
     multiPropAni2: 
-      title: "Visual Example"
+      title: "Second Option for Multiple Property Animations Visual Example"
       visualDisplay: /videos/animation-docs/multiPropAni2.webm
     sequenceAni: 
-      title: "Visual Example"
+      title: "Sequence of Animations Visual Example"
       visualDisplay: /videos/animation-docs/sequenceAni.webm
 resources:
   links:
@@ -214,7 +214,7 @@ $animations: (
 );
 ```
 
-In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. We have included defaults for the duration (2s) and timing function (ease-in), in case you do not specify your own.
+In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: `@include animation($animation-name [, $duration, $timing-function])`. We have included defaults for the `$duration` (2s) and `$timing-function` (ease-in), in case you do not specify your own.
 
 For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
 
