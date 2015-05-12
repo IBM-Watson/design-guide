@@ -1,0 +1,10 @@
+version: 1.0.0-rc.1
+repo: https://github.com/IBM-Watson/design-library
+licenses:
+  docs:
+    name: CC-BY 4.0 License
+    url: http://creativecommons.org/licenses/by/4.0/
+  code:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/LICENSE-2.0
+url: watsondesign.guide

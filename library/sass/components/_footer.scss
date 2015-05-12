@@ -1,0 +1,43 @@
+[library-class='footer'] {
+  background: color('grayscale', 50);
+  padding: setting-get('rhythm') * 2 0;
+  font-size: .75em;
+
+  [library-class='_library--container'] {
+    padding: 0 setting-get('rhythm');
+  }
+}
+
+[library-class='footer--link'] {
+  @include base--a(setting-get('text color'), color('grayscale', 50));
+}
+
+[library-class='footer--issues'],
+[library-class='footer--code'] {
+  display: inline-block;
+  margin-top: 0;
+}
+
+[library-class='footer--issues'] {
+  margin-right: setting-get('rhythm');
+}
+
+[library-class='footer--github'] {
+  @include breakpoint(542px) {
+    float: left;
+  }
+}
+
+[library-class='footer--licenses'] {
+  display: block;
+
+  @include breakpoint(542px) {
+    float: right;
+    text-align: right;
+    margin-top: 0;
+  }
+}
+
+[library-class='footer--code-license'] {
+  margin-top: 0;
+}

@@ -9,6 +9,11 @@
 * Add Apache 2.0 and CC-BY licenses! All source code is licensed under the Apache 2.0 license, documentation and assets under the CC-BY license
 * Add Bottom (previous/next) Nav
 * Add Resource panel to Layout template
+* Add Styling for header, sidebar, footer, bottom nav, and basic layout
+* Add Performance guidelines
+* Add Base and Components section, with pattern links
+* Add icon font
+* Add resource panel
 
 **Changes**
 
@@ -33,6 +38,10 @@
 * Remove resources template and update front matter
 * Add sub-content templates to Introduce Cognitive
 * Add sub-content templates to Inform Interactions
+* Clean lots of small details
+* Update base styling
+* Order sections correctly
+* Update Accessibility visual example
 
 ## v1.0.0-beta.3
 *April 28, 2015*
