@@ -5,16 +5,16 @@ variables:
   example:
     singlePropAni: 
       title: "Visual Example"
-      visualDisplay: /videos/animation-docs/singlePropAni.webmHD.webm
+      visualDisplay: /videos/animation-docs/singlePropAni.webm
     multiPropAni1: 
       title: "Visual Example"
-      visualDisplay: /videos/animation-docs/multiPropAni1.webmHD.webm
+      visualDisplay: /videos/animation-docs/multiPropAni1.webm
     multiPropAni2: 
       title: "Visual Example"
-      visualDisplay: /videos/animation-docs/multiPropAni2.webmHD.webm
+      visualDisplay: /videos/animation-docs/multiPropAni2.webm
     sequenceAni: 
       title: "Visual Example"
-      visualDisplay: /videos/animation-docs/sequenceAni.webmHD.webm
+      visualDisplay: /videos/animation-docs/sequenceAni.webm
 resources:
   links:
     name: "Debugging Chrome Animations"
