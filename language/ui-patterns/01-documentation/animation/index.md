@@ -4,8 +4,11 @@ title: Animation
 variables:
   example:
     singlePropAni: 
-      title: "Single Property Animation Example"
+      title: "Visual Example"
       visualDisplay: /videos/animation-docs/singlePropAni.webmHD.webm
+    multiPropAni1: 
+      title: "Visual Example"
+      visualDisplay: /videos/animation-docs/multiPropAni1.webmHD.webm
 resources:
   links:
     name: "Debugging Chrome Animations"
@@ -69,7 +72,7 @@ Multiple property animations are animations where multiple properties are being 
 
 Start one property alone, then animate any additional properties.
 
-![Scaling box animation starting with X axis scale then the Y axis scale follows.](/images/motion/examples/Option-A.gif)
+{{ _example.small(example.multiPropAni1) }}
 
 ```scss
 //box class
