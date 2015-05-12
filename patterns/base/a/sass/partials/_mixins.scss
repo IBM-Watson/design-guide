@@ -1,0 +1,17 @@
+@mixin base--a($color: null, $background: null, $extend: true) {
+  $color: setting-pick('primary color', $color);
+  $background: setting-pick('background color', $background);
+
+  color: $color;
+  @include underline($background, $color);
+
+  &:hover,
+  &:focus {
+    color: color-shade($color, 20);
+    @include underline($background, color-shade($color, 20));
+  }
+
+  @include mixin-dryer('base--a', $extend) {
+    font-weight: setting-get('bold weight font');
+  }
+}
