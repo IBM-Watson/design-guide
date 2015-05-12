@@ -12,6 +12,9 @@ variables:
     multiPropAni2: 
       title: "Second Option for Multiple Property Animations Visual Example"
       visualDisplay: /videos/animation-docs/multiPropAni2.webm
+    singularAni: 
+      title: "Singular Animation Visual Example"
+      visualDisplay: /videos/animation-docs/multiPropAni1.webm
     sequenceAni: 
       title: "Sequence of Animations Visual Example"
       visualDisplay: /videos/animation-docs/sequenceAni.webm
@@ -151,7 +154,7 @@ Within user interfaces, there are instances where only one element moves, as wel
 
 A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
-{{ _example.small(example.multiPropAni1) }}
+{{ _example.small(example.singularAni) }}
 
 ### Sequence of Actions
 
