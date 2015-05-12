@@ -1,6 +1,11 @@
 ---
 type: documentation
 title: Animation
+variables:
+  example:
+    singlePropAni: 
+      title: "Single Property Animation Example"
+      visualDisplay: /videos/animation-docs/singlePropAni.webmHD.webm
 resources:
   links:
     name: "Debugging Chrome Animations"
@@ -28,7 +33,7 @@ To see a full list of animatable properties and examples of them animating visit
 
 When animating only a single property, follow the guidelines below. 
 
-![Scaling of a box from 0% to 100%](/images/motion/examples/Single_Attribute-1.gif)
+{{ _example.small(example.singlePropAni) }}
 
 ```scss
 //box class
