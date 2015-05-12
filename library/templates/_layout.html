@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="{{css}}">
   {% endfor %}
 
+  {# Next and Previous #}
+  {% if navigation.next %}
+  <link rel="next prefetch" href="{{ navigation.next.url }}" title="{{ navigation.next.title }}">
+  {% endif %}
+  {% if navigation.previous %}
+  <link rel="prev" href="{{ navigation.previous.url }}" title="{{ navigation.previous.title }}">
+  {% endif %}
+
+  {# Prefetch header image #}
+  <link rel="prefetch" href="/images/library/wordmark-header.svg">
+
   {# JavaScript -#}
   <script src="/js/modernizr.min.js" async defer></script>
 
@@ -119,16 +130,22 @@
           {% endif %}
 
           {# Back to Top #}
-          <a href="#wdg-top" library-class="main-content--back-to-top"><span library-class="icon">(top)</span> Back to top</a>
+          <div library-class="main-content--back-to-top">
+            <a href="#wdg-top" library-class="main-content--section-link"><span library-class="icon">(top)</span> Back to top</a>
+          </div>
 
           {# Next/Previous #}
           {%if navigation.next || navigation.previous %}
             <div library-class="main-content--section-nav">
               {%if navigation.previous %}
-                <a href="{{ navigation.previous.url }}" library-class="main-content--previous">{{ navigation.previous.title }} <span library-class="icon">(previous)</span></a>
+                <div library-class="main-content--previous">
+                  <a href="{{ navigation.previous.url }}" library-class="main-content--section-link"><span library-class="icon">(previous)</span> {{ navigation.previous.title }}</a>
+                </div>
               {% endif %}
               {%if navigation.next %}
-                <a href="{{ navigation.next.url }}" library-class="main-content--next">{{ navigation.next.title }} <span library-class="icon">(next)</span></a>
+                <div library-class="main-content--next">
+                  <a href="{{ navigation.next.url }}" library-class="main-content--section-link">{{ navigation.next.title }} <span library-class="icon">(next)</span></a>
+                </div>
               {% endif %}
             </div>
           {% endif %}
