@@ -1,1 +1,16 @@
 @import '../../patterns/watson-patterns';
+
+//////////////////////////////
+// Components
+//////////////////////////////
+@import 'components/subnav';
+@import 'components/a11y';
+@import 'components/main-nav';
+@import 'components/wordmark';
+@import 'components/pattern';
+@import 'components/main-content';
+
+//////////////////////////////
+// Layouts
+//////////////////////////////
+@import 'layouts/library';

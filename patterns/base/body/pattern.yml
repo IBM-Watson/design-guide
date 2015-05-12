@@ -9,3 +9,9 @@ settings:
     description: Font family for site
   - setting: light weight font
     description: Font weight for light weight fonts. Used as default for whole site
+  - setting: rhythm
+    description: Vertical rhythm of items (`margin-top`)
+  - setting: backgronud color
+    description: Color of site's background
+  - setting: text color
+    description: Color of site's main body text

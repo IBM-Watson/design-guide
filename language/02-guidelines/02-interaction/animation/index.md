@@ -5,11 +5,11 @@ variables:
   examples:
     animationBefore:
       title: "Before"
-      visualDisplay: videos/animation/example-animation-1.webm
+      visualDisplay: /videos/animation/example-animation-1.webm
       description: "Interfaces without animations often produce a choppy, disorienting, and confusing experience for the user."
     animationAfter:
       title: "After"
-      visualDisplay: videos/animation/example-animation-2.webm
+      visualDisplay: /videos/animation/example-animation-2.webm
       description: "Interfaces with animations provide orientation and guidance for the user and make for a more pleasant experience."
 ---
 

@@ -33,9 +33,6 @@ variables:
       title: "Example: Responsive Grid"
       description: "Begin by designing the smallest size, using as close to real content as possible. As the size expands, the content will determine where the breakpoints should occur, not the device sizes."
 ---
-
-# Grids
-
 Grids enforce proportion and constraint upon our designs, providing order and structure to information. The best grid is specific to the displayed content and the design, as it is an extension of both. When used correctly, a grid will [enhance, balance, and structure content](http://www.ibm.com/design/language/framework/visual/layout.shtml), so users can read and view the information with ease.
 
 {{ _quote.quote(blockquote.quoteOne) }}
