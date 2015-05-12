@@ -6,12 +6,7 @@ resources:
     name: "Debugging Chrome Animations"
     source: http://valhead.com/2015/01/06/quick-tip-chrome-animation-controls/
 ---
-
-
-## Animation Guidelines
-
 The overarching metaphor for our animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation, plus subtle offsets.
-
 
 ## Properties
 
