@@ -43,6 +43,7 @@
   background: transparent;
   display: inline-block;
   margin-top: 0;
+  transform: translateY(-.5em);
 
   &:hover {
     cursor: pointer;
@@ -51,6 +52,8 @@
   [library-class='icon'] {
     display: inline-block;
     margin-top: 0;
+    font-size: 2em;
+    transform: translateY(.25em);
     transition: all 0.2s map-get($timing-functions, ease-in);
   }
 }
@@ -66,7 +69,7 @@
 
   &:hover {
     [library-class='icon'] {
-      transform: translateX(-.5em);
+      transform: translateX(-.25em) translateY(.25em);
     }
   }
 }
@@ -83,7 +86,7 @@
 
   &:hover {
     [library-class='icon'] {
-      transform: translateX(.5em);
+      transform: translateX(.25em) translateY(.25em);
     }
   }
 }
