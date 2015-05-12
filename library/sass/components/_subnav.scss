@@ -1,0 +1,47 @@
+[library-class~='subnav'] {
+  background: color('grayscale', 40);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+[library-class='subnav--heading'] {
+  @extend %base--strong;
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+[library-class*='subnav--list'] {
+  margin-top: 0;
+}
+
+[library-class='subnav--list-item'] {
+  &:hover,
+  &:focus {
+    border-left: 5px solid color('grayscale', 70);
+    background: color('grayscale', 50);
+
+    [library-class='subnav--item'] {
+      padding-left: calc(1rem - 5px);
+    }
+  }
+
+  &[data-state='active'] {
+    @extend %base--strong;
+    border-left: 5px solid tint(setting-get('primary color'), 20);
+    background: color('grayscale', 50);
+
+    [library-class='subnav--item'] {
+      padding-left: calc(1rem - 5px);
+      color: setting-get('primary color');
+    }
+  }
+}
+
+[library-class='subnav--item'] {
+  color: color('grayscale', 70);
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+}

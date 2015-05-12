@@ -1,0 +1,39 @@
+%__library--padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+[library-class='_library'] {
+  margin-top: 0;
+}
+
+[library-class*='_library--heading'] {
+  background: color('grayscale', 80);
+  margin-top: 0;
+}
+
+[library-class*='_library--container'] {
+  max-width: 940px;
+  margin: 0 auto;
+
+  @include clearfix;
+}
+
+[library-class*='_library--subnav'] {
+  @include breakpoint(557px) {
+    padding-right: .5rem;
+    width: 26.5%;
+    float: left;
+  }
+
+}
+
+[library-class*='_library--main-content'] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include breakpoint(557px) {
+    width: 100% - 26.5%;
+    padding-left: .5rem;
+    float: left;
+  }
+}
