@@ -63,7 +63,7 @@
           {% for navC in navigation.children %}
             {% if navC.children.length %}
             <dl library-class="page-children--group">
-              <lh library-class="page-children--group-title">{{ navC.title }}</lh>
+              <lh library-class="page-children--group-title" class="base--h2">{{ navC.title }}</lh>
               {% for child in navC.children %}
               <dl library-class="page-children--name"><a href="{{ child.url }}">{{ child.title }}</a></dl>
               <dt library-class="page-children--description">{{ child.description }}</dt>

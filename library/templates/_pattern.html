@@ -25,7 +25,7 @@
     </header>
     <ul class="base--ul">
       {% for setting in pattern.metadata.settings %}
-      <li class="base--li"><code class="base--code">{{ setting.code }}</code> - <span library-class="pattern--inline-description" class="base--STYLED">{{ setting.description|markdown | safe -}}</span></li>
+      <li class="base--li"><code class="base--code">{{ setting.setting }}</code> - <span library-class="pattern--inline-description" class="base--STYLED">{{ setting.description|markdown | safe -}}</span></li>
       {% endfor %}
     </ul>
 </aside>
