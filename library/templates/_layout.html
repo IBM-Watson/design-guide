@@ -153,6 +153,27 @@
 
       </article>
     </main>
+    <footer library-class="footer">
+      <div library-class="_library--container">
+        <div library-class="footer--github">
+          <div library-class="footer--version">
+            <a href="https://github.com/IBM-Watson/design-library/releases/latest" library-class="footer--link">v{{ site.version }}</a>
+          </div>
+          <div library-class="footer--issues">
+            <span library-class="icon">(issues)</span>
+            <a href="{{ site.repo }}/issues" library-class="footer--link">Submit an Issue</a>
+          </div>
+          <div library-class="footer--code">
+            <span library-class="icon">(code)</span>
+            <a href="{{ site.repo }}" library-class="footer--link">View the Code</a>
+          </div>
+        </div>
+        <div library-class="footer--licenses">
+          <p library-class="footer--doc-license">Documentation licensed under <a href="{{ site.licenses.docs.url }}" library-class="footer--link">{{ site.licenses.docs.name }}</a></p>
+          <p library-class="footer--code-license">Code licensed under <a href="{{ site.licenses.code.url }}" library-class="footer--link">{{ site.licenses.code.name }}</a></p>
+        </div>
+      </div>
+    </footer>
   </div>
 
 
