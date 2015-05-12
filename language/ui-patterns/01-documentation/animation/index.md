@@ -6,12 +6,7 @@ resources:
     name: "Debugging Chrome Animations"
     source: http://valhead.com/2015/01/06/quick-tip-chrome-animation-controls/
 ---
-
-
-## Animation Guidelines
-
 The overarching metaphor for our animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation, plus subtle offsets.
-
 
 ## Properties
 
@@ -33,12 +28,12 @@ To see a full list of animatable properties and examples of them animating visit
 
 When animating only a single property, follow the guidelines below. 
 
-![Scaling of a box from 0% to 100%](images/motion/examples/Single_Attribute-1.gif)
+![Scaling of a box from 0% to 100%](/images/motion/examples/Single_Attribute-1.gif)
 
 ```scss
 //box class
 .single-attribute {
-  animation: single-attribute 1s map-get($timing-function, bounce-in);
+  animation: single-attribute 1s map-get($timing-functions, bounce-in);
 }
 
 //keyframes for animation
@@ -57,9 +52,9 @@ When animating only a single property, follow the guidelines below.
 Use bounce eases to add the snap-in factor that is typically achieved with multiple properties. Bounce eases are snappy bounces, not physics-based bounces.
 
   * Use of Timing Functions:
-    * **Entrances** - `map-get($timing-function, bounce-in)` (Fast to Slow) 
-    * **Exits** - `map-get($timing-function, bounce-out)` (Slow to Fast)
-    * **Interactive Elements** - `map-get($timing-function, bounce-in-out)`
+    * **Entrances** - `map-get($timing-functions, bounce-in)` (Fast to Slow) 
+    * **Exits** - `map-get($timing-functions, bounce-out)` (Slow to Fast)
+    * **Interactive Elements** - `map-get($timing-functions, bounce-in-out)`
 
 ### Multiple Property Animations
 
@@ -69,12 +64,12 @@ Multiple property animations are animations where multiple properties are being 
 
 Start one property alone, then animate any additional properties.
 
-![Scaling box animation starting with X axis scale then the Y axis scale follows.](images/motion/examples/Option-A.gif)
+![Scaling box animation starting with X axis scale then the Y axis scale follows.](/images/motion/examples/Option-A.gif)
 
 ```scss
 //box class
 .animation-a {
-  animation: animation-a 1s map-get($timing-function, snap-in);
+  animation: animation-a 1s map-get($timing-functions, snap-in);
   transform-origin: 0% 100%;
 }
 
@@ -97,12 +92,12 @@ Start one property alone, then animate any additional properties.
 Both properties start at the same time, then one property ends before the other.
 
 
-![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](images/motion/examples/Option-B.gif)
+![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](/images/motion/examples/Option-B.gif)
 
 ```scss
 //box class
 .animation-b {
-  animation: animation-b 1s map-get($timing-function, snap-in);
+  animation: animation-b 1s map-get($timing-functions, snap-in);
   transform-origin: 0% 100%;
 }
 
@@ -128,9 +123,9 @@ Both properties start at the same time, then one property ends before the other.
 Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
 
 * Use of Timing Functions: 
-  * **Entrances** - `map-get($timing-function, snap-in)` (Fast to Slow) 
-  * **Exits** - `map-get($timing-function, snap-out)` (Slow to Fast)
-  * **Interactive Elements** - `map-get($timing-function, snap-in-out)`
+  * **Entrances** - `map-get($timing-functions, snap-in)` (Fast to Slow) 
+  * **Exits** - `map-get($timing-functions, snap-out)` (Slow to Fast)
+  * **Interactive Elements** - `map-get($timing-functions, snap-in-out)`
 
 
 ## Singular vs. Sequence of Actions
@@ -142,13 +137,13 @@ Within user interfaces, there are instances where only one element moves, as wel
 
 A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
-![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
+![Singular action shows a box animating scaling horizontally then vertically](/images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
 A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](images/motion/examples/secondary-action.gif)
+![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](/images/motion/examples/secondary-action.gif)
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 

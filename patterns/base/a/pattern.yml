@@ -8,8 +8,14 @@ applicationMethods:
     description: '`<a>` tag inside a class of `.base--STYLED`'
   - code: '%base--a'
     description: 'Extend this silent selector through Sass'
+  - code: '`@include base--a([$color: null, $background: null])'
+    description: 'Include mixin to customize links. `$color` is text color and defaults to `primary color` setting, `$background` is background color link will be on and defaults to `background color` setting.'
 settings:
-  - setting: secondary color
-    description: Text color
+  - setting: primary color
+    description: Link color
+  - setting: background color
+    description: Assists with creating illusion of cleared descenders for underline
+  - setting: bold weight font
+    description: Weight of link
 variables:
   text: Link to something

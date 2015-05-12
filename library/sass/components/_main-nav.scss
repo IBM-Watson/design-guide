@@ -1,0 +1,46 @@
+[library-class="main-nav"] {
+  @include clearfix;
+  margin-top: 0;
+
+
+  @include breakpoint(455px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @include breakpoint(565px) {
+    padding: 0;
+    float: right;
+    margin-top: .16em;
+  }
+}
+
+[library-class="main-nav--item"] {
+  color: color('gray', 20);
+  display: block;
+  float: left;
+  width: 100 / 3 * 1%;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0;
+  padding: setting-get('rhythm') 0;
+
+  border-bottom: 5px solid transparent;
+
+  &[data-state='active'] {
+    @extend %base--strong;
+    color: color-tint(setting-get('primary color'), 30);
+    border-color: color-tint(setting-get('primary color'), 30);
+  }
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    border-color: inherit;
+  }
+
+  @include breakpoint(565px) {
+    width: auto;
+    padding: setting-get('rhythm')
+  }
+}
