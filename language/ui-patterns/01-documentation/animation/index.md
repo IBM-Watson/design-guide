@@ -58,7 +58,7 @@ Use bounce eases to add the snap-in factor that is typically achieved with multi
 
 ### Multiple Property Animations
 
-Multiple property animations are animations where multiple properties are being animated together. With multiple property animations there are two different options. The first option is to start one property alone, then animate any additional properties. The second option is for both properties to start at the same time, then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
+Multiple property animations are animations where multiple properties are being animated together. With multiple property animations, there are two different options. The first option is to start one property alone, then animate any additional properties. The second option is for both properties to start at the same time, then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
 
 **Option One**
 
