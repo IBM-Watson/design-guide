@@ -1,5 +1,5 @@
 name: Body
-description: The document's body which contains all of its content
+description: The body of the document which contains all of its content
 displayTemplate: pattern
 applicationMethods:
   - code: body
@@ -8,10 +8,10 @@ settings:
   - setting: sans serif font
     description: Font family for site
   - setting: light weight font
-    description: Font weight for light weight fonts. Used as default for whole site
+    description: Font weight for light weight fonts. Used as default for whole site.
   - setting: rhythm
     description: Vertical rhythm of items (`margin-top`)
-  - setting: backgronud color
+  - setting: background color
     description: Color of site's background
   - setting: text color
     description: Color of site's main body text
