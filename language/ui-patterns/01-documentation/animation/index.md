@@ -36,9 +36,9 @@ Properties are the elements of an object that will change over time. The propert
 * Rotation: `transform: rotate(ndeg);`
 * Opacity: `opacity: 0...1;`
 
-For more information about why these properties are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+For more information about why these properties are performant, see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
-To see a full list of animatable properties and examples of them animating visit [Animatable.](http://leaverou.github.io/animatable/)
+To see a full list of animatable properties and examples of them animating, visit [Animatable.](http://leaverou.github.io/animatable/)
 
 
 ### Single Property Animations
