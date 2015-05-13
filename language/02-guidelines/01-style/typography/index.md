@@ -53,19 +53,19 @@ IBM Watson recommends the Major Third ratio for screen sizes under 500px and the
 
 ### Desktop or Browser
 
-`font-family: "Helvetica Neue for IBM", Helvetica, Arial, Roboto, sans-serif;`  
+`font-family: 'Helvetica Neue for IBM', Helvetica, Arial, Roboto, sans-serif;`  
 ######Monospace 
 
 `font-family: 'Source Code Pro', Lucida Console, Andale Mono, monospace;`
 
 ###Apple Watch 
 
-`font-family: “San Francisco”;`
+`font-family: 'San Francisco';`
 
 ###iOS
 
-`font-family: "Helvetica Neue";` 
+`font-family: 'Helvetica Neue';` 
 
 ###Android
 
-`font-family: "Roboto";`
+`font-family: 'Roboto';`
