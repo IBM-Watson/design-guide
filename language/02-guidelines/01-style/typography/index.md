@@ -25,7 +25,7 @@ variables:
       description: "When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes."
 ---
 
-Typography is the atomic element of good interface design. It colors the words in our language and shapes their meaning. It helps to set the visual tone for the entire Watson experience. Text is largely differentiated by size and weight. Keep other properties the same or similar, differentiating only when necessary for the sake of clarity.
+Typography is the atomic element of good interface design. It colors the words in our language and shapes their meaning. It helps to set the visual tone for the entire IBM Watson experience. Text is largely differentiated by size and weight. Keep other properties the same or similar, differentiating only when necessary for the sake of clarity.
 
 ## Helvetica Neue for IBM
 
@@ -41,7 +41,7 @@ When presenting large amounts of content, it is important to consider how multip
 
 ## Typographic Scale
 
-The IBM Design Language recommends using [modular type scales](http://www.ibm.com/design/language/framework/visual/typography.shtml) to create harmonious proportions and structure, as scale creates consistency in sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. 
+The IBM Design Language recommends using [modular type scales](http://www.ibm.com/design/language/framework/visual/typography.shtml) to create harmonious proportions and structure, because scale creates consistency in sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. 
 
 ### Major Third Type Scale
 
@@ -56,7 +56,7 @@ IBM Watson recommends the Major Third ratio for screen sizes under 500px and the
 `font-family: "Helvetica Neue for IBM", Helvetica, Arial, Roboto, sans-serif;`  
 ######Monospace 
 
-`font-family: 'Source Code Pro', Lucida Console, Andale Mono, monospace;`
+`font-family: "Source Code Pro", Lucida Console, Andale Mono, monospace;`
 
 ###Apple Watch 
 
