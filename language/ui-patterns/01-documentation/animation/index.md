@@ -75,7 +75,7 @@ Use snap-in eases to add very strong eases to quick movements. This enhances the
 
 ### Multiple Property Animations
 
-Multiple properties are animated together is known as a multiple property animation. With multiple property animations, there are two different options: to start one property alone then animate any additional properties, or to start both properties at the same time then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
+When more than one property is being animated, the animation is known as a multiple property animation. With multiple property animations, there are two different options: to start one property alone then animate any additional properties, or to start both properties at the same time then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
 
 **Option One**
 
