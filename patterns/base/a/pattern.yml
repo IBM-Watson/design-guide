@@ -1,5 +1,5 @@
 name: Anchor link
-description: Anchor link
+description: Tag to define a hyperlink
 displayTemplate: pattern
 applicationMethods:
   - code: '.base--a'

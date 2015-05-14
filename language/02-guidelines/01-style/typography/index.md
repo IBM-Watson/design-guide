@@ -9,23 +9,23 @@ variables:
     typefaceCombinations:
       typefaceCombinationOne:
         title: "Helvetica Neue Roman"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-roman.svg
       typefaceCombinationTwo:
         title: "Helvetica Neue Roman Italic"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-roman-italic.svg
       typefaceCombinationThree:
         title: "Helvetica Neue Bold"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-bold.svg
       typefaceCombinationFour:
         title: "Helvetica Neue Bold Italic"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-bold-italic.svg
     responsiveTypography:
       title: "Major Third with a breakpoint at 500px"
       visualDisplay: /videos/typography/responsive-typography.webm
       description: "When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes."
 ---
 
-Typography is the atomic element of good interface design. It colors the words in our language and shapes their meaning. It helps to set the visual tone for the entire Watson experience. Text is largely differentiated by size and weight. Keep other properties the same or similar, differentiating only when necessary for the sake of clarity.
+Typography is the atomic element of good interface design. It colors the words in our language and shapes their meaning. It helps to set the visual tone for the entire IBM Watson experience. Text is largely differentiated by size and weight. Keep other properties the same or similar, differentiating only when necessary for the sake of clarity.
 
 ## Helvetica Neue for IBM
 
@@ -41,7 +41,7 @@ When presenting large amounts of content, it is important to consider how multip
 
 ## Typographic Scale
 
-The IBM Design Language recommends using [modular type scales](http://www.ibm.com/design/language/framework/visual/typography.shtml) to create harmonious proportions and structure, as scale creates consistency in sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. 
+The IBM Design Language recommends using [modular type scales](http://www.ibm.com/design/language/framework/visual/typography.shtml) to create harmonious proportions and structure. Scale creates consistent sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. 
 
 ### Major Third Type Scale
 
@@ -53,19 +53,19 @@ IBM Watson recommends the Major Third ratio for screen sizes under 500px and the
 
 ### Desktop or Browser
 
-`font-family: "Helvetica Neue for IBM", Helvetica, Arial, Roboto, sans-serif;`  
+`font-family: 'Helvetica Neue for IBM', Helvetica, Arial, Roboto, sans-serif;`  
 ######Monospace 
 
 `font-family: 'Source Code Pro', Lucida Console, Andale Mono, monospace;`
 
 ###Apple Watch 
 
-`font-family: “San Francisco”;`
+`font-family: 'San Francisco';`
 
 ###iOS
 
-`font-family: "Helvetica Neue";` 
+`font-family: 'Helvetica Neue';` 
 
 ###Android
 
-`font-family: "Roboto";`
+`font-family: 'Roboto';`

@@ -25,6 +25,9 @@
   {# Prefetch header image #}
   <link rel="prefetch" href="/images/library/wordmark-header.svg">
 
+  {# Favicon -#}
+  <link rel="icon" type="image/x-icon" href="/images/library/favicon.ico" />
+
   {# JavaScript -#}
   <script src="/js/modernizr.min.js" async defer></script>
 
@@ -113,16 +116,16 @@
           <div library-class="resources">
             <h3 library-class="resources--title">Resources</h3>
             {% if resources.files %}
-            <ul class="resources--file-list">
+            <ul library-class="resources--file-list">
               {% for resource in resources.files %}
-              <li class="resources--item"><a href="{{ resource.source }}" class="resources--link">{{ resource.name }}</a></li>
+              <li library-class="resources--item"><span library-class="icon">(document)</span> <a href="{{ resource.source }}" library-class="resources--link">{{ resource.name }}</a></li>
               {% endfor %}
             </ul>
             {% endif %}
             {% if resources.links %}
-            <ul class="resources--file-list">
+            <ul library-class="resources--link-list">
               {% for resource in resources.links %}
-              <li class="resources--item"><a href="{{ resource.source }}" class="resources--link">{{ resource.name }}</a></li>
+              <li library-class="resources--item"><span library-class="icon">(link)</span> <a href="{{ resource.source }}" library-class="resources--link">{{ resource.name }}</a></li>
               {% endfor %}
             </ul>
             {% endif %}

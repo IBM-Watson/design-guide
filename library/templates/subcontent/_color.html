@@ -1,7 +1,7 @@
 <!-- Swatchs -->
 {% macro swatchWithAttribute(color) %}
   <div library-class="color-swatch--ATTRIBUTES">
-    <span library-class="color-swatch--swatch" style="background: {{ color.palette|ibmHex(color.tone) }}"></span>
+    <span library-class="color-swatch--swatch" style="background: {{ color.palette|ibmHex(color.tone) }}"> </span>
     <div library-class="color-swatch--info">
       <p library-class="color-swatch--name">{{ color.palette }} {{ color.tone }}</p>
       {% if color.adjectives %}
