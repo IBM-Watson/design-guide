@@ -1,0 +1,80 @@
+[library-class='color-swatch--swatch'] {
+  width: 65%;
+  @include breakpoint(578px) {
+    width: 70%;
+  }
+  @include breakpoint(716px) {
+    width: 75%;
+  }
+
+  height: 5em;
+  float: left;
+  display: block;
+  clear: both;
+}
+
+[library-class='color-swatch--info'] {
+  width: 35%;
+  @include breakpoint(578px) {
+    width: 30%;
+  }
+  @include breakpoint(716px) {
+    width: 25%;
+  }
+
+  display: block;
+  float: left;
+  margin-top: 0;
+  padding-left: setting-get('rhythm');
+}
+
+[library-class='color-swatch--name'],
+[library-class='color-grouping--instructions'] {
+  @extend %base--strong;
+}
+
+[library-class='color-swatch--attributes'] {
+  margin-top: 0;
+
+  li {
+    display: block;
+
+    &:before {
+      content: '' !important;
+      padding-right: 0 !important;
+    }
+  }
+}
+
+[library-class='color-swatch--ATTRIBUTES'],
+[library-class='color-grouping--swatches'] {
+  @include clearfix;
+  margin-top: setting-get('rhythm');
+}
+
+[library-class='color-swatch'] {
+  padding: setting-get('rhythm');
+
+  width: 100%;
+
+  @include breakpoint(449px) {
+    width: 50%;
+  }
+  @include breakpoint(557px) {
+    width: 100%;
+  }
+  @include breakpoint(596px) {
+    width: 50%;
+  }
+  @include breakpoint(899px) {
+    width: 33%;
+  }
+
+  float: left;
+  margin-top: 0;
+
+
+  [library-class='color-swatch--attributes'] {
+    margin-top: setting-get('rhythm');
+  }
+}
