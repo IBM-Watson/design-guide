@@ -1,5 +1,5 @@
 name: Select Box
-description: A flexible and configurable way of selecting an indivdual item from a list
+description: A flexible and configurable way of selecting an individual item from a list
 displayTemplate: pattern
 applicationMethods:
   - code: '.base--select'
