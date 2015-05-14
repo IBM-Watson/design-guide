@@ -6,6 +6,9 @@
   @include breakpoint(716px) {
     width: 75%;
   }
+  @include breakpoint(898px) {
+    width: 80%;
+  }
 
   height: 5em;
   float: left;
@@ -20,6 +23,9 @@
   }
   @include breakpoint(716px) {
     width: 25%;
+  }
+  @include breakpoint(898px) {
+    width: 20%
   }
 
   display: block;
@@ -67,7 +73,7 @@
     width: 50%;
   }
   @include breakpoint(899px) {
-    width: 33%;
+    width: 100 / 3 * 1%;
   }
 
   float: left;
