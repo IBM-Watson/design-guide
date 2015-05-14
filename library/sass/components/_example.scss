@@ -14,8 +14,23 @@
 }
 
 [library-class='example--SMALL'] {
-  width: 50%;
   float: left;
+
+  width: 100%;
+
+  @include breakpoint(442px) {
+    width: 50%;
+  }
+
+  @include breakpoint(557px) {
+    width: 100%;
+  }
+
+
+  @include breakpoint(685px) {
+    width: 50%;
+  }
+
 
   &:nth-of-type(2n + 1) {
     clear: both;
