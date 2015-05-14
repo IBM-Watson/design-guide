@@ -18,7 +18,7 @@ resources:
     - name: "Web Page Test"
       source: http://www.webpagetest.org/
 variables:
-  detail:
+  example:
     framesPerSecond:
       visualDisplay: /videos/performance/performance2.webm
       title: "FPS/Hertz Comparison"
@@ -60,7 +60,7 @@ Based on this understanding of memory as well as Nielsen's research, we recommen
 
 A human's sensory memory, acting at 100ms, is able to identify around 10 unique images per second. In order to create the illusion of smooth movement for users, as opposed to a series of independent images, more images are needed. The number of images per second, or frame rate, is often expressed as either Frames per Second (FPS), or in hertz (Hz) when working with progressive scan monitors. For a point of reference, the *de facto* standard for movies and television with sound is 24 FPS.
 
-{{ _detail.view(detail.framesPerSecond) }}
+{{ example.large(example.framesPerSecond) }}
 
 When creating interfaces, however, 24 FPS will not provide the fluid movement it does on film. Film relies on a number of effects – most commonly, [motion blur](http://en.wikipedia.org/wiki/Motion_blur) - to hide inter-frame judder. When [animating interface elements](/guidelines/interaction/animation/) or having users interact with our interfaces in a way that would cause motion (such as scrolling), we cannot rely upon those same effects because they are unique to the film medium. Instead, our interfaces should update at the same rate the device's screen is refreshing. When interfaces are not able to refresh at this rate, the result, called [Jank](http://jankfree.org/), is a "…stuttering, juddering, or just plain halting" of the interface.
 
