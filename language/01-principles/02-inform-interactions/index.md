@@ -35,6 +35,9 @@ variables:
 **Reduce the complexity of using Watson by informing the user's interactions as they collaborate with Watson to accomplish desired tasks.**
 
 {{ _detail.view(detail.informOne) }}
+
 {{ _detail.view(detail.informTwo) }}
+
 {{ _detail.view(detail.informThree) }}
+
 {{ _detail.view(detail.informFour) }}

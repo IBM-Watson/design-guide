@@ -33,6 +33,9 @@ variables:
 **Give first-time users a set of "cognitive training wheels" and continue to provide unobtrusive support as needed.**
 
 {{ _detail.view(detail.introduceOne) }}
+
 {{ _detail.view(detail.introduceTwo) }}
+
 {{ _detail.view(detail.introduceThree) }}
+
 {{ _detail.view(detail.introduceFour) }}

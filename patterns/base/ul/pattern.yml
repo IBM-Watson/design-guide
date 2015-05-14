@@ -12,5 +12,5 @@ variables:
   listitems:
     - List item 1
     - List item 2
-    - Really super duper long list item so we can see how lists look like when they wrap
+    - Really super duper long list item that is included so that we can see what lists look like when they wrap
     - List item 3

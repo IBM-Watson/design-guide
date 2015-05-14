@@ -1,1 +1,1 @@
-The `<body>`tag defines the document's body, which contains all of its content.
+The `<body>` tag defines the body of the document, which contains all of its content.

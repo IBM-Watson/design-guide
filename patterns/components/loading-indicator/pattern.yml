@@ -1,5 +1,5 @@
 name: Loading Indicator
-description: A loader for when Watson is thinking.
+description: A loader for when Watson is thinking
 displayTemplate: pattern
 applicationMethods:
   - code: 'loading-indicator.svg'

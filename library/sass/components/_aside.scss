@@ -1,0 +1,6 @@
+[library-class='aside'] {
+  border-top: 3px solid color-tint(setting-get('primary color'), 20);
+  font-size: .8em;
+  padding: setting-get('rhythm');
+  padding-bottom: 0;
+}

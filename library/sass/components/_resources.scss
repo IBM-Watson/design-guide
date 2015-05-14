@@ -1,0 +1,68 @@
+[library-class='resources'] {
+  @extend [library-class~='subnav'];
+}
+
+[library-class='resources--title'] {
+  @extend %base--h5;
+  padding-bottom: setting-get('rhythm');
+  padding-left: setting-get('rhythm');
+  padding-right: setting-get('rhythm');
+  border-bottom: 1px solid color('grayscale', 90);
+}
+
+[library-class='resources--file-list'],
+[library-class='resources--link-list'] {
+  padding-left: setting-get('rhythm');
+  padding-right: setting-get('rhythm');
+}
+
+
+[library-class='resources--file-list'] {
+  $color: color-shade(setting-get('secondary color'), 10);
+  color: $color;
+
+  &:hover {
+    color: color-shade($color, 20);
+  }
+
+  [library-class='resources--link'] {
+    @include base--a($color, color('grayscale', 40));
+    background-position: 0 (toolkit-get('underline width') * 0.625em);
+
+    &:hover {
+      background-position: 0 (toolkit-get('underline width') * 0.625em);
+    }
+  }
+}
+
+[library-class='resources--item'] {
+  [library-class='icon'] {
+    font-size: 1.5em;
+  }
+}
+
+
+[library-class='resources--link-list'] {
+  $color: setting-get('primary color');
+  color: $color;
+
+  &:hover {
+    color: color-shade($color, 20);
+  }
+
+  [library-class='resources--link'] {
+    @include base--a($color, color('grayscale', 40));
+    background-position: 0 (toolkit-get('underline width') * 0.625em);
+
+    &:hover {
+      background-position: 0 (toolkit-get('underline width') * 0.625em);
+    }
+  }
+}
+
+[library-class='resources--link'] {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: .25em;
+  transform: translateY(-.25em);
+}
