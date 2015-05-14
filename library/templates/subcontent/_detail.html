@@ -13,8 +13,8 @@
       {% endif %}
       <dl library-class="detail--callouts">
         {% for callout in detail.callouts %}
-        <dt library-class="detail--callout-title"><span library-class="detail--counter" aria-hidden>{{ loop.index }}</span>{{ callout.title }}</dt>
-        <dd library-class="detail--callout-description">{{ callout.description }}</dd>
+        <dt library-class="detail--callout-title"><span library-class="detail--counter" aria-hidden>{{ loop.index }}.</span>{{ callout.title }}</dt>
+        <dd library-class="a11y--hidden-focusable">{{ callout.description }}</dd>
         {% endfor %}
       </dl>
     </div>
