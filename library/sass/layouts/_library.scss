@@ -7,6 +7,10 @@
   margin-top: 0;
 }
 
+[library-class='_library--clearfix'] {
+  @include clearfix;
+}
+
 [library-class*='_library--heading'] {
   background: color('grayscale', 80);
   color: color('grayscale', 10);

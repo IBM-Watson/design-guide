@@ -15,20 +15,21 @@ variables:
         title: Logo
         visualDisplay: /images/wordmark/logo.svg
     smallExample:
-      title: Wordmark
-      visualDisplay: /images/wordmark/wordmark-spacing.svg
+      wordmark:
+        title: Wordmark
+        visualDisplay: /images/wordmark/wordmark-spacing.svg
     secondCompare:
-      exampleOne:
-        light:
-          title: Wordmark
+        lightOne:
+          title: Light Wordmark
           visualDisplay: /images/wordmark/wordmark-color-pos.svg
-        dark:
+        darkOne:
+          title: Dark Wordmark
           visualDisplay: /images/wordmark/wordmark-color-neg.svg
-      exampleTwo:
-        light:
-          title: Logo
+        lightTwo:
+          title: Light Logo
           visualDisplay: /images/wordmark/logo-color-pos.svg
-        dark:
+        darkTwo:
+          title: Dark Logo
           visualDisplay: /images/wordmark/logo-color-neg.svg
     thirdCompare:
         exampleOne:
@@ -59,7 +60,7 @@ The IBM Watson wordmark and logo represent our brand and should be managed caref
 
 It is important to include adequate spacing around these elements to avoid visual clutter. Keep the area around the IBM Watson wordmark separated from other visual elements by a distance approximately equal to the height of the IBM Watson wordmark. This distance is considered the minimum uninterrupted space surrounding the mark.
 
-{{ _example.small(example.smallExample) }}
+{{ _example.compare(example.smallExample) }}
 
 ### Color Usage
 
