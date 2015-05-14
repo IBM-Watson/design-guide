@@ -30,6 +30,8 @@ When choosing colors and contrast ratios for typography it is important to adher
 
 {{ _detail.view(detail.accessibilityInteraction) }}
 
+Colors at a 50 value or lower are not accessible on neutral backgrounds, unless they're displayed at 18 pt or larger. There are no formal color contrast requirements for icons or glyphs that are paired with supporting text. If an icon is used separately from supporting text on a neutral background, use a color value of 50 or higher.
+
 ## Animation
 
 In addition to the fundamental visual accessibility guides, animation has its own set of considerations. For animations that are longer than five seconds, we must provide the ability to pause, stop, or hide animations for users who can be severely distracted, particularly those with attention deficit disorders.
