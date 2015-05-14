@@ -39,6 +39,9 @@ variables:
 **Let the user choose more help or less help by offering control when it is wanted. Watson experiences should naturally adapt to amplify the user's abilities and expertise.**
 
 {{ _detail.view(detail.offerOne) }}
+
 {{ _detail.view(detail.offerTwo) }}
+
 {{ _detail.view(detail.offerThree) }}
+
 {{ _detail.view(detail.offerFour) }}
