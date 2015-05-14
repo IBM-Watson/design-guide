@@ -49,11 +49,11 @@ Ratios can be used to help set the tone for compositions. Choose one that makes 
 
 ## Responsive Grids
 
-When designing for the ever evolving, unstable medium of the web, take care to ensure that the layouts work no matter the context. In order to do so, grids need to be flexible and fluid, stretching and condensing to fill the given space. At some points, though, the design or the content will no longer be displayed as intended. At this point the grid should change to allow the content and design to be rearranged into a more optimal display.
+When designing for the ever-evolving, unstable medium of the web, take care to ensure that the layouts work no matter the context. In order to do so, grids need to be flexible and fluid, stretching and condensing to fill the given space. At some points, though, the design or the content will no longer be displayed as intended. At this point the grid should change to allow the content and design to be rearranged into a more optimal display.
 
 {{ _quote.quote(blockquote.quoteThree) }}
 
-When designing responsive grids, the smallest size should be designed first, using as close to real content as possible. The content and design determine the breaking point of that grid, not the device sizes, so it's necessary to work in the medium of the final product. In the web, this means low-fidelity wireframing in code and browser. Different combinations and types of content and content displays will likely require different breakpoints and different grids, sometimes requiring only one grid for the whole range of displays, sometimes requiring many grids. The responsive layouts created for these content and design pairs can and should be reused even if the individual grids and breakpoints that make them up are not.
+To create responsive grids, the smallest size should be designed first, using as close to real content as possible. The content and design determine the breaking point of that grid, not the device sizes, so it's necessary to work in the medium of the final product. In the web, this means low-fidelity wireframing in code and browser. Different combinations and types of content and content displays will likely require different breakpoints and different grids, sometimes requiring only one grid for the whole range of displays, sometimes requiring many grids. The responsive layouts created for these content and design pairs can and should be reused even if the individual grids and breakpoints that make them up are not.
 
 {{ _example.large(example.responsiveGridVideo) }}
 
