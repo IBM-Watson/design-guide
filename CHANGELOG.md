@@ -1,5 +1,20 @@
 # Watson Design Library Changelog
 
+## v1.0.0-rc.2
+**May 14, 2015**
+
+**New**
+
+* Add visual examples for Typography
+* Add visual examples for performance
+* Add favicon
+* Add `mp4` versions for all videos
+* Add subcontent and resource styling
+
+**Changes**
+
+* :art: Clean up Grids, Typography, Wordmark, Animation, and Animation Documentation writing
+
 ## v1.0.0-rc.1
 *May 7, 2015*
 
