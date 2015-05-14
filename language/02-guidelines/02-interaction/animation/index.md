@@ -17,7 +17,7 @@ Motion is a fundamental element of user experience design because it demonstrate
 
 {{ _example.compare(examples) }}
 
-Motion design enhances communication throughout the design process, from the rapid prototyping of scenarios and interfaces to delivering final coded interface animations. The metaphor for animation comes from the IBM Design Language metaphor of elegant machine motion. The [IBM Design Language "Motion" section](http://www.ibm.com/design/language/framework/interaction/motion.shtml) walks through the methodologies and process for creating animation for IBM software products.
+Motion design enhances communication throughout the design process, from the rapid prototyping of scenarios and interfaces to delivering final coded interface animations. The metaphor for animation comes from the IBM Design Language metaphor of elegant machine motion. The [IBM Design Language *Motion* section](http://www.ibm.com/design/language/framework/interaction/motion.shtml) walks through the methodologies and process for creating animation for IBM software products.
 
 
 ## Animation Library
