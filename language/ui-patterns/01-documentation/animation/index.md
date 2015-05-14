@@ -3,24 +3,29 @@ type: documentation
 title: Animation
 variables:
   example:
-    singlePropAni: 
-      title: "Single Property Animation Visual Example"
-      visualDisplay: /videos/animation-docs/singlePropAni.webm
-    multiPropAni1: 
-      title: "First Option for Multiple Property Animations Visual Example"
-      visualDisplay: /videos/animation-docs/multiPropAni1.webm
-    multiPropAni2: 
-      title: "Second Option for Multiple Property Animations Visual Example"
-      visualDisplay: /videos/animation-docs/multiPropAni2.webm
-    singularAni: 
-      title: "Singular Animation Visual Example"
-      visualDisplay: /videos/animation-docs/multiPropAni1.webm
-    sequenceAni: 
-      title: "Sequence of Animations Visual Example"
-      visualDisplay: /videos/animation-docs/sequenceAni.webm
+    firstCompare:
+      exampleOne: 
+        title: "Single Property Animation Visual Example"
+        visualDisplay: /videos/animation-docs/singlePropAni.webm
+    secondCompare:
+      exampleOne: 
+        title: "First Option for Multiple Property Animations Visual Example"
+        visualDisplay: /videos/animation-docs/multiPropAni1.webm
+    thirdCompare:    
+      exampleOne: 
+        title: "Second Option for Multiple Property Animations Visual Example"
+        visualDisplay: /videos/animation-docs/multiPropAni2.webm
+    fourthCompare:
+      exampleOne: 
+        title: "Singular Animation Visual Example"
+        visualDisplay: /videos/animation-docs/multiPropAni1.webm
+    fifthCompare:
+      exampleOne: 
+        title: "Sequence of Animations Visual Example"
+        visualDisplay: /videos/animation-docs/sequenceAni.webm
 resources:
   links:
-    name: "Debugging Chrome Animations"
+  - name: "Debugging Chrome Animations"
     source: http://valhead.com/2015/01/06/quick-tip-chrome-animation-controls/
 ---
 The overarching metaphor for our animation comes from the IBM Design Language metaphor *elegant machine motion*. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation, plus subtle offsets.
@@ -45,7 +50,7 @@ To see a full list of animatable properties and examples of them animating, visi
 
 When animating only a single property, follow the guidelines below. 
 
-{{ _example.compare(example.singlePropAni) }}
+{{ _example.compare(example.firstCompare) }}
 
 ```scss
 //box class
@@ -81,7 +86,7 @@ When more than one property is being animated, the animation is known as a multi
 
 Start one property alone, then animate any additional properties.
 
-{{ _example.compare(example.multiPropAni1) }}
+{{ _example.compare(example.secondCompare) }}
 
 ```scss
 //box class
@@ -109,7 +114,7 @@ Start one property alone, then animate any additional properties.
 Both properties start at the same time, then one property ends before the other.
 
 
-{{ _example.compare(example.multiPropAni2) }}
+{{ _example.compare(example.thirdCompare) }}
 
 ```scss
 //box class
@@ -154,13 +159,13 @@ Within user interfaces, there are instances where only one element moves, as wel
 
 A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
-{{ _example.compare(example.singularAni) }}
+{{ _example.compare(example.fourthCompare) }}
 
 ### Sequence of Actions
 
 A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-{{ _example.compare(example.sequenceAni) }}
+{{ _example.compare(example.fifthCompare) }}
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
