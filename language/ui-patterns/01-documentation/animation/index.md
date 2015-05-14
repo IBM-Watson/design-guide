@@ -45,7 +45,7 @@ To see a full list of animatable properties and examples of them animating, visi
 
 When animating only a single property, follow the guidelines below. 
 
-{{ _example.small(example.singlePropAni) }}
+{{ _example.compare(example.singlePropAni) }}
 
 ```scss
 //box class
@@ -81,7 +81,7 @@ When more than one property is being animated, the animation is known as a multi
 
 Start one property alone, then animate any additional properties.
 
-{{ _example.small(example.multiPropAni1) }}
+{{ _example.compare(example.multiPropAni1) }}
 
 ```scss
 //box class
@@ -109,7 +109,7 @@ Start one property alone, then animate any additional properties.
 Both properties start at the same time, then one property ends before the other.
 
 
-{{ _example.small(example.multiPropAni2) }}
+{{ _example.compare(example.multiPropAni2) }}
 
 ```scss
 //box class
@@ -154,13 +154,13 @@ Within user interfaces, there are instances where only one element moves, as wel
 
 A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
-{{ _example.small(example.singularAni) }}
+{{ _example.compare(example.singularAni) }}
 
 ### Sequence of Actions
 
 A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-{{ _example.small(example.sequenceAni) }}
+{{ _example.compare(example.sequenceAni) }}
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
