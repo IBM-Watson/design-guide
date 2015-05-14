@@ -62,6 +62,8 @@ variables:
       - palette: Gray
         tone: 50
       - palette: Gray
+        tone: 30
+      - palette: Gray
         tone: 10
       - palette: Neutral-White
         tone: 40
