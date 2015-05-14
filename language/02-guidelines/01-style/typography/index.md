@@ -41,7 +41,7 @@ When presenting large amounts of content, it is important to consider how multip
 
 ## Typographic Scale
 
-The IBM Design Language recommends using [modular type scales](http://www.ibm.com/design/language/framework/visual/typography.shtml) to create harmonious proportions and structure, because scale creates consistency in sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. 
+The IBM Design Language recommends using [modular type scales](http://www.ibm.com/design/language/framework/visual/typography.shtml) to create harmonious proportions and structure. Scale creates consistent sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. 
 
 ### Major Third Type Scale
 
