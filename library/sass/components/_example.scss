@@ -1,0 +1,32 @@
+[library-class='example--LARGE'] {
+  [library-class='example--body'] {
+    font-size: .8em;
+    max-width: 411px;
+  }
+}
+
+[library-class='example--title'] {
+  @extend %base--strong;
+}
+
+[library-class='example--description'] {
+  margin-top: 0;
+}
+
+[library-class='example--SMALL'] {
+  width: 50%;
+  float: left;
+
+  &:nth-of-type(2n + 1) {
+    clear: both;
+    margin-top: setting-get('rhythm');
+  }
+}
+
+[library-class^='example--negative'] {
+  color: color('red');
+}
+
+[library-class^='example--positive'] {
+  color: color('green');
+}

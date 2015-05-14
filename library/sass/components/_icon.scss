@@ -3,6 +3,7 @@
   'ttf': '/fonts/wdg/wdg.ttf'
 ));
 
-[library-class='icon'] {
+[library-class='icon'],
+[library-class*=' icon'] {
   @include icon-font('wdg');
 }

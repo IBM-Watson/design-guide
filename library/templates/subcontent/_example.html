@@ -22,7 +22,7 @@
   {{ title(example) }}
   {{ _media.object(example) }}
   {% if example.description %}
-    <p library-class="example--description">{{ example.description }}</p>
+    <div library-class="example--description">{{ example.description|markdown | safe -}}</div>
   {% endif %}
 </div>
 {% endmacro %}
@@ -34,7 +34,7 @@
   <div library-class="example--body">
     {{ title(example) }}
     {% if example.description %}
-      <p library-class="example--description">{{ example.description }}</p>
+      <div library-class="example--description">{{ example.description|markdown | safe -}}</div>
     {% endif %}
   </div>
 </div>
@@ -42,7 +42,9 @@
 
 <!-- Compare examples -->
 {% macro compare(examples) %}
+<div library-class="_library--clearfix">
   {% for example in examples %}
     {{ small(example) }}
   {% endfor %}
+</div>
 {% endmacro %}
