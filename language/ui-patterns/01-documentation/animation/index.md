@@ -1,6 +1,23 @@
 ---
 type: documentation
 title: Animation
+variables:
+  example:
+    singlePropAni: 
+      title: "Single Property Animation Visual Example"
+      visualDisplay: /videos/animation-docs/singlePropAni.webm
+    multiPropAni1: 
+      title: "First Option for Multiple Property Animations Visual Example"
+      visualDisplay: /videos/animation-docs/multiPropAni1.webm
+    multiPropAni2: 
+      title: "Second Option for Multiple Property Animations Visual Example"
+      visualDisplay: /videos/animation-docs/multiPropAni2.webm
+    singularAni: 
+      title: "Singular Animation Visual Example"
+      visualDisplay: /videos/animation-docs/multiPropAni1.webm
+    sequenceAni: 
+      title: "Sequence of Animations Visual Example"
+      visualDisplay: /videos/animation-docs/sequenceAni.webm
 resources:
   links:
     name: "Debugging Chrome Animations"
@@ -19,21 +36,21 @@ Properties are the elements of an object that will change over time. The propert
 * Rotation: `transform: rotate(ndeg);`
 * Opacity: `opacity: 0...1;`
 
-For more information about why these properties are performant see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+For more information about why these properties are performant, see [this blog post.](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
-To see a full list of animatable properties and examples of them animating visit [Animatable.](http://leaverou.github.io/animatable/)
+To see a full list of animatable properties and examples of them animating, visit [Animatable.](http://leaverou.github.io/animatable/)
 
 
 ### Single Property Animations
 
 When animating only a single property, follow the guidelines below. 
 
-![Scaling of a box from 0% to 100%](/images/motion/examples/Single_Attribute-1.gif)
+{{ _example.small(example.singlePropAni) }}
 
 ```scss
 //box class
 .single-attribute {
-  animation: single-attribute 1s map-get($timing-functions, bounce-in);
+  animation: single-attribute 1s map-get($timing-functions, snap-in);
 }
 
 //keyframes for animation
@@ -47,24 +64,24 @@ When animating only a single property, follow the guidelines below.
 }
 ``` 
 
-**Timing Function**
+**Timing Functions**
 
-Use bounce eases to add the snap-in factor that is typically achieved with multiple properties. Bounce eases are snappy bounces, not physics-based bounces.
+Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
 
   * Use of Timing Functions:
-    * **Entrances** - `map-get($timing-functions, bounce-in)` (Fast to Slow) 
-    * **Exits** - `map-get($timing-functions, bounce-out)` (Slow to Fast)
-    * **Interactive Elements** - `map-get($timing-functions, bounce-in-out)`
+    * **Entrances** - `map-get($timing-functions, snap-in)` (Fast to Slow) 
+    * **Exits** - `map-get($timing-functions, snap-out)` (Slow to Fast)
+    * **Interactive Elements** - `map-get($timing-functions, snap-in-out)`
 
 ### Multiple Property Animations
 
-Multiple property animations are animations where multiple properties are being animated together. With multiple property animations there are two different options. The first option is to start one property alone, then animate any additional properties. The second option is for both properties to start at the same time, then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
+When more than one property is being animated, the animation is known as a multiple property animation. With multiple property animations, there are two different options: to start one property alone then animate any additional properties, or to start both properties at the same time then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
 
 **Option One**
 
 Start one property alone, then animate any additional properties.
 
-![Scaling box animation starting with X axis scale then the Y axis scale follows.](/images/motion/examples/Option-A.gif)
+{{ _example.small(example.multiPropAni1) }}
 
 ```scss
 //box class
@@ -92,7 +109,7 @@ Start one property alone, then animate any additional properties.
 Both properties start at the same time, then one property ends before the other.
 
 
-![Scaling box animation starting with both X and Y axis scale then X axis ends before Y finishes.](/images/motion/examples/Option-B.gif)
+{{ _example.small(example.multiPropAni2) }}
 
 ```scss
 //box class
@@ -118,7 +135,7 @@ Both properties start at the same time, then one property ends before the other.
 }
 ```
 
-**Timing Function**
+**Timing Functions**
 
 Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
 
@@ -137,13 +154,13 @@ Within user interfaces, there are instances where only one element moves, as wel
 
 A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
 
-![Singular action shows a box animating scaling horizontally then vertically](/images/motion/examples/Option-B.gif)
+{{ _example.small(example.singularAni) }}
 
 ### Sequence of Actions
 
 A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
-![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](/images/motion/examples/secondary-action.gif)
+{{ _example.small(example.sequenceAni) }}
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
@@ -200,7 +217,7 @@ $animations: (
 );
 ```
 
-In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. We have included defaults for duration (2s) and timing function (ease-in), in case you do not specify your own.
+In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: `@include animation($animation-name [, $duration, $timing-function])`. We have included defaults for the `$duration` (2s) and `$timing-function` (ease-in), in case you do not specify your own.
 
 For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
 

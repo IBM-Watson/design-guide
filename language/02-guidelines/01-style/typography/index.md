@@ -9,16 +9,16 @@ variables:
     typefaceCombinations:
       typefaceCombinationOne:
         title: "Helvetica Neue Roman"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-roman.svg
       typefaceCombinationTwo:
         title: "Helvetica Neue Roman Italic"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-roman-italic.svg
       typefaceCombinationThree:
         title: "Helvetica Neue Bold"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-bold.svg
       typefaceCombinationFour:
         title: "Helvetica Neue Bold Italic"
-        visualAlternative: "The quick brown fox jumped over the fence."
+        visualDisplay: /images/typography/typeface-bold-italic.svg
     responsiveTypography:
       title: "Major Third with a breakpoint at 500px"
       visualDisplay: /videos/typography/responsive-typography.webm
