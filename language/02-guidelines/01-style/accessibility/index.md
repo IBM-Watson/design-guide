@@ -30,10 +30,12 @@ When choosing colors and contrast ratios for typography it is important to adher
 
 {{ _detail.view(detail.accessibilityInteraction) }}
 
+Colors at a 50 value or lower are not accessible on neutral backgrounds, unless they're displayed at 18 pt or larger. There are no formal color contrast requirements for icons or glyphs that are paired with supporting text. If an icon is used separately from supporting text on a neutral background, use a color value of 50 or higher.
+
 ## Animation
 
 In addition to the fundamental visual accessibility guides, animation has its own set of considerations. For animations that are longer than five seconds, we must provide the ability to pause, stop, or hide animations for users who can be severely distracted, particularly those with attention deficit disorders.
 
 {{ _detail.view(detail.accessibilityAnimation) }}
 
-The five-second limit is long enough to get a user’s attention, but short enough for a user to wait out the distraction before reading the page. (2.2b) Do not include anything that flashes, or can be considered a flash, more than twice per second; it can negatively affect those prone to seizures. (2.3a) If the animation has audio longer than three seconds, provide audio control for users that have screen reading software, as it will make it easier for them to understand their screen reader. (1.4b)
+The five-second limit is long enough to get a user’s attention, but short enough for a user to wait out the distraction before reading the page. Do not include anything that flashes, or can be considered a flash, more than twice per second; it can negatively affect those prone to seizures. If the animation has audio longer than three seconds, provide audio control for users that have screen reading software, as it will make it easier for them to understand their screen reader.

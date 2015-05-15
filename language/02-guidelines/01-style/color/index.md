@@ -26,9 +26,9 @@ variables:
           Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30
 
 
-          Consider users who are sensitive to brightness and high contrast colors by using a Gray value as a background color instead of pure black.
+          Consider users who are sensitive to brightness and high contrast colors by using a gray value as a background color instead of pure black.
   primaryColors:
-    instructions: "Choose a primary and secondary color"
+    instructions: "Choose a primary and secondary color."
     colors:
       - palette: Blue
         tone: 60
@@ -57,7 +57,7 @@ variables:
       - palette: Yellow
         tone: 30
   supportingGrays:
-    instructions: "Choose supporting grays and neutrals"
+    instructions: "Choose supporting grays and neutrals."
     colors:
       - palette: Gray
         tone: 90
@@ -68,6 +68,8 @@ variables:
       - palette: Gray
         tone: 50
       - palette: Gray
+        tone: 30
+      - palette: Gray
         tone: 10
       - palette: Neutral-White
         tone: 40
@@ -77,17 +79,17 @@ variables:
         tone: 10
 ---
 
-Color is a crucial component of our visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.
+Color is a crucial component of visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.
 
 ## Colors for Watson
 
-The colors chosen for IBM Watson are flexible and distinguish Watson as a brand across all user experiences. The colors were chosen based on color psychology to support the Watson [brand attributes](brand-attributes.html), reinforce Watson's personality, and set the tone of each specific product.
+The colors chosen for IBM Watson are flexible and distinguish Watson as a brand across all user experiences. The colors were chosen based on color psychology to support the Watson brand attributes, reinforce Watson's personality, and set the tone of each specific product.
 
 {{ _color.adjectiveSwatches(primaryColors) }}
 
-## Choosing A Color Palette
+## Choosing a Color Palette
 
-Choose a primary color, a secondary color, and an accent color. Additional tints and shades of the chosen palette can help to unify the design. These values can add variety to a palette without additional colors. Use the IBM Design Language for a wider variety of colors, values, and neutrals. When choosing a background color for light or dark palettes, IBM Watson recommends using Neutral 1 and Gray 90, as opposed to pure white and black, as some users are sensitive to brightness and high contrast colors.
+Choose a primary color, a secondary color, and an accent color. Additional tints and shades of the chosen palette can help to unify the design. These values can add variety to a palette without additional colors. Refer to the IBM Design Language for a wider variety of colors, values, and neutrals. When choosing a background color for light or dark palettes, IBM Watson recommends using Neutral 1 and Gray 90, as opposed to pure white and black, as some users are sensitive to brightness and high contrast colors.
 
 {{ _color.groupSwatches(primaryColors) }}
 
@@ -97,7 +99,7 @@ Choose a primary color, a secondary color, and an accent color. Additional tints
 
 ## Applying A Color Palette
 
-Color is a powerful communication tool to determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users' attention.
+Color is a powerful communication tool that helps determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users' attention.
 
 {{ _example.large(example.paletteApplication.light) }}
 
