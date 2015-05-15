@@ -2,6 +2,16 @@
   background: color('grayscale', 50);
   padding: setting-get('rhythm') * 2 0;
   font-size: .75em;
+  text-align: center;
+
+  @include breakpoint(542px) {
+    text-align: left;
+  }
+
+  [library-class~='_library--stretch-container'] ~ & {
+    margin-top: 0;
+    padding-top: setting-get('rhythm');
+  }
 
   [library-class='_library--container'] {
     padding: 0 setting-get('rhythm');

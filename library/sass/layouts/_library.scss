@@ -13,7 +13,7 @@
   margin-top: 0;
 }
 
-[library-class*='_library--container'] {
+[library-class~='_library--container'] {
   max-width: 940px;
   margin: 0 auto;
 
