@@ -111,6 +111,9 @@
 
         {# Main Content Footer #}
         <footer library-class="main-content--footer">
+          {% if layout.index %}
+          <div library-class="_library--container">
+          {% endif %}
           {# Resources #}
           {%if resources %}
           <div library-class="resources">
@@ -152,6 +155,9 @@
               {% endif %}
             </div>
           {% endif %}
+          {% if layout.index %}
+          </div>
+          {% endif %}
         </footer>
 
       </article>
@@ -160,7 +166,7 @@
       <div library-class="_library--container">
         <div library-class="footer--github">
           <div library-class="footer--version">
-            <a href="https://github.com/IBM-Watson/design-library/releases/latest" library-class="footer--link">v{{ site.version }}</a>
+            <a href="https://github.com/IBM-Watson/design-library/releases/latest" library-class="footer--link">Version {{ site.version }}</a>
           </div>
           <div library-class="footer--issues">
             <span library-class="icon">(issues)</span>
