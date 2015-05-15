@@ -1,0 +1,23 @@
+[library-class='what-is'] {
+  @include clearfix;
+  background-color: color('neutral-white', 40);
+  padding: 2rem 0;
+}
+[library-class='what-is--logo'] {
+  @include breakpoint(650px) {
+    float: left;
+    width: 33%;
+    margin-right: 1em;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+[library-class='what-is--content'] {
+  @include breakpoint(650px) {
+    float: right;
+    width: calc(67% - 1em);
+    margin-top: 0;
+  }
+}

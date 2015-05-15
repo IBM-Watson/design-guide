@@ -1,9 +1,9 @@
-# Watson Design Library [![Issues In Progress](https://badge.waffle.io/ibm-watson/design-library.svg?label=In%20Progress&title=Issues%20In%20Progress)](http://waffle.io/ibm-watson/design-library) [![Build Status](https://travis-ci.org/IBM-Watson/design-library.svg?branch=develop)](https://travis-ci.org/IBM-Watson/design-library)
+# Watson Design Guide [![Issues In Progress](https://badge.waffle.io/ibm-watson/design-library.svg?label=In%20Progress&title=Issues%20In%20Progress)](http://waffle.io/ibm-watson/design-library) [![Build Status](https://travis-ci.org/IBM-Watson/design-library.svg?branch=develop)](https://travis-ci.org/IBM-Watson/design-library)
 
 
 ## Getting Started
 
-Development on the Watson Design Library is done in this repository. Patterns are developed in the `patterns/` folder, with enhancementsto the library itself and the language are added to the `library/` folder. The design library runs off of the [Watson Runner](https://github.com/IBM-Watson/runner), so work on that should be done there.
+Development on the Watson Design Guide is done in this repository. Patterns are developed in the `patterns/` folder, with enhancementsto the library itself and the language are added to the `library/` folder. The design library runs off of the [Watson Runner](https://github.com/IBM-Watson/runner), so work on that should be done there.
 
 ### Installation
 

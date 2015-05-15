@@ -1,4 +1,19 @@
-# Watson Design Library Changelog
+# Watson Design Guide Changelog
+
+## v1.0.0-rc.3
+**May 15, 2015**
+
+**New**
+
+* Add visual examples for Accessibility
+* Add homepage
+* Add page load visual example for performance
+* Add `gray 30` to grayscale colors
+* Add styling for pattern list
+
+**Change**
+
+* :art: Clean up color and accessibility text
 
 ## v1.0.0-rc.2
 **May 14, 2015**

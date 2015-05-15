@@ -1,0 +1,25 @@
+[library-class='banner'] {
+  background-color: color('neutral-white', 40);
+  background-image: url(../images/homepage/homepage-watermark.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 42%;
+  padding: setting-get('rhythm') 0;
+  @include breakpoint(900px) {
+    padding: setting-get('rhythm') * 3 0 setting-get('rhythm');
+  }
+
+  @include breakpoint(1048px) {
+    background-size: 1048px;
+    background-position: center 42%;
+  }
+}
+[library-class='banner-title'] {
+  @include breakpoint(setting-get('large typography breakpoint')) {
+    font-size: ms(9);
+  }
+}
+[library-class='banner-title'] span {
+  font-weight: normal;
+  color: setting-get('text color');
+}

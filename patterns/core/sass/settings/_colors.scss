@@ -12,13 +12,14 @@ $ColorScheme: (
     30: color('neutral-white', 20),
     40: color('neutral-white', 40),
     50: color('gray', 10),
-    60: color('gray', 50),
-    70: color('gray', 60),
-    80: color('gray', 80),
-    90: color('gray', 90)
+    60: color('gray', 30),
+    70: color('gray', 50),
+    80: color('gray', 60),
+    90: color('gray', 80),
+    100: color('gray', 90)
   ),
   'background color': color('white'),
-  'text color': color('black'),
+  'text color': color('gray', 90),
   'black': color('gray', 90),
   'white': color('white')
 );

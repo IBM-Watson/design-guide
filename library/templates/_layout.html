@@ -54,7 +54,7 @@
     </div>
 
     {# Page Body -#}
-    <main library-class="_library--container">
+    <main {% if not layout.index %}library-class="_library--container"{% else %}library-class="_library--stretch-container"{% endif %}>
       {# Sub Nav #}
       {% if navigation.sub %}
       <aside library-class="_library--subnav">
@@ -96,13 +96,17 @@
           <nav library-class="page-children">
             {% for navC in navigation.children %}
               {% if navC.children.length %}
-              <dl library-class="page-children--group">
-                <lh library-class="page-children--group-title" class="base--h2">{{ navC.title }}</lh>
+              <h2 library-class="page-children--group-title" class="base--h2">{{ navC.title }}</h2>
+              <ul library-class="page-children--group">
                 {% for child in navC.children %}
-                <dl library-class="page-children--name"><a href="{{ child.url }}">{{ child.title }}</a></dl>
-                <dt library-class="page-children--description">{{ child.description }}</dt>
+                <li library-class="page-children--item">
+                  <dl>
+                    <dt library-class="page-children--name"><a href="{{ child.url }}" class='base--a'>{{ child.title }}</a></dt>
+                    <dd library-class="page-children--description">{{ child.description }}</dd>
+                  </dl>
+                </li>
                 {% endfor %}
-              </dl>
+              </ul>
               {% endif %}
             {% endfor %}
           </nav>
@@ -111,6 +115,9 @@
 
         {# Main Content Footer #}
         <footer library-class="main-content--footer">
+          {% if layout.index %}
+          <div library-class="_library--container">
+          {% endif %}
           {# Resources #}
           {%if resources %}
           <div library-class="resources">
@@ -152,6 +159,9 @@
               {% endif %}
             </div>
           {% endif %}
+          {% if layout.index %}
+          </div>
+          {% endif %}
         </footer>
 
       </article>
@@ -160,7 +170,7 @@
       <div library-class="_library--container">
         <div library-class="footer--github">
           <div library-class="footer--version">
-            <a href="https://github.com/IBM-Watson/design-library/releases/latest" library-class="footer--link">v{{ site.version }}</a>
+            <a href="https://github.com/IBM-Watson/design-library/releases/latest" library-class="footer--link">Version {{ site.version }}</a>
           </div>
           <div library-class="footer--issues">
             <span library-class="icon">(issues)</span>
