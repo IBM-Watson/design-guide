@@ -1,8 +1,8 @@
-# Contributing to the IBM Watson Design Library
+# Contributing to the IBM Watson Design Guide
 
-The Watson Design Library contains the design and development guidelines and resources for creating cognitive experiences. It's built using Sass and available via Bower, so it's easy to include all or part of it within a project.
+The Watson Design Guide contains the design and development guidelines and resources for creating cognitive experiences. It's built using Sass and available via Bower, so it's easy to include all or part of it within a project.
 
-_**Heads Up!** We love open source, but the Watson Design Library is unlikely to add new guidelines or features that are not in-line with the work we're doing or won't be used at IBM Watson. Inclusion is at the discretion of the Watson Design team. We really love to share, though, so hopefully that means we're still friends :blue_heart:_
+_**Heads Up!** We love open source, but the Watson Design Guide is unlikely to add new guidelines or features that are not in-line with the work we're doing or won't be used at IBM Watson. Inclusion is at the discretion of the Watson Design team. We really love to share, though, so hopefully that means we're still friends :blue_heart:_
 
 ## Navigating the Repository
 
@@ -14,7 +14,7 @@ The `language` folder contains all of the long-form text available and its relat
 
 ### Library
 
-The `library` folder contains all of the items needed to compile the content in the `language` and `patterns` folders into the Watson Design Library website. This includes site-specific Sass, JavaScript, configuration, and templates.
+The `library` folder contains all of the items needed to compile the content in the `language` and `patterns` folders into the Watson Design Guide website. This includes site-specific Sass, JavaScript, configuration, and templates.
 
 ### Patterns
 
@@ -22,16 +22,16 @@ The `patterns` folder contains all of the UI patterns and their documentation. D
 
 No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any pattern submissions that do will be asked to be rewritten without said dependencies. Acceptable JavaScript dependencies include core JavaScript that we provide and any current dependencies already included in the project. Any additional external dependencies will need to be approved before they can be used. Styling should be written without vendor prefixes. Only web standard features that have [moved beyond](http://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Specification_Maturation) the Candidate Recommendation stage (or equivalent for the relevant standards body) will be considered for inclusion.
 
-## Developing for the Watson Design Library
+## Developing for the Watson Design Guide
 
-Whether working on language, library, or patterns, there are a specific set of steps that should be followed in order contribute in a standard and consistent manner. Our wiki contains the full instructions for [setting up and working with the Watson Design Library](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Library).
+Whether working on language, library, or patterns, there are a specific set of steps that should be followed in order contribute in a standard and consistent manner. Our wiki contains the full instructions for [setting up and working with the Watson Design Guide](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Guide).
 
 ## Submitting Issues
 
 * Before creating a new issue, perform a [cursory search](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+user%3Aibm-watson+) to see if a similar issue has already been submitted.
 * Can create an issue [here](https://github.com/IBM-Watson/design-library/issues). Please include as many details as possible when filing an issue.
 * Issue titles should be descriptive, explaining at the high level what it is about, and should be written in the same style as [Git commit messages](#git-commit-messages).
-* Please include the version of the Design Library being used or viewed
+* Please include the version of the Design Guide being used or viewed
 * Do not open a [pull request](#pull-requests) to resolve an issue without first receiving feedback from a `collaborator` or `owner` and having them agree on a solution forward.
 * Include screenshots and animated GIFs whenever possible; they are immensely helpful.
 * When submitting a browser bug, please include the browser, version, operating system, and operating system version.
@@ -45,7 +45,7 @@ Whether working on language, library, or patterns, there are a specific set of s
 * Pull requests should reference their related issues. If the pull request closes an issue, [please reference its closing from a commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/). Pull requests not referencing any issues will be closed.
 * Pull request titles should be descriptive, explaining at the high level what it is doing, and should be written in the same style as [Git commit messages](#git-commit-messages).
 * Update the [CHANGELOG](#maintaining-thechangelog) with the changes made by the pull request, making sure to use the proper [Emoji](#emoji-cheatsheet).
-* Make sure that the steps for [Developing for the Watson Design Library](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Library) have been followed
+* Make sure that the steps for [Developing for the Watson Design Guide](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Guide) have been followed
 * Follow our JavaScript and CSS styleguides. We have linters set up to catch most of it.
 * Ensure that [EditorConfig](http://editorconfig.org/) installed in the editor used to work on the library and that it is functioning properly.
 * Do not squash or rebase commits when submitting a Pull Request. It makes it much harder to follow work and make incremental changes.

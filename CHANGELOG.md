@@ -1,4 +1,4 @@
-# Watson Design Library Changelog
+# Watson Design Guide Changelog
 
 ## v1.0.0-rc.2
 **May 14, 2015**

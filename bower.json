@@ -1,5 +1,5 @@
 {
-  "name": "watson-design-library",
+  "name": "watson-design-guide",
   "version": "1.0.0-rc.2",
   "homepage": "https://github.com/IBM-Watson/design-library",
   "authors": [
@@ -19,7 +19,10 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "helper-apps",
+    "Vagrantfile",
+    "library"
   ],
   "dependencies": {
     "sass-toolkit": "~2.9.0",
