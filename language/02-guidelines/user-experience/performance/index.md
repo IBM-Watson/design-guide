@@ -18,10 +18,18 @@ resources:
     - name: "Web Page Test"
       source: http://www.webpagetest.org/
 variables:
-  example:
+  examples:
     framesPerSecond:
       visualDisplay: /videos/performance/performance2.webm
       title: "FPS/Hertz Comparison"
+    desktopLoad:
+      visualDisplay: /videos/performance/wdg--desktop.webm
+      title: "Desktop Page Load"
+      description: "New York, NY USA - **Chrome**. *5/1 Mbps connection with a 28ms round trip time*. [Full test](http://www.webpagetest.org/result/150515_FD_JXH/)"
+    mobileLoad:
+      visualDisplay: /videos/performance/wdg--mobile.webm
+      title: "Mobile Page Load"
+      description: "Dulles, VA - **Motorola E** - **Chrome**. *1.6 Mbps/768 Kbps connection with a 150ms round trip time*. [Full test](http://www.webpagetest.org/result/150515_53_JXT/)"
 ---
 
 Performance is an integral part of a user's experience no matter the medium that interface takes. Web delivered interfaces, native interfaces, application programming interfaces; whenever a user interacts with a product, performance always needs to be a top concern. Slow performing interfaces have been shown to [cost money and conversions](http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales) and [affect a company's bottom line](https://blog.kissmetrics.com/loading-time/). More than that, performance is about respecting our users and the way humans perceive and react to the world around them.
@@ -60,7 +68,7 @@ Based on this understanding of memory as well as Nielsen's research, we recommen
 
 A human's sensory memory, acting at 100ms, is able to identify around 10 unique images per second. In order to create the illusion of smooth movement for users, as opposed to a series of independent images, more images are needed. The number of images per second, or frame rate, is often expressed as either Frames per Second (FPS), or in hertz (Hz) when working with progressive scan monitors. For a point of reference, the *de facto* standard for movies and television with sound is 24 FPS.
 
-{{ example.large(example.framesPerSecond) }}
+{{ _example.large(examples.framesPerSecond) }}
 
 When creating interfaces, however, 24 FPS will not provide the fluid movement it does on film. Film relies on a number of effects – most commonly, [motion blur](http://en.wikipedia.org/wiki/Motion_blur) - to hide inter-frame judder. When [animating interface elements](/guidelines/interaction/animation/) or having users interact with our interfaces in a way that would cause motion (such as scrolling), we cannot rely upon those same effects because they are unique to the film medium. Instead, our interfaces should update at the same rate the device's screen is refreshing. When interfaces are not able to refresh at this rate, the result, called [Jank](http://jankfree.org/), is a "…stuttering, juddering, or just plain halting" of the interface.
 
@@ -72,5 +80,14 @@ Whenever working with a network powered interface (websites, native apps that ma
 
 * Main content is available and usable in **<1s** on a **5/1 Mbps connection with a 28ms round trip time** on a *cold cache*
 * Main content is available and usable in **<3s** on a **1.6 Mbps/768 Kbps connection with a 150ms round trip time** on a *cold cache*
+
+When working with visual interfaces, the [speed index](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) metric is also a good indicator of how quickly an interface is available and usable.
+
+* A speed index of **<1000** on a **5/1 Mbps connection with a 28ms round trip time** on a *cold cache*
+* A speed index of **<3000** on a **1.6 Mbps/768 Kbps connection with a 150ms round trip time** on a *cold cache*
+
+{{ _example.large(examples.desktopLoad) }}
+
+{{ _example.large(examples.mobileLoad) }}
 
 All interfaces should be tested against both. [Web Page Test](http://www.webpagetest.org/) is a tool that will allow teams to test their website performance metrics against these numbers. 
