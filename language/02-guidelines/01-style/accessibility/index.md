@@ -42,7 +42,7 @@ When choosing colors and contrast ratios for typography it is important to adher
 
 {{ _detail.view(detail.accessibilityInteraction) }}
 
-Colors at a 50 value or lower are not accessible on neutral backgrounds, unless they're displayed at 24 px or larger. There are no formal color contrast requirements for icons or glyphs that are paired with supporting text. If an icon is used separately from supporting text on a neutral background, use a color value of 50 or higher.
+Colors at a 50 value or lower are not accessible when applied to text on neutral backgrounds, unless the text is 24 px or larger. There are no formal color contrast requirements for icons or glyphs that are paired with supporting text. If an icon is used separately from supporting text on a neutral background, use a color value of 50 or higher.
 
 {{ _example.compare(examples.neutralAccessibility) }}
 
