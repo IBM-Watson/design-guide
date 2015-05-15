@@ -1,0 +1,29 @@
+[library-class='page-children--group-title'] {
+  border-bottom: 1px solid color('grayscale', 70);
+}
+
+[library-class='page-children--group'] {
+  margin-top: 0;
+  @include clearfix;
+}
+
+[library-class='page-children--item'] {
+  &:nth-of-type(1) {
+    margin-top: setting-get('rhythm');
+  }
+
+  @include breakpoint(478px) {
+    float: left;
+    width: 50%;
+
+    &:nth-of-type(odd) {
+      padding-right: setting-get('rhythm') / 2;
+      clear: both;
+    }
+
+    &:nth-of-type(even) {
+      padding-left: setting-get('rhythm') / 2;
+    }
+  }
+
+}
