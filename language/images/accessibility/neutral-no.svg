@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="341.1px" height="300px" viewBox="179 139 341.1 300" enable-background="new 179 139 341.1 300" xml:space="preserve">
+<path fill="#ECECEC" d="M179,139h341.1v300H179V139z"/>
+<path fill="#F9F9F9" d="M219.2,231.4h300.9v71.2H219.2V231.4z"/>
+<path fill="#D74108" d="M219.2,320.8h198.5v53.7H219.2V320.8z"/>
+<text transform="matrix(1 0 0 1 262.9985 354.5771)" fill="#F9F9F9" font-family="'HelvNeueMediumforIBM'" font-size="20.6692">Ask Watson</text>
+<text transform="matrix(1 0 0 1 262.9984 273.3349)" fill="#D74108" font-family="'HelvNeueLightItalicforIBM'" font-size="20.6692">Type your question here</text>
+<g>
+	<polygon fill="#AEAEAE" points="279,180.6 273,180.6 273,182.6 275,182.6 275,188.6 273,188.6 273,190.6 281,190.6 281,188.6 
+		279,188.6 	"/>
+	<circle fill="#AEAEAE" cx="277" cy="176.6" r="2"/>
+	<path fill="#AEAEAE" d="M277,168.6c-7.7,0-14,6.3-14,14c0,7.7,6.3,14,14,14s14-6.3,14-14C291,174.9,284.7,168.6,277,168.6z
+		 M277,194.6c-6.6,0-12-5.4-12-12c0-6.6,5.4-12,12-12s12,5.4,12,12C289,189.3,283.6,194.6,277,194.6z"/>
+</g>
+<g>
+	<path fill="#AEAEAE" d="M230.2,168.6c-6.1,0-11,4.9-11,11c0,6.1,4.9,11,11,11s11-4.9,11-11C241.2,173.6,236.3,168.6,230.2,168.6z
+		 M230.2,188.6c-5,0-9-4-9-9c0-5,4-9,9-9s9,4,9,9C239.2,184.6,235.2,188.6,230.2,188.6z"/>
+	
+		<rect x="242.1" y="188.7" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 553.8856 157.8652)" fill="#AEAEAE" width="4.2" height="9.9"/>
+	<circle fill="#AEAEAE" cx="239.2" cy="188.6" r="1"/>
+</g>
+</svg>
