@@ -1,6 +1,12 @@
 [library-class='main-content--footer'] {
   clear: both;
   @include clearfix;
+
+  [library-class='_library--stretch-container'] & {
+    margin-top: 0;
+    padding-top: setting-get('rhythm');
+    background-color: color('neutral-white', 40);
+  }
 }
 
 [library-class='main-content--back-to-top'] {

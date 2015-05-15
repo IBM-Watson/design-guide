@@ -54,7 +54,7 @@
     </div>
 
     {# Page Body -#}
-    <main library-class="_library--container">
+    <main {% if not layout.index %}library-class="_library--container"{% else %}library-class="_library--stretch-container"{% endif %}>
       {# Sub Nav #}
       {% if navigation.sub %}
       <aside library-class="_library--subnav">
