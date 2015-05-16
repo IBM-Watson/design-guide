@@ -3,6 +3,8 @@
 #########################
 modernizr:
   classPrefix: ''
+  options:
+    - setClasses
   'feature-detects':
     - svg/smil
 
