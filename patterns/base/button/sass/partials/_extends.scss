@@ -1,6 +1,6 @@
 %base--button {
   padding: .2em .5em;
   color: setting-get('white');
-  background-color: setting-get('secondary color');
-  border: 0;
+  background-color: setting-get('background color');
+  border: 3px solid setting-get('primary accent color');
 }
