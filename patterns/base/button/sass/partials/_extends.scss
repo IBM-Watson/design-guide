@@ -1,6 +1,12 @@
 %base--button {
-  padding: .2em .5em;
-  color: setting-get('white');
+  padding: .5em 1em;
+  color: setting-get('primary color');
+  font-weight: bold;
   background-color: setting-get('background color');
   border: 3px solid setting-get('primary accent color');
+  &:hover {
+    background-color: setting-get('primary color');
+    border: 3px solid setting-get('primary color');
+    color: color('white');
+  }
 }
