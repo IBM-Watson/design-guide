@@ -4,7 +4,7 @@
     {% if media.visualDisplay|fileType === 'image' %}
       <img library-class="media--image" src="{{ media.visualDisplay }}" alt="{{ media.title }}">
     {% elseif media.visualDisplay|fileType === 'video' %}
-      <video library-class="media--video" controls loop>
+      <video library-class="media--video" controls loop autoplay>
         {% if media.visualDisplay|smallerVideo === 'webm' %}
           <source src="{{ media.visualDisplay }}" type="video/{{ media.visualDisplay|fileExtension }}">
           <source src="{{ media.visualDisplay|mp4 }}" type="video/{{ media.visualDisplay|mp4|fileExtension }}">
