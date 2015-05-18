@@ -3,6 +3,8 @@
 #########################
 modernizr:
   classPrefix: ''
+  options:
+    - setClasses
   'feature-detects':
     - svg/smil
 
@@ -13,9 +15,8 @@ modernizr:
 ## Use <<modernizr>> to include the custom Modernizr build from above
 #########################
 js:
-  modernizr:
-    - <<modernizr>>
   app:
+    - <<modernizr>>
     - bower_components/prism/prism.js
     - bower_components/prism/components/prism-css.js
     - bower_components/prism/components/prism-css-extras.js

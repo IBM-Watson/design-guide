@@ -1,5 +1,18 @@
 # Watson Design Guide Changelog
 
+## v1.0.0-rc.4
+**May 18, 2015**
+
+**Change**
+
+* :bug: Fix Modernizr rendering
+* :fire: Reduce number of JavaScript files to one
+* :bug: Fix Label rendering
+* :bug: Fix resource link wrapping
+* :bug: Fix loading indicator display
+* :art: Fix display of caption
+* Add autoplay to videos
+
 ## v1.0.0-rc.3
 **May 15, 2015**
 

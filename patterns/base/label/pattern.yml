@@ -1,4 +1,6 @@
 name: Label
+description: Caption for an item in a user interface
+displayTemplate: pattern
 applicationMethods:
   - code: '.base--inline-label'
     description: 'Add this class to an element that is to be inline'
