@@ -5,6 +5,13 @@
   }
 }
 
+[library-class='example--SMALL'] {
+  [library-class='example--description'] {
+    font-size: .8em;
+  }
+}
+
+
 [library-class='example--title'] {
   @extend %base--strong;
 }
