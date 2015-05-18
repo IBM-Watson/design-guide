@@ -16,53 +16,36 @@
   padding-right: setting-get('rhythm');
 }
 
+[library-class='resources--item'] {
+  [library-class='icon'] {
+    display: inline-block;
+    font-size: 1.5em;
+    transform: translateY(.25em);
+  }
+}
 
 [library-class='resources--file-list'] {
   $color: color-shade(setting-get('secondary color'), 10);
   color: $color;
 
-  &:hover {
+  [library-class='resources--item']:hover {
     color: color-shade($color, 20);
   }
 
   [library-class='resources--link'] {
     @include base--a($color, color('grayscale', 40));
-    background-position: 0 (toolkit-get('underline width') * 0.625em);
-
-    &:hover {
-      background-position: 0 (toolkit-get('underline width') * 0.625em);
-    }
   }
 }
-
-[library-class='resources--item'] {
-  [library-class='icon'] {
-    font-size: 1.5em;
-  }
-}
-
 
 [library-class='resources--link-list'] {
   $color: setting-get('primary color');
   color: $color;
 
-  &:hover {
+  [library-class='resources--item']:hover {
     color: color-shade($color, 20);
   }
 
   [library-class='resources--link'] {
     @include base--a($color, color('grayscale', 40));
-    background-position: 0 (toolkit-get('underline width') * 0.625em);
-
-    &:hover {
-      background-position: 0 (toolkit-get('underline width') * 0.625em);
-    }
   }
-}
-
-[library-class='resources--link'] {
-  display: inline-block;
-  margin-top: 0;
-  margin-left: .25em;
-  transform: translateY(-.25em);
 }
