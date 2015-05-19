@@ -1,22 +1,24 @@
 [library-class='resources'] {
   @extend [library-class~='subnav'];
+  padding: setting-get('rhythm') / 2 0;
 }
 
 [library-class='resources--title'] {
   @extend %base--h5;
-  padding-bottom: setting-get('rhythm');
-  padding-left: setting-get('rhythm');
-  padding-right: setting-get('rhythm');
+  padding-bottom: setting-get('rhythm') / 2;
+  padding-left: setting-get('rhythm') / 2;
+  padding-right: setting-get('rhythm') / 2;
   border-bottom: 1px solid color('grayscale', 100);
 }
 
 [library-class='resources--file-list'],
 [library-class='resources--link-list'] {
-  padding-left: setting-get('rhythm');
-  padding-right: setting-get('rhythm');
+  padding-left: setting-get('rhythm') / 2;
+  padding-right: setting-get('rhythm') / 2;
 }
 
 [library-class='resources--item'] {
+  margin-top: setting-get('rhythm') / 2;
   [library-class='icon'] {
     display: inline-block;
     font-size: 1.5em;
@@ -40,6 +42,8 @@
 [library-class='resources--link-list'] {
   $color: setting-get('primary color');
   color: $color;
+  margin-top: setting-get('rhythm') / 2;
+  transform: translateY(-.25em);
 
   [library-class='resources--item']:hover {
     color: color-shade($color, 20);
