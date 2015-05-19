@@ -9,12 +9,14 @@ variables:
         visualDisplay: /videos/animation-docs/singlePropAni.webm
     secondCompare:
       exampleOne: 
-        title: "First Option for Multiple Property Animations Visual Example"
+        title: "Option One Visual Example"
         visualDisplay: /videos/animation-docs/multiPropAni1.webm
+        description: "Start one property alone, then animate any additional properties."
     thirdCompare:    
       exampleOne: 
-        title: "Second Option for Multiple Property Animations Visual Example"
+        title: "Option Two Visual Example"
         visualDisplay: /videos/animation-docs/multiPropAni2.webm
+        description: "Both properties start at the same time, then one property ends before the other."
     fourthCompare:
       exampleOne: 
         title: "Singular Animation Visual Example"
@@ -82,10 +84,6 @@ Use snap-in eases to add very strong eases to quick movements. This enhances the
 
 When more than one property is being animated, the animation is known as a multiple property animation. With multiple property animations, there are two different options: to start one property alone then animate any additional properties, or to start both properties at the same time then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
 
-**Option One**
-
-Start one property alone, then animate any additional properties.
-
 {{ _example.compare(example.secondCompare) }}
 
 ```scss
@@ -108,11 +106,6 @@ Start one property alone, then animate any additional properties.
   }
 }
 ```
-
-**Option Two**
-
-Both properties start at the same time, then one property ends before the other.
-
 
 {{ _example.compare(example.thirdCompare) }}
 
@@ -150,7 +143,7 @@ Use snap-in eases to add very strong eases to quick movements. This enhances the
   * **Interactive Elements** - `map-get($timing-functions, snap-in-out)`
 
 
-## Singular vs. Sequence of Actions
+## Singular versus Sequence of Actions
 
 Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions.
 
