@@ -29,5 +29,5 @@ variables:
     disabled:
       label: Disabled URL Input
       type: url
-      placeholder: http://disabled-input.com
+      placeholder: http://canttouchthis.com
       disabled: true

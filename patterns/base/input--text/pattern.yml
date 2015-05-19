@@ -29,5 +29,5 @@ variables:
     disabled:
       label: Disabled Text Input
       type: text
-      placeholder: Can't click me
+      placeholder: Can't touch this
       disabled: true
