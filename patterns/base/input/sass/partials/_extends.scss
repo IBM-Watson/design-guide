@@ -13,4 +13,8 @@
     outline: 3px solid setting-get('primary color');
     border-color: setting-get('primary color');
   }
+
+  &:disabled {
+    background-color: color('neutral-white', 40);
+  }
 }
