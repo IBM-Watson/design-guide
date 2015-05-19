@@ -1,0 +1,30 @@
+.base--button,
+.base--STYLED button {
+  padding: .5em 1em;
+  color: setting-get("primary color");
+  font-weight: bold;
+  background-color: setting-get("background color");
+  border: 3px solid setting-get("primary accent color"); }
+
+.base--button[type='submit'],
+.base--STYLED button[type='submit'] {
+  background-color: setting-get("background color");
+  border: 3px solid setting-get("secondary accent color");
+  color: setting-get("secondary color"); }
+  .base--button[type='submit']:hover,
+  .base--STYLED button[type='submit']:hover {
+    background-color: setting-get("secondary color");
+    border: 3px solid setting-get("secondary color");
+    color: color("white"); }
+.base--button[type='reset'],
+.base--STYLED button[type='reset'] {
+  background-color: setting-get("background color");
+  border: 3px solid color("gray", 30);
+  color: color("gray", 60); }
+  .base--button[type='reset']:hover,
+  .base--STYLED button[type='reset']:hover {
+    background-color: color("gray", 60);
+    border: 3px solid color("gray", 60);
+    color: color("white"); }
+
+/*# sourceMappingURL=_button.css.map */

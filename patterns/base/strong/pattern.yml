@@ -9,4 +9,4 @@ applicationMethods:
   - code: '%base--strong'
     description: 'Extend this silent selector through Sass'
 variables:
-  text: important text
+  text: This text is very important.

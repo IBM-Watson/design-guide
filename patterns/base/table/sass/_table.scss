@@ -5,6 +5,11 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
+.base--table,
+.base--STYLED table {
+  @extend %base--table;
+}
+
 .base--thead,
 .base--STYLED thead {
   @extend %base--thead;

@@ -6,12 +6,13 @@
 
     &:before {
       display: inline-block;
-      width: .8em;
-      height: .8em;
-      margin-right: 1em;
+      width: 1em;
+      height: 1em;
+      margin-right: setting-get('rhythm') / 2;
       vertical-align: middle;
       border: setting-get('input border width') solid color('gray', 30);
       content: '';
+      transform: translateY(-.125em);
     }
   }
 

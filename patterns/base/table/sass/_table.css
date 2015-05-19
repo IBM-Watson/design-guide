@@ -1,0 +1,19 @@
+.base--table,
+.base--STYLED table {
+  width: 100%; }
+
+.base--thead,
+.base--STYLED thead {
+  font-weight: bold;
+  color: setting-get("white");
+  background-color: setting-get("primary color"); }
+
+.base--td,
+.base--STYLED td {
+  padding: 1em; }
+
+.base--tr:nth-of-type(even),
+.base--STYLED tr:nth-of-type(even) {
+  background-color: color("grayscale", 40); }
+
+/*# sourceMappingURL=_table.css.map */

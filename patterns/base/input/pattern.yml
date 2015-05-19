@@ -26,5 +26,5 @@ variables:
       placeholder: This is placeholder text
     disabled:
       label: Disabled Basic Input
-      placeholder: Can't click me
+      placeholder: Can't touch this
       disabled: true
