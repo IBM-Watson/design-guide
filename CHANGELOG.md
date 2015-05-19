@@ -1,5 +1,16 @@
 # Watson Design Guide Changelog
 
+## v1.0.0
+**May 19, 2015**
+
+**Change**
+
+* :bug: Fix loading indicator minification
+* :art: Clean up patterns
+* :art: Spelling and grammar fixes
+* Update global `rhythm`
+* Make site footer sticky to bottom of viewport
+
 ## v1.0.0-rc.4
 **May 18, 2015**
 
