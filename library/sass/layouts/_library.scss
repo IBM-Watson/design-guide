@@ -3,8 +3,16 @@
   padding-right: setting-get('rhythm');
 }
 
+html,
+body {
+  height: 100%;
+}
+
 [library-class='_library'] {
   margin-top: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
 [library-class='_library--clearfix'] {

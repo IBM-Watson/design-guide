@@ -41,6 +41,7 @@
   border-top: 3px solid color('grayscale', 40);
   padding-top: setting-get('rhythm');
   margin-top: setting-get('rhythm');
+  margin-bottom: setting-get('rhythm');
 
   color: setting-get('text color');
 }
@@ -99,4 +100,5 @@
 
 [library-class='main-content--section-link'] {
   text-decoration: none;
+  display: inline-block;
 }
