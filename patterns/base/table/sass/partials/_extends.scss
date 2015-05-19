@@ -1,7 +1,11 @@
+%base--table {
+  width: 100%;
+}
+
 %base--thead {
   font-weight: bold;
   color: setting-get('white');
-  background-color: color('gray');
+  background-color: setting-get('primary color');
 }
 
 %base--td {
