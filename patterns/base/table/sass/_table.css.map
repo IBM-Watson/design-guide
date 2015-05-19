@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;mBAAa;EACX,KAAK,EAAE,IAAI;;AAGb;mBAAa;EACX,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,oBAAoB;EAC3B,gBAAgB,EAAE,4BAA4B;;AAGhD;gBAAU;EACR,OAAO,EAAE,GAAG;;AAIZ;kCAAoB;EAClB,gBAAgB,EAAE,sBAAsB",
+"sources": ["partials/_extends.scss"],
+"names": [],
+"file": "_table.css"
+}

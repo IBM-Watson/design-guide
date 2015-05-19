@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 42%;
-  padding: setting-get('rhythm') 0;
+  padding: setting-get('rhythm') * 2 0 setting-get('rhythm');
   @include breakpoint(900px) {
     padding: setting-get('rhythm') * 3 0 setting-get('rhythm');
   }

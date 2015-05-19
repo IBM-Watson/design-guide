@@ -4,15 +4,19 @@
 
 [library-class~='home'][library-class~='_library--container'] {
   margin-top: setting-get('rhythm');
+
+  @include breakpoint(699px) {
+    padding: setting-get('rhythm') 0;
+  }
 }
 
 [library-class='home-children'] {
   position: relative;
 
-  @include breakpoint(700px) {
+  @include breakpoint(699px) {
     margin-top: 0;
     width: 100 / 3 * 1%;
-    min-height: 245px;
+    min-height: 285px;
     position: relative;
     float: left;
     padding-left: setting-get('rhythm') / 2;
@@ -41,6 +45,10 @@
         width: calc(100% - #{setting-get('rhythm') / 2});
       }
     }
+  }
+
+  @include breakpoint(884px) {
+    min-height: 245px;
   }
 }
 

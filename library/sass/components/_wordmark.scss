@@ -4,8 +4,8 @@
   margin-top: setting-get('rhythm') / 2;
 
   @include breakpoint(565px) {
-    margin-top: setting-get('rhythm');
+    margin-top: setting-get('rhythm') / 2;
     float: left;
-    margin-left: setting-get('rhythm');
+    margin-left: setting-get('rhythm') / 2;
   }
 }

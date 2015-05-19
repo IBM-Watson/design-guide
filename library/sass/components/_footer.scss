@@ -1,6 +1,7 @@
 [library-class='footer'] {
-  background: color('grayscale', 50);
-  padding: setting-get('rhythm') * 2 0;
+  display: table-row;
+  height: 1px;
+
   font-size: .75em;
   text-align: center;
 
@@ -8,13 +9,8 @@
     text-align: left;
   }
 
-  [library-class~='_library--stretch-container'] ~ & {
-    margin-top: 0;
-    padding-top: setting-get('rhythm');
-  }
-
   [library-class='_library--container'] {
-    padding: 0 setting-get('rhythm');
+    padding: setting-get('rhythm');
   }
 }
 

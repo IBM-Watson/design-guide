@@ -38,13 +38,13 @@ variables:
       - palette: Orange
         tone: 50
         adjectives: 
-          - Innovation
-          - Utility
+          - Innovative
+          - Utilitarian
       - palette: Teal
         tone: 60
         adjectives:
-          - Awareness
-          - Approachability
+          - Aware
+          - Approachable
   accentColors:
     instructions: "Choose an accent color. Add hues as necessary."
     colors:
@@ -97,7 +97,7 @@ Choose a primary color, a secondary color, and an accent color. Additional tints
 
 {{ _color.groupSwatches(supportingGrays) }}
 
-## Applying A Color Palette
+## Applying a Color Palette
 
 Color is a powerful communication tool that helps determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users' attention.
 

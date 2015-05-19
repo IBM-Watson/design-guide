@@ -28,7 +28,10 @@ variables:
     head:
       - First Name
       - Last Name
-      - Job
+      - Role
     body:
-      - [John, Doe, Programmer]
-      - [Jane, Doe, '']
+      - [Westley, '--', The Man in Black]
+      - [Princess, Buttercup, The Princess Bride]
+      - [Prince, Humperdinck, The Obnoxious Prince]
+      - [Inigo, Montoya, The Spaniard]
+      - [Fezzik, '--', The Giant]
