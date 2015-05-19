@@ -33,19 +33,19 @@ variables:
           visualDisplay: /images/wordmark/logo-color-neg.svg
     thirdCompare:
         exampleOne:
-          title: "Do not reconfigure"
+          title: "Do not reconfigure."
           visualDisplay: /images/wordmark/wrong-configuration.svg
           sentiment: negative
         exampleTwo:
-          title: "Do not distort"
+          title: "Do not distort."
           visualDisplay: /images/wordmark/wrong-distortion.svg
           sentiment: negative
         exampleThree:
-          title: "Do not combine colors"
+          title: "Do not combine colors."
           visualDisplay: /images/wordmark/wrong-color-combination.svg
           sentiment: negative
         exampleFour:
-          title: "Do not change the font"
+          title: "Do not change the font."
           visualDisplay: /images/wordmark/wrong-font.svg
           sentiment: negative
 ---
@@ -56,7 +56,7 @@ The IBM Watson wordmark and logo represent our brand and should be managed caref
 
 ## Specifications
 
-### Spacing considerations
+### Spacing Considerations
 
 It is important to include adequate spacing around these elements to avoid visual clutter. Keep the area around the IBM Watson wordmark separated from other visual elements by a distance approximately equal to the height of the IBM Watson wordmark. This distance is considered the minimum uninterrupted space surrounding the mark.
 
