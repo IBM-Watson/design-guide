@@ -52,4 +52,4 @@ In addition to the fundamental visual accessibility guides, animation has its ow
 
 {{ _detail.view(detail.accessibilityAnimation) }}
 
-The five-second limit is long enough to get a user’s attention, but short enough for a user to wait out the distraction before reading the page. Do not include anything that flashes, or can be considered a flash, more than twice per second; it can negatively affect those prone to seizures. If the animation has audio longer than three seconds, provide audio control for users that have screen reading software, as it will make it easier for them to understand their screen reader.
+The five-second limit is long enough to get a user’s attention, but short enough for a user to wait out the distraction before reading the page. Do not include anything that flashes, or can be considered a flash, more than twice per second; it can potentially cause seizures. If the animation has audio longer than three seconds, provide audio control for users that have screen reading software, as it will make it easier for them to understand their screen reader.
