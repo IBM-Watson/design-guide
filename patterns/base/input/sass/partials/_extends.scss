@@ -10,7 +10,7 @@
   background-color: setting-get('background color');
 
   &:focus {
-    outline: 3px solid setting-get('primary color');
+    outline: setting-get('input border width') solid setting-get('primary color');
     border-color: setting-get('primary color');
   }
 
