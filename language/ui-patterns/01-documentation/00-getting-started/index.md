@@ -1,5 +1,5 @@
 ---
-title: Getting Started with the WDG Pattern Library
+title: Getting Started with UI Patterns
 resources:
   links:
     - name: "Bower"
@@ -21,9 +21,9 @@ resources:
     - name: "Node Sass Import Once"
       source: https://github.com/at-import/node-sass-import-once
 ---
-Welcome to the Watson Design Guide's Pattern Library!
+Welcome to the IBM Watson Design Guide's Pattern Library!
 
-The Pattern Library is a set of usable patterns expressed in HTML, Sass, and JavaSciprt, that can be used as a base for developing new or updating existing web projects, especially those that are powered by Watson.
+The Pattern Library is a set of usable patterns expressed in HTML, Sass, and JavaScript, that can be used as a base for developing new or updating existing web projects, especially those that are powered by Watson.
 
 ## Installation
 
@@ -33,7 +33,7 @@ The Pattern Library can be installed through [Bower](http://bower.io):
 $ bower install watson-design-library --save
 ```
 
-This will install the patterns, as well as its dependencies and the documentation from the rest of this site, in to the project's local `bower_components` folder.
+This will install the patterns, as well as its dependencies and the documentation from the rest of this site, into the project's local `bower_components` folder.
 
 ## Working with the Pattern Library
 
@@ -41,11 +41,11 @@ Each pattern in the Pattern Library comes with HTML written in [Swig](http://pau
 
 ### Styling a Project
 
-Styling for projects is done through [Sass](http://sass-lang.com). No CSS files are included intentionally; the styling that is available is basic and will not fit all projects; teams should include designers and developers to flesh out the styling of a project. What is provided are a set of patterns that encapsulate the design guidelines presented within the Watson Design Guide that are customizable to a project's needs within those guidelines.
+Styling for projects is done through [Sass](http://sass-lang.com). No CSS files are included intentionally. The styling that is available is basic and will not fit all projects; teams should include designers and developers to flesh out the styling of a project. What *is* provided are a set of patterns that encapsulate the design guidelines presented within the Watson Design Guide that are customizable to a project's needs within those guidelines.
 
 All styling is written following our [Sass and CSS Development Guidelines](/guidelines/development/sass).
 
-The Pattern Library is at its best when being customized for the needs of a given project. [Settings](/ui-patterns/documentation/settings) for customization are provided by [Toolkit](https://github.com/at-import/toolkit), so a project's main Sass file should be set up as follows:
+The Pattern Library is best used when it is customized for the needs of a given project. [Settings](/ui-patterns/documentation/settings) for customization are provided by [Toolkit](https://github.com/at-import/toolkit), so a project's main Sass file should be set up as follows:
 
 ```scss
 @import "toolkit";
