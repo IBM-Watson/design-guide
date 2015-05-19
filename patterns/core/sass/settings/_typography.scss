@@ -4,7 +4,7 @@ $TypographySettings: (
   'monospace font': ('Courier New', 'Lucida Console', monospace),
   'normal weight font': 400,
   'bold weight font': 600,
-  'rhythm': 1rem
+  'rhythm': 2rem
 );
 
 $GlobalSettings: map-merge($GlobalSettings, $TypographySettings);

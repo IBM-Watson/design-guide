@@ -23,7 +23,7 @@
   text-decoration: none;
   text-align: center;
   margin-top: 0;
-  padding: setting-get('rhythm') 0;
+  padding: setting-get('rhythm') / 2 0;
 
   border-bottom: 5px solid transparent;
 
@@ -41,6 +41,6 @@
 
   @include breakpoint(565px) {
     width: auto;
-    padding: setting-get('rhythm')
+    padding: setting-get('rhythm') / 2;
   }
 }
