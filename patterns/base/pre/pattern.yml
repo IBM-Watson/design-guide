@@ -1,5 +1,5 @@
 name: Pre
-description: Pre formatted text
+description: Pre-formatted text
 displayTemplate: pattern
 applicationMethods:
   - code: '.base--pre'
