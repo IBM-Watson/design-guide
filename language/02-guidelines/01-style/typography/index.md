@@ -35,7 +35,7 @@ As a rule and wherever possible, use Helvetica Neue. It is the font of science a
 
 ## Performance Considerations
 
-When presenting large amounts of content, it is important to consider how multiple font downloads can affect the [browser’s performance](/guidelines/user-experience/performance/) for the user. To ensure optimized performance for all users, we recommend choosing a combination of no more than four different weights and styles (light and light oblique being two different styles, for instance). 
+When presenting large amounts of content, it is important to consider how multiple font downloads can affect the [browser’s performance](/guidelines/user-experience/performance/) for the user. To ensure optimized performance for all users, IBM Watson recommends choosing a combination of no more than four different weights and styles (light and light oblique being two different styles, for instance). 
 
 {{ _example.compare(example.typefaceCombinations) }}
 
@@ -45,7 +45,7 @@ The IBM Design Language recommends using [modular type scales](http://www.ibm.co
 
 ### Major Third Type Scale
 
-We recommend the Major Third ratio for screen sizes under 500px and the establishment of breakpoints for higher contrast on larger screens. This ratio is ideal for creating visual hierarchy on small screens without being too jarring.
+IBM Watson recommends the Major Third ratio for screen sizes under 500px and the establishment of breakpoints for higher contrast on larger screens. This ratio is ideal for creating visual hierarchy on small screens without being too jarring.
 
 {{ _example.large(example.responsiveTypography) }}
 
