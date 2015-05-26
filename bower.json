@@ -21,8 +21,9 @@
     "test",
     "tests",
     "helper-apps",
-    "Vagrantfile",
-    "library"
+    "library",
+    "Gulpfile.js",
+    "package.json"
   ],
   "dependencies": {
     "sass-toolkit": "~2.9.0",
