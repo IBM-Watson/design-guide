@@ -34,6 +34,6 @@
   },
   "homepage": "https://github.com/IBM-Watson/design-library",
   "devDependencies": {
-    "bower": "^1.4.1"
+    "runner": "git://github.com/ibm-watson/runner"
   }
 }
