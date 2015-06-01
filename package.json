@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/IBM-Watson/design-library",
   "devDependencies": {
+    "gulp": "^3.8.11",
     "runner": "git://github.com/ibm-watson/runner"
   }
 }
