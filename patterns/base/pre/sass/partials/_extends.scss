@@ -6,8 +6,10 @@
   text-align: left;
   word-break: normal;
   white-space: pre;
+  word-wrap: normal;
   direction: ltr;
   tab-size: 2;
+  overflow-y: overlay;
 }
 
 %base--pre {
