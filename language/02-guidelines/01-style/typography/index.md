@@ -20,7 +20,7 @@ variables:
         title: "Helvetica Neue Bold Italic"
         visualDisplay: /images/typography/typeface-bold-italic.svg
     responsiveTypography:
-      title: "Major third with a breakpoint at 500px"
+      title: "Major Third with a breakpoint at 500px"
       visualDisplay: /videos/typography/responsive-typography.webm
       description: "When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes."
 ---
@@ -35,7 +35,7 @@ As a rule and wherever possible, use Helvetica Neue. It is the font of science a
 
 ## Performance Considerations
 
-When presenting large amounts of content, it is important to consider how multiple font downloads can affect the browser’s performance for the user. To ensure optimized performance for all users, IBM Watson recommends choosing a combination of no more than four different weights and styles (light and light oblique being two different styles, for instance). 
+When presenting large amounts of content, it is important to consider how multiple font downloads can affect the [browser’s performance](/guidelines/user-experience/performance/) for the user. To ensure optimized performance for all users, IBM Watson recommends choosing a combination of no more than four different weights and styles (light and light oblique being two different styles, for instance). 
 
 {{ _example.compare(example.typefaceCombinations) }}
 
