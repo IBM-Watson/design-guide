@@ -22,6 +22,7 @@
 [library-class='footer--code'] {
   display: inline-block;
   margin: 0 setting-get('rhythm') / 4;
+
   @include breakpoint(max-width 303px) {
     display: block;
     margin-left: -1em;
