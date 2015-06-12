@@ -5,20 +5,17 @@
 #########################
 set -e # exit with nonzero exit code if anything fails
 
-if [ "$TRAVIS_BRANCH" = "master" ]
-  then
-    # Move to build folder and init it
-    cd www
-    git init
+# Move to build folder and init it
+cd www
+git init
 
-    # Configure Git
-    git config user.name "Travis CI"
-    git config user.email "sam.richard@us.ibm.com"
+# Configure Git
+git config user.name "Travis CI"
+git config user.email "sam.richard@us.ibm.com"
 
-    # Commit all the things into the repo
-    git add .
-    git commit -m ":shipit: Deploy to GitHub Pages"
+# Commit all the things into the repo
+git add .
+git commit -m ":shipit: Deploy to GitHub Pages"
 
-    # Force push to gh-pages
-    git push --force "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
-fi
+# Force push to gh-pages
+git push --force "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
