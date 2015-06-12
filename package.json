@@ -4,8 +4,12 @@
   "description": "Design guidelines and patterns for creating sites and applications with IBM Watson",
   "main": "index.js",
   "scripts": {
+    "test": "npm run gulp build",
     "postinstall": "npm run install:bower",
-    "install:bower": "./node_modules/bower/bin/bower install"
+    "install:bower": "npm run bower install",
+    "build": "npm run gulp build",
+    "bower": "./node_modules/bower/bin/bower",
+    "gulp": "./node_modules/gulp/bin/gulp.js"
   },
   "repository": {
     "type": "git",
