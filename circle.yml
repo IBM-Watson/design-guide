@@ -4,5 +4,5 @@ machine:
 deployment:
   production:
     branch: master
-      commands:
-        - ./.deploy.sh
+    commands:
+      - ./.deploy.sh
