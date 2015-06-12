@@ -6,7 +6,7 @@
 set -e # exit with nonzero exit code if anything fails
 
 # Move to build folder and init it
-cd www
+cd .www
 git init
 
 # Configure Git
