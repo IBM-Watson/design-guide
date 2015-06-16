@@ -44,6 +44,15 @@
     &:nth-of-type(2) {
       margin-top: 0;
     }
+    &:nth-of-type(odd) {
+      padding-right: setting-get('rhythm')/4;
+      width: 50%;
+    }
+
+    &:nth-of-type(even) {
+      width: 50%;
+      padding-left: setting-get('rhythm')/4;
+    }
   }
 
   @include breakpoint(557px) {
@@ -51,6 +60,15 @@
 
     &:nth-of-type(2) {
       margin-top: setting-get('rhythm');
+    }
+    &:nth-of-type(odd) {
+      padding-right: 0;
+      width: 100%;
+    }
+
+    &:nth-of-type(even) {
+      width: 100%;
+      padding-left: 0;
     }
   }
 
@@ -63,6 +81,15 @@
     }
     &:nth-of-type(2) {
       margin-top: 0;
+    }
+    &:nth-of-type(odd) {
+      padding-right: setting-get('rhythm')/2;
+      width: 50%;
+    }
+
+    &:nth-of-type(even) {
+      width: 50%;
+      padding-left: setting-get('rhythm')/2
     }
   }
 }
