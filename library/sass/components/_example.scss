@@ -27,7 +27,6 @@
 
 [library-class='example--SMALL'] {
   float: left;
-
   width: 100%;
 
   &:nth-of-type(2n + 1) {
@@ -41,8 +40,17 @@
 
   @include breakpoint(442px) {
     width: 50%;
+
     &:nth-of-type(2) {
       margin-top: 0;
+    }
+
+    &:nth-of-type(odd) {
+      padding-right: setting-get('rhythm') / 4;
+    }
+
+    &:nth-of-type(even) {
+      padding-left: setting-get('rhythm') / 4;
     }
   }
 
@@ -51,6 +59,14 @@
 
     &:nth-of-type(2) {
       margin-top: setting-get('rhythm');
+    }
+
+    &:nth-of-type(odd) {
+      padding-right: 0;
+    }
+
+    &:nth-of-type(even) {
+      padding-left: 0;
     }
   }
 
@@ -61,8 +77,17 @@
     &:nth-of-type(1) {
       margin-top: 0;
     }
+
     &:nth-of-type(2) {
       margin-top: 0;
+    }
+
+    &:nth-of-type(odd) {
+      padding-right: setting-get('rhythm') / 2;
+    }
+
+    &:nth-of-type(even) {
+      padding-left: setting-get('rhythm') / 2;
     }
   }
 }
