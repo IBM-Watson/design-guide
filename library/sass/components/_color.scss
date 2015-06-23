@@ -59,9 +59,9 @@
 }
 
 [library-class='color-swatch'] {
-  padding: setting-get('rhythm');
-
-  width: 100%;
+  padding: setting-get('rhythm')/2;
+  font-size: ms(-2);
+  width: 50%;
 
   @include breakpoint(449px) {
     width: 50%;
@@ -70,10 +70,10 @@
     width: 100%;
   }
   @include breakpoint(596px) {
-    width: 50%;
+    width: 100% / 3 * 1;
   }
   @include breakpoint(899px) {
-    width: 100 / 3 * 1%;
+    width: 25%;
   }
 
   float: left;
