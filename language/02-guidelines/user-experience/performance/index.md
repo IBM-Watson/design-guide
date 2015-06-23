@@ -25,11 +25,11 @@ variables:
     desktopLoad:
       visualDisplay: /videos/performance/wdg--desktop.webm
       title: "Desktop Page Load"
-      description: "New York, NY USA - **Chrome**. *5/1 Mbps connection with a 28ms round trip time*. [Full test](http://www.webpagetest.org/result/150515_FD_JXH/)"
+      description: "New York, NY USA - **Chrome**. *5/1 Mbps connection with a 28ms round trip time*. Speed Index: *400*. [Full test](http://www.webpagetest.org/result/150520_GD_PQ1/)"
     mobileLoad:
       visualDisplay: /videos/performance/wdg--mobile.webm
       title: "Mobile Page Load"
-      description: "Dulles, VA - **Motorola E** - **Chrome**. *1.6 Mbps/768 Kbps connection with a 150ms round trip time*. [Full test](http://www.webpagetest.org/result/150515_53_JXT/)"
+      description: "Dulles, VA - **Motorola E** - **Chrome**. *1.6 Mbps/768 Kbps connection with a 300ms round trip time*. Speed Index: *2049*. [Full test](http://www.webpagetest.org/result/150623_ZA_Y65/)"
 ---
 
 Performance is an integral part of a user's experience no matter the medium that interface takes. Web-delivered interfaces, native interfaces, application programming interfaces; whenever a user interacts with a product, performance always needs to be a top concern. Slow performing interfaces have been shown to [cost money and conversions](http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales) and [affect a company's bottom line](https://blog.kissmetrics.com/loading-time/). More than that, performance is about respecting our users and the way humans perceive and react to the world around them.
