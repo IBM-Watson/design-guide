@@ -5,6 +5,7 @@
   [library-class='_library--stretch-container'] & {
     margin-top: 0;
     padding-top: setting-get('rhythm');
+    padding-bottom: setting-get('rhythm');
     background-color: color('neutral-white', 40);
   }
 }
