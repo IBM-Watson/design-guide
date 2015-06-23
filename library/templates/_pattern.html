@@ -19,6 +19,7 @@
       {% endfor %}
     </ul>
   </aside>
+  {% if pattern.metadata.settings %}
   <aside library-class="pattern--settings">
     <header library-class="pattern--header" class="base--h3">
       <h3>Settings</h3>
@@ -28,7 +29,8 @@
       <li class="base--li"><code class="base--code">{{ setting.setting }}</code> - <span library-class="pattern--inline-description" class="base--STYLED">{{ setting.description|markdown | safe -}}</span></li>
       {% endfor %}
     </ul>
-</aside>
+  </aside>
+  {% endif %}
 </article>
 
 
