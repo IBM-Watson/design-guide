@@ -1,5 +1,33 @@
 # Watson Design Guide Changelog
 
+## v1.1.0
+**June 24, 2015**
+
+**Change**
+
+* Update accessibility examples
+* :bug: Fix Pattern and Performance typos
+* Add links to Performance page from Typography page
+* :art: Reword guideline explanation on home page
+* Update inputs
+* :bug: Fix SVGs
+* :fire: Remove Vagrant (replace with straight Node)
+* Update Inline codeblocks
+* :bug: Fix footer link positioning
+* :bug: Fix viewport issue
+* :green_heart: Move to CircleCI
+* Increase spacing between examples
+* Add bottom padding to link on homepage
+* :art: Resize SVG artboards so logos display similarly
+* :memo: Add Developer Certificate of Origin
+* Update neutral color names
+* Update performance statistics
+* :bug: Fix broken links
+* :bug: Remove settings when none are present
+* Update colors based on research
+* Add `?` to homepage
+* Update Library to Guide
+
 ## v1.0.0
 **May 19, 2015**
 
