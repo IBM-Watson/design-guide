@@ -59,20 +59,17 @@
 }
 
 [library-class='color-swatch'] {
-  padding: setting-get('rhythm');
-
-  width: 100%;
+  padding: setting-get('rhythm') / 4;
+  font-size: ms(-1);
+  width: 50%;
 
   @include breakpoint(449px) {
+    padding: setting-get('rhythm') / 2;
+  }
+  @include breakpoint(520px) {
     width: 50%;
   }
-  @include breakpoint(557px) {
-    width: 100%;
-  }
-  @include breakpoint(596px) {
-    width: 50%;
-  }
-  @include breakpoint(899px) {
+  @include breakpoint(700px) {
     width: 100 / 3 * 1%;
   }
 
