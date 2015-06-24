@@ -1,6 +1,6 @@
 {
   "name": "watson-design-guide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Design guidelines and patterns for creating sites and applications with IBM Watson",
   "main": "index.js",
   "scripts": {
