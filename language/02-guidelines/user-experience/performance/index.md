@@ -25,11 +25,11 @@ variables:
     desktopLoad:
       visualDisplay: /videos/performance/wdg--desktop.webm
       title: "Desktop Page Load"
-      description: "New York, NY USA - **Chrome**. *5/1 Mbps connection with a 28ms round trip time*. [Full test](http://www.webpagetest.org/result/150515_FD_JXH/)"
+      description: "New York, NY USA - **Chrome**. *5/1 Mbps connection with a 28ms round trip time*. Speed Index: *400*. [Full test](http://www.webpagetest.org/result/150520_GD_PQ1/)"
     mobileLoad:
       visualDisplay: /videos/performance/wdg--mobile.webm
       title: "Mobile Page Load"
-      description: "Dulles, VA - **Motorola E** - **Chrome**. *1.6 Mbps/768 Kbps connection with a 150ms round trip time*. [Full test](http://www.webpagetest.org/result/150515_53_JXT/)"
+      description: "Dulles, VA - **Motorola E** - **Chrome**. *1.6 Mbps/768 Kbps connection with a 300ms round trip time*. Speed Index: *2049*. [Full test](http://www.webpagetest.org/result/150623_ZA_Y65/)"
 ---
 
 Performance is an integral part of a user's experience no matter the medium that interface takes. Web-delivered interfaces, native interfaces, application programming interfaces; whenever a user interacts with a product, performance always needs to be a top concern. Slow performing interfaces have been shown to [cost money and conversions](http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales) and [affect a company's bottom line](https://blog.kissmetrics.com/loading-time/). More than that, performance is about respecting our users and the way humans perceive and react to the world around them.
@@ -79,12 +79,12 @@ Most devices today have a **refresh rate of 60Hz**, so that is what we should ai
 Whenever working with a network powered interface (websites, native apps that make network calls, cross-network APIs, etc…), the following measurements should be performed and graded against in order to inform if an interface is performing at the level expected:
 
 * Main content is available and usable in **<1s** on a **5/1 Mbps connection with a 28ms round trip time** on a *cold cache*
-* Main content is available and usable in **<3s** on a **1.6 Mbps/768 Kbps connection with a 150ms round trip time** on a *cold cache*
+* Main content is available and usable in **<3s** on a **1.6 Mbps/768 Kbps connection with a 300ms round trip time** on a *cold cache*
 
 When working with visual interfaces, the [speed index](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) metric is also a good indicator of how quickly an interface is available and usable.
 
 * A speed index of **<1000** on a **5/1 Mbps connection with a 28ms round trip time** on a *cold cache*
-* A speed index of **<3000** on a **1.6 Mbps/768 Kbps connection with a 150ms round trip time** on a *cold cache*
+* A speed index of **<3000** on a **1.6 Mbps/768 Kbps connection with a 300ms round trip time** on a *cold cache*
 
 {{ _example.large(examples.desktopLoad) }}
 
