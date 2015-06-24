@@ -6,30 +6,30 @@ _**Heads Up!** We love open source, but the Watson Design Guide is unlikely to a
 
 ## Navigating the Repository
 
-There are three main folders of concern for those interested in contributing: `language`, `library`, and `patterns`.
+There are three main folders of concern for those interested in contributing: `guides`, `site`, and `patterns`.
 
-### Language
+### Guides
 
-The `language` folder contains all of the long-form text available and its related assets, with the exception of documentation for individual UI patterns. All content in here follows our [Guideline](https://github.com/IBM-Watson/design-library/wiki/Content-Models#guideline) content model. Within these, there are a number of [Secondary Content Types](https://github.com/IBM-Watson/design-library/wiki/Content-Models#secondary-content-types) that can be used as sub-content. Assets to be downloaded by a user should go in to `language/assets`, images should go in to `language/images`, and videos should go in to `language/videos`. Within each of those folders, assets should be sorted in to sub-folders based on the sub-folder their related content is sorted into.
+The `guides` folder contains all of the long-form text available and its related assets, with the exception of documentation for individual UI patterns. All content in here follows our [Guideline](https://github.com/IBM-Watson/design-guide/wiki/Content-Models#guideline) content model. Within these, there are a number of [Secondary Content Types](https://github.com/IBM-Watson/design-guide/wiki/Content-Models#secondary-content-types) that can be used as sub-content. Assets to be downloaded by a user should go in to `guides/assets`, images should go in to `guides/images`, and videos should go in to `guides/videos`. Within each of those folders, assets should be sorted in to sub-folders based on the sub-folder their related content is sorted into.
 
-### Library
+### Site
 
-The `library` folder contains all of the items needed to compile the content in the `language` and `patterns` folders into the Watson Design Guide website. This includes site-specific Sass, JavaScript, configuration, and templates.
+The `site` folder contains all of the items needed to compile the content in the `guides` and `patterns` folders into the Watson Design Guide website. This includes site-specific Sass, JavaScript, configuration, and templates.
 
 ### Patterns
 
-The `patterns` folder contains all of the UI patterns and their documentation. Development is being done following [North's](http://pointnorth.io/#website-building-blocks) naming conventions and best practices. Any code that does not adhere to North's conventions will be asked to be rewritten. The folder is divided in to four parts, [base](https://github.com/IBM-Watson/design-library/tree/develop/patterns/base#base-elements), [components](https://github.com/IBM-Watson/design-library/tree/develop/patterns/components#components), [layouts](https://github.com/IBM-Watson/design-library/tree/develop/patterns/layouts#layouts), and [core](https://github.com/IBM-Watson/design-library/tree/develop/patterns/core#core).
+The `patterns` folder contains all of the UI patterns and their documentation. Development is being done following [North's](http://pointnorth.io/#website-building-blocks) naming conventions and best practices. Any code that does not adhere to North's conventions will be asked to be rewritten. The folder is divided in to four parts, [base](https://github.com/IBM-Watson/design-guide/tree/develop/patterns/base#base-elements), [components](https://github.com/IBM-Watson/design-guide/tree/develop/patterns/components#components), [layouts](https://github.com/IBM-Watson/design-guide/tree/develop/patterns/layouts#layouts), and [core](https://github.com/IBM-Watson/design-guide/tree/develop/patterns/core#core).
 
 No patterns rely upon JavaScript frameworks (jQuery, Dojo, Angular, etc…). Any pattern submissions that do will be asked to be rewritten without said dependencies. Acceptable JavaScript dependencies include core JavaScript that we provide and any current dependencies already included in the project. Any additional external dependencies will need to be approved before they can be used. Styling should be written without vendor prefixes. Only web standard features that have [moved beyond](http://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Specification_Maturation) the Candidate Recommendation stage (or equivalent for the relevant standards body) will be considered for inclusion.
 
 ## Developing for the Watson Design Guide
 
-Whether working on language, library, or patterns, there are a specific set of steps that should be followed in order contribute in a standard and consistent manner. Our wiki contains the full instructions for [setting up and working with the Watson Design Guide](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Guide).
+Whether working on guides, site, or patterns, there are a specific set of steps that should be followed in order contribute in a standard and consistent manner. Our wiki contains the full instructions for [setting up and working with the Watson Design Guide](https://github.com/IBM-Watson/design-guide/wiki/Developing-for-the-Design-Guide).
 
 ## Submitting Issues
 
 * Before creating a new issue, perform a [cursory search](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+user%3Aibm-watson+) to see if a similar issue has already been submitted.
-* Can create an issue [here](https://github.com/IBM-Watson/design-library/issues). Please include as many details as possible when filing an issue.
+* Can create an issue [here](https://github.com/IBM-Watson/design-guide/issues). Please include as many details as possible when filing an issue.
 * Issue titles should be descriptive, explaining at the high level what it is about, and should be written in the same style as [Git commit messages](#git-commit-messages).
 * Please include the version of the Design Guide being used or viewed
 * Do not open a [pull request](#pull-requests) to resolve an issue without first receiving feedback from a `collaborator` or `owner` and having them agree on a solution forward.
@@ -46,9 +46,9 @@ Whether working on language, library, or patterns, there are a specific set of s
 * Pull requests should reference their related issues. If the pull request closes an issue, [please reference its closing from a commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/). Pull requests not referencing any issues will be closed.
 * Pull request titles should be descriptive, explaining at the high level what it is doing, and should be written in the same style as [Git commit messages](#git-commit-messages).
 * Update the [CHANGELOG](#maintaining-thechangelog) with the changes made by the pull request, making sure to use the proper [Emoji](#emoji-cheatsheet).
-* Make sure that the steps for [Developing for the Watson Design Guide](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Guide) have been followed
+* Make sure that the steps for [Developing for the Watson Design Guide](https://github.com/IBM-Watson/design-guide/wiki/Developing-for-the-Design-Guide) have been followed
 * Follow our JavaScript and CSS styleguides. We have linters set up to catch most of it.
-* Ensure that [EditorConfig](http://editorconfig.org/) installed in the editor used to work on the library and that it is functioning properly.
+* Ensure that [EditorConfig](http://editorconfig.org/) installed in the editor used to work on the site and that it is functioning properly.
 * Do not squash or rebase commits when submitting a Pull Request. It makes it much harder to follow work and make incremental changes.
 * Ensure no Emoji tags are used in the title of the Pull Request
 
@@ -103,14 +103,14 @@ By making a contribution to this project, I certify that:
 
 ### Branching Model
 
-* Branches must be made off of the most current `develop` branch from `git@github.com:IBM-Watson/design-library.git`
+* Branches must be made off of the most current `develop` branch from `git@github.com:IBM-Watson/design-guide.git`
 * Branch names should be descriptive, describing what is being done in that branch
-* Pull requests must be made into our [develop](https://github.com/IBM-Watson/design-library/tree/develop) branch.
+* Pull requests must be made into our [develop](https://github.com/IBM-Watson/design-guide/tree/develop) branch.
 * The following branch prefixes should be used when creating a new branch:
   * `hotfix/` - bug fixes that got through and need to be squashed
   * `pattern/` - update to or new pattern to be added
-  * `language/` - update to or new piece of long-form text or assets to go along with it
-  * `library/` - update to or new code for the site
+  * `guide/` - update to or new piece of long-form text or assets to go along with it
+  * `site/` - update to or new code for the site
   * `release/` - for releases
   * `feature/` - update to or new general feature not covered by other prefixes
 

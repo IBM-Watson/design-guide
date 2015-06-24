@@ -11,7 +11,7 @@
     "Josh Kimmell <jmkimmel@us.ibm.com>"
   ],
   "description": "Design guidelines and patterns for creating sites and applications with IBM Watson",
-  "main": "patterns/crick.scss",
+  "main": "patterns/_watson-patterns.scss",
   "license": ["Apache 2.0", "CC-BY 4.0"],
   "ignore": [
     "**/.*",
@@ -21,7 +21,7 @@
     "test",
     "tests",
     "helper-apps",
-    "library",
+    "site",
     "Gulpfile.js",
     "package.json"
   ],
