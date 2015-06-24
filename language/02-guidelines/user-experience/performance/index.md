@@ -79,12 +79,12 @@ Most devices today have a **refresh rate of 60Hz**, so that is what we should ai
 Whenever working with a network powered interface (websites, native apps that make network calls, cross-network APIs, etc…), the following measurements should be performed and graded against in order to inform if an interface is performing at the level expected:
 
 * Main content is available and usable in **<1s** on a **5/1 Mbps connection with a 28ms round trip time** on a *cold cache*
-* Main content is available and usable in **<3s** on a **1.6 Mbps/768 Kbps connection with a 150ms round trip time** on a *cold cache*
+* Main content is available and usable in **<3s** on a **1.6 Mbps/768 Kbps connection with a 300ms round trip time** on a *cold cache*
 
 When working with visual interfaces, the [speed index](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) metric is also a good indicator of how quickly an interface is available and usable.
 
 * A speed index of **<1000** on a **5/1 Mbps connection with a 28ms round trip time** on a *cold cache*
-* A speed index of **<3000** on a **1.6 Mbps/768 Kbps connection with a 150ms round trip time** on a *cold cache*
+* A speed index of **<3000** on a **1.6 Mbps/768 Kbps connection with a 300ms round trip time** on a *cold cache*
 
 {{ _example.large(examples.desktopLoad) }}
 
