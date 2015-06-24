@@ -1,20 +1,10 @@
-# Watson Design Guide [![Issues In Progress](https://badge.waffle.io/ibm-watson/design-library.svg?label=In%20Progress&title=Issues%20In%20Progress)](http://waffle.io/ibm-watson/design-library) [![Build Status](https://travis-ci.org/IBM-Watson/design-library.svg?branch=develop)](https://travis-ci.org/IBM-Watson/design-library)
+# Watson Design Guide [![Circle CI Build Status](https://circleci.com/gh/IBM-Watson/design-library/tree/develop.svg?style=svg)](https://circleci.com/gh/IBM-Watson/design-library/tree/develop)
 
 
 ## Getting Started
 
-Development on the Watson Design Guide is done in this repository. Patterns are developed in the `patterns/` folder, with enhancementsto the library itself and the language are added to the `library/` folder. The design library runs off of the [Watson Runner](https://github.com/IBM-Watson/runner), so work on that should be done there.
+Development on the Watson Design Guide is done in this repository. Patterns are developed in the `patterns/` folder, with enhancements to the guides done in `guides/` and enhancements to the site itself done in the `site/` folder. The design guide runs off of the [Watson Runner](https://github.com/IBM-Watson/runner), so work on that should be done there.
 
-### Installation
+## Working with the Design Guide
 
-Development is done through a Vagrant VM. Please install the [Watson Development Environments](https://github.com/IBM-Watson/environments/blob/gh-pages/README.md#ibm-watson-development-environments) requirements. You will also need [Bower](http://bower.io/) installed.
-
-After [forking and cloning](https://guides.github.com/activities/forking/) the repository, either open your terminal, [`cd` to the cloned folder](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line), and run `bower install` followed by `vagrant up` (Mac, Unix, Windows), or run the **Bower Install** app followed by the **Vagrant Start** app from inside the `helper-apps` directory (Mac).
-
-### Updating The Runner
-
-The runner will be updated from time to time. To get these updates, either open your terminal, `cd` to the cloned folder, and run `vagrant provision`, or run the **Vagrant Update** app from inside the `helper-apps` directory.
-
-### Running Locally
-
-To run the design library site locally, either open your terminal, `cd` to the cloned folder, and run `vagrant ssh -c 'gulp'`, or run the **Server Refresh** app followed by the **Server Start** app from inside the `helper-apps` directory.
+Development is done through Node. Please refer to the [Developing for the Design Guide](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Guide) wiki article for how to get started and how to work on the Design Guide.

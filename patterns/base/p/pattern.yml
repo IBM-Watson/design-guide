@@ -1,5 +1,5 @@
 name: Paragraph
-description: Defines paragraphs of text within a page
+description: Paragraph of text within a page
 displayTemplate: pattern
 applicationMethods:
   - code: 'p'

@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 0.12.0
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./.deploy.sh

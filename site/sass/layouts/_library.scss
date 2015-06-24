@@ -1,0 +1,68 @@
+%__library--padding {
+  padding-left: setting-get('rhythm');
+  padding-right: setting-get('rhythm');
+}
+
+html,
+body {
+  height: 100%;
+}
+
+[library-class='_library'] {
+  margin-top: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+[library-class='_library--clearfix'] {
+  @include clearfix;
+}
+
+[library-class*='_library--heading'] {
+  background: color('grayscale', 90);
+  color: color('grayscale', 10);
+  margin-top: 0;
+}
+
+[library-class~='_library--container'] {
+  max-width: 940px;
+  margin: 0 auto;
+
+  @include clearfix;
+}
+
+[library-class='_library--stretch-container'] {
+  margin-top: 0;
+  @include clearfix;
+
+  [library-class*='_library--container'] {
+    padding-left: setting-get('rhythm');
+    padding-right: setting-get('rhythm');
+  }
+}
+
+[library-class*='_library--subnav'] {
+  @include breakpoint(557px) {
+    padding-right: setting-get('rhythm') / 2;
+    width: 26.5%;
+    float: left;
+  }
+
+}
+
+[library-class*='_library--main-content'] {
+  width: 100%;
+  max-width: 100vw;
+
+  [library-class*='_library--subnav'] ~ & {
+    padding-left: setting-get('rhythm');
+    padding-right: setting-get('rhythm');
+    @include breakpoint(557px) {
+      width: 100% - 26.5%;
+
+      padding-left: setting-get('rhythm') / 2;
+      float: left;
+    }
+  }
+}

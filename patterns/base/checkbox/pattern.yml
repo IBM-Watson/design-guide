@@ -1,5 +1,5 @@
 name: Check Box
-description: A form field option where multiple choices may be selected, including, but not requiring this particular element.
+description: A form field option where multiple choices may be selected, including, but not requiring this particular element
 displayTemplate: pattern
 applicationMethods:
   - code: '.base--checkbox'

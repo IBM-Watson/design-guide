@@ -1,0 +1,47 @@
+{
+  "name": "watson-design-guide",
+  "version": "1.1.0",
+  "description": "Design guidelines and patterns for creating sites and applications with IBM Watson",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run gulp build",
+    "postinstall": "npm run install:bower",
+    "install:bower": "npm run bower install",
+    "build": "npm run gulp build",
+    "bower": "./node_modules/bower/bin/bower",
+    "gulp": "./node_modules/gulp/bin/gulp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IBM-Watson/design-library.git"
+  },
+  "keywords": [
+    "watson",
+    "design",
+    "guide",
+    "ibm"
+  ],
+  "authors": [
+    "Sam Richard <sam.richard@us.ibm.com>",
+    "Una Kravets <unakravets@us.ibm.com>",
+    "Jessica Tremblay <tremblay@us.ibm.com>",
+    "Ryan Brownhill <rgbrownh@us.ibm.com>",
+    "Robyn Hammond <rlhammon@us.ibm.com>",
+    "Josh Kimmell <jmkimmel@us.ibm.com>"
+  ],
+  "license": [
+    "Apache 2.0",
+    "CC-BY 4.0"
+  ],
+  "bugs": {
+    "url": "https://github.com/IBM-Watson/design-library/issues"
+  },
+  "homepage": "https://github.com/IBM-Watson/design-library",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "runner": "git://github.com/ibm-watson/runner"
+  },
+  "dependencies": {
+    "bower": "^1.4.1"
+  }
+}

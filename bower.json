@@ -1,6 +1,6 @@
 {
   "name": "watson-design-guide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/IBM-Watson/design-library",
   "authors": [
     "Sam Richard <sam.richard@us.ibm.com>",
@@ -10,8 +10,8 @@
     "Robyn Hammond <rlhammon@us.ibm.com>",
     "Josh Kimmell <jmkimmel@us.ibm.com>"
   ],
-  "description": "Design guidelines and patterns for creating sites and applications",
-  "main": "patterns/crick.scss",
+  "description": "Design guidelines and patterns for creating sites and applications with IBM Watson",
+  "main": "patterns/_watson-patterns.scss",
   "license": ["Apache 2.0", "CC-BY 4.0"],
   "ignore": [
     "**/.*",
@@ -21,8 +21,9 @@
     "test",
     "tests",
     "helper-apps",
-    "Vagrantfile",
-    "library"
+    "site",
+    "Gulpfile.js",
+    "package.json"
   ],
   "dependencies": {
     "sass-toolkit": "~2.9.0",
