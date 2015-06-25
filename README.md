@@ -1,4 +1,4 @@
-# Watson Design Guide [![Circle CI Build Status](https://circleci.com/gh/IBM-Watson/design-library/tree/develop.svg?style=svg)](https://circleci.com/gh/IBM-Watson/design-library/tree/develop)
+# Watson Design Guide [![Circle CI Build Status](https://circleci.com/gh/IBM-Watson/design-guide/tree/develop.svg?style=svg)](https://circleci.com/gh/IBM-Watson/design-guide/tree/develop)
 
 
 ## Getting Started
@@ -7,4 +7,4 @@ Development on the Watson Design Guide is done in this repository. Patterns are 
 
 ## Working with the Design Guide
 
-Development is done through Node. Please refer to the [Developing for the Design Guide](https://github.com/IBM-Watson/design-library/wiki/Developing-for-the-Design-Guide) wiki article for how to get started and how to work on the Design Guide.
+Development is done through Node. Please refer to the [Developing for the Design Guide](https://github.com/IBM-Watson/design-guide/wiki/Developing-for-the-Design-Guide) wiki article for how to get started and how to work on the Design Guide.
